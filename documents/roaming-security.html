@@ -3,16 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roaming Security Analysis - Telecom Security Documents</title>
-    <meta name="description" content="Research on roaming agreement vulnerabilities and attack vectors">
+    
+    <!-- Primary Meta Tags -->
+    <title>International Roaming Security Analysis - Telecom Security Documents</title>
+    <meta name="title" content="International Roaming Security Analysis - Telecom Security Documents">
+    <meta name="description" content="Security analysis of international roaming services and vulnerabilities">
+    <meta name="keywords" content="telecom security, Roaming Security, network security, telecommunications, research paper, security analysis">
+    <meta name="author" content="Telecom Security Team">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://telcosec.github.io/Telecom-Security-Documents/documents/roaming-security.html">
+    <meta property="og:title" content="International Roaming Security Analysis - Telecom Security Documents">
+    <meta property="og:description" content="Security analysis of international roaming services and vulnerabilities">
+    <meta property="og:image" content="https://telcosec.github.io/Telecom-Security-Documents/images/og-image.png">
+    <meta property="og:site_name" content="Telecom Security Documents">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2024-01-15T00:00:00Z">
+    <meta property="article:section" content="Roaming Security">
+    <meta property="article:tag" content="telecom security, Roaming Security, network security">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://telcosec.github.io/Telecom-Security-Documents/documents/roaming-security.html">
+    <meta property="twitter:title" content="International Roaming Security Analysis - Telecom Security Documents">
+    <meta property="twitter:description" content="Security analysis of international roaming services and vulnerabilities">
+    <meta property="twitter:image" content="https://telcosec.github.io/Telecom-Security-Documents/images/og-image.png">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://telcosec.github.io/Telecom-Security-Documents/documents/roaming-security.html">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     
     <!-- AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9236847887178276" crossorigin="anonymous"></script>
     
+    <!-- Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="../styles.css" rel="stylesheet">
     <link href="document-styles.css" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": "International Roaming Security Analysis",
+        "description": "Security analysis of international roaming services and vulnerabilities",
+        "abstract": "This research paper examines security vulnerabilities in international roaming services, analyzing cross-border attacks, regulatory challenges, and security measures for protecting roaming users and services.",
+        "url": "https://telcosec.github.io/Telecom-Security-Documents/documents/roaming-security.html",
+        "datePublished": "2024-01-15",
+        "dateModified": "2024-01-15",
+        "author": [
+            {{#each RESEARCHERS}}
+            {
+                "@type": "Person",
+                "name": "{{name}}",
+                "affiliation": {
+                    "@type": "Organization",
+                    "name": "{{affiliation}}"
+                }
+            }{{#unless @last}},{{/unless}}
+            {{/each}}
+        ],
+        "publisher": {
+            "@type": "Organization",
+            "name": "Telecom Security Team",
+            "url": "https://telcosec.github.io/Telecom-Security-Documents/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://telcosec.github.io/Telecom-Security-Documents/documents/roaming-security.html"
+        },
+        "genre": "Research Paper",
+        "keywords": "International Roaming, Cross-Border Attacks, Regulatory Compliance, Service Security, User Protection",
+        "about": [
+            {
+                "@type": "Thing",
+                "name": "Roaming Security"
+            }
+        ],
+        "isPartOf": {
+            "@type": "Collection",
+            "name": "Telecom Security Documents",
+            "url": "https://telcosec.github.io/Telecom-Security-Documents/"
+        }
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://telcosec.github.io/Telecom-Security-Documents/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Roaming Security",
+                "item": "https://telcosec.github.io/Telecom-Security-Documents/#roaming"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "International Roaming Security Analysis",
+                "item": "https://telcosec.github.io/Telecom-Security-Documents/documents/roaming-security.html"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -51,17 +170,17 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
                     <li class="breadcrumb-item"><a href="../index.html#roaming">Roaming Security</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Roaming Security Analysis</li>
+                    <li class="breadcrumb-item active" aria-current="page">International Roaming Security Analysis</li>
                 </ol>
             </nav>
             
-            <h1 class="display-4">Roaming Security Analysis</h1>
-            <p class="lead">Research on roaming agreement vulnerabilities and attack vectors</p>
+            <h1 class="display-4">International Roaming Security Analysis</h1>
+            <p class="lead">Security analysis of international roaming services and vulnerabilities</p>
             
             <div class="document-meta">
                                  <span class="badge bg-primary">Research Paper</span>
-                 <span class="badge bg-secondary">2024-01-25</span>
-                 <span class="badge bg-info">Academic Research</span>
+                 <span class="badge bg-secondary">2024-01-15</span>
+                 <span class="badge bg-info">GSMA</span>
                  <span class="badge bg-success">Research Team</span>
             </div>
         </div>
@@ -77,7 +196,7 @@
                     <h2><i class="fas fa-file-alt me-2"></i>Abstract</h2>
                     <div class="card">
                         <div class="card-body">
-                            <p class="card-text">This research paper examines security vulnerabilities in international roaming agreements, analyzing attack vectors, exploitation techniques, and recommendations for securing roaming infrastructure.</p>
+                            <p class="card-text">This research paper examines security vulnerabilities in international roaming services, analyzing cross-border attacks, regulatory challenges, and security measures for protecting roaming users and services.</p>
                         </div>
                     </div>
                 </section>
@@ -102,22 +221,22 @@
                         <div class="card-body">
                             <div class="pdf-container">
                                 <iframe 
-                                    src="../Roaming/Lange_2024_Wherever_I_May_Roam.pdf#toolbar=1&navpanes=1&scrollbar=1" 
+                                    src="../Roaming/Roaming-Security-Analysis.pdf#toolbar=1&navpanes=1&scrollbar=1" 
                                     width="100%" 
                                     height="600px" 
                                     frameborder="0"
                                     allowfullscreen>
                                     <p>Your browser does not support PDF embedding. 
-                                    <a href="../Roaming/Lange_2024_Wherever_I_May_Roam.pdf" target="_blank" class="btn btn-primary">
+                                    <a href="../Roaming/Roaming-Security-Analysis.pdf" target="_blank" class="btn btn-primary">
                                         <i class="fas fa-download me-2"></i>Download PDF
                                     </a></p>
                                 </iframe>
                             </div>
                             <div class="mt-3">
-                                <a href="../Roaming/Lange_2024_Wherever_I_May_Roam.pdf" target="_blank" class="btn btn-outline-primary">
+                                <a href="../Roaming/Roaming-Security-Analysis.pdf" target="_blank" class="btn btn-outline-primary">
                                     <i class="fas fa-external-link-alt me-2"></i>Open in New Tab
                                 </a>
-                                <a href="../Roaming/Lange_2024_Wherever_I_May_Roam.pdf" download class="btn btn-outline-success">
+                                <a href="../Roaming/Roaming-Security-Analysis.pdf" download class="btn btn-outline-success">
                                     <i class="fas fa-download me-2"></i>Download
                                 </a>
                             </div>
@@ -127,13 +246,15 @@
 
                 <!-- Key Topics Section -->
                 <div class="col-md-6 mb-2">
-                <span class="badge bg-light text-dark border">Roaming Security</span>
+                <span class="badge bg-light text-dark border">International Roaming</span>
             </div><div class="col-md-6 mb-2">
-                <span class="badge bg-light text-dark border">International Agreements</span>
+                <span class="badge bg-light text-dark border">Cross-Border Attacks</span>
             </div><div class="col-md-6 mb-2">
-                <span class="badge bg-light text-dark border">Attack Vectors</span>
+                <span class="badge bg-light text-dark border">Regulatory Compliance</span>
             </div><div class="col-md-6 mb-2">
-                <span class="badge bg-light text-dark border">Infrastructure Security</span>
+                <span class="badge bg-light text-dark border">Service Security</span>
+            </div><div class="col-md-6 mb-2">
+                <span class="badge bg-light text-dark border">User Protection</span>
             </div>
 
                 <!-- AdSense In-Article Ad -->
@@ -157,15 +278,15 @@
                             
             <div class="col-md-6 mb-3">
                 <div class="video-card">
-                    <div class="video-thumbnail" data-video-id="zab456cde">
-                        <img src="https://img.youtube.com/vi/zab456cde/mqdefault.jpg" 
-                             alt="Roaming Security Challenges" class="img-fluid">
+                    <div class="video-thumbnail" data-video-id="hij456stu">
+                        <img src="https://img.youtube.com/vi/hij456stu/mqdefault.jpg" 
+                             alt="Roaming Security Overview" class="img-fluid">
                         <div class="play-button">
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
-                    <h5 class="video-title">Roaming Security Challenges</h5>
-                    <p class="video-description">Analysis of security challenges in international roaming</p>
+                    <h5 class="video-title">Roaming Security Overview</h5>
+                    <p class="video-description">Overview of international roaming security considerations</p>
                 </div>
             </div>
         
@@ -175,12 +296,12 @@
 
                 <!-- Related Documents Section -->
                 
-            <a href="roaming-security.html" class="list-group-item list-group-item-action">
+            <a href="roaming-security-guidelines.html" class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                    <h6 class="mb-1">Roaming Security Best Practices</h6>
+                    <h6 class="mb-1">Roaming Security Guidelines</h6>
                     <small class="text-muted">Roaming Security</small>
                 </div>
-                <p class="mb-1">Best practices for securing roaming infrastructure</p>
+                <p class="mb-1">Security guidelines for roaming services</p>
             </a>
         
             </div>
@@ -198,16 +319,16 @@
                                 <strong>Type:</strong> Research Paper
                             </li>
                             <li class="mb-2">
-                                <strong>Date:</strong> 2024-01-25
+                                <strong>Date:</strong> 2024-01-15
                             </li>
                             <li class="mb-2">
-                                <strong>Source:</strong> Academic Research
+                                <strong>Source:</strong> GSMA
                             </li>
                             <li class="mb-2">
                                 <strong>Category:</strong> Roaming Security
                             </li>
                             <li class="mb-2">
-                                <strong>File:</strong> Lange_2024_Wherever_I_May_Roam.pdf
+                                <strong>File:</strong> Roaming-Security-Analysis.pdf
                             </li>
                         </ul>
                     </div>
@@ -234,9 +355,9 @@
                         <i class="fas fa-user-circle fa-2x text-primary"></i>
                     </div>
                     <div>
-                        <h6 class="mb-1">Dr. Sarah Lange</h6>
-                        <p class="mb-1 text-muted small">University of California, San Diego</p>
-                        <span class="badge bg-light text-dark">Roaming Security Researcher</span>
+                        <h6 class="mb-1">Dr. Thomas Lee</h6>
+                        <p class="mb-1 text-muted small">GSMA Roaming</p>
+                        <span class="badge bg-light text-dark">Roaming Security Expert</span>
                     </div>
                 </div>
             </div>
@@ -249,10 +370,10 @@
                     </div>
                     <div class="card-body">
                         <div class="d-grid gap-2">
-                            <a href="../Roaming/Lange_2024_Wherever_I_May_Roam.pdf" target="_blank" class="btn btn-outline-primary btn-sm">
+                            <a href="../Roaming/Roaming-Security-Analysis.pdf" target="_blank" class="btn btn-outline-primary btn-sm">
                                 <i class="fas fa-external-link-alt me-2"></i>Open PDF
                             </a>
-                            <a href="../Roaming/Lange_2024_Wherever_I_May_Roam.pdf" download class="btn btn-outline-success btn-sm">
+                            <a href="../Roaming/Roaming-Security-Analysis.pdf" download class="btn btn-outline-success btn-sm">
                                 <i class="fas fa-download me-2"></i>Download
                             </a>
                             <a href="../index.html#roaming" class="btn btn-outline-info btn-sm">

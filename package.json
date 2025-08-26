@@ -6,8 +6,9 @@
   "scripts": {
     "start": "http-server -p 8080 -o",
     "generate": "node generate-pages.js",
+    "generate:yaml": "node generate-from-yaml.js",
     "generate:watch": "nodemon generate-pages.js",
-    "build": "npm run generate && npm run seo",
+    "build": "npm run generate:yaml && npm run seo",
     "seo": "node generate-sitemap.js",
     "test": "echo \"No tests specified\" && exit 0"
   },
@@ -29,7 +30,8 @@
   "license": "MIT",
   "devDependencies": {
     "http-server": "^14.1.1",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "js-yaml": "^4.1.0"
   },
   "engines": {
     "node": ">=14.0.0"

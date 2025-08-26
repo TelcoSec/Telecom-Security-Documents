@@ -2,9 +2,21 @@
 
 const fs = require('fs');
 const path = require('path');
+const yaml = require('js-yaml');
 
-// Import the documents array from generate-pages.js
-const { documents } = require('./generate-pages.js');
+// Load content from YAML file
+function loadContent() {
+    try {
+        const yamlPath = path.join(__dirname, 'content', 'documents.yaml');
+        const yamlContent = fs.readFileSync(yamlPath, 'utf8');
+        const content = yaml.load(yamlContent);
+        
+        return content;
+    } catch (error) {
+        console.error('❌ Error loading YAML content:', error.message);
+        process.exit(1);
+    }
+}
 
 // Site configuration
 const siteConfig = {
@@ -22,6 +34,8 @@ const siteConfig = {
 // Generate sitemap XML
 function generateSitemap() {
     console.log('🗺️ Generating sitemap.xml...');
+    
+    const content = loadContent();
     
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -54,7 +68,7 @@ function generateSitemap() {
     </url>
     
     <!-- Individual Document Pages -->
-${documents.map(doc => `    <url>
+${content.documents.map(doc => `    <url>
         <loc>${siteConfig.baseUrl}/documents/${doc.id}.html</loc>
         <lastmod>${siteConfig.lastmod}</lastmod>
         <changefreq>monthly</changefreq>
@@ -62,114 +76,44 @@ ${documents.map(doc => `    <url>
     </url>`).join('\n')}
     
     <!-- Category Pages -->
-    <url>
-        <loc>${siteConfig.baseUrl}/#4g</loc>
+${content.categories.map(cat => `    <url>
+        <loc>${siteConfig.baseUrl}/#${cat.anchor}</loc>
         <lastmod>${siteConfig.lastmod}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>${siteConfig.priority.categories}</priority>
-    </url>
-    <url>
-        <loc>${siteConfig.baseUrl}/#5g</loc>
-        <lastmod>${siteConfig.lastmod}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>${siteConfig.priority.categories}</priority>
-    </url>
-    <url>
-        <loc>${siteConfig.baseUrl}/#sim-cards</loc>
-        <lastmod>${siteConfig.lastmod}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>${siteConfig.priority.categories}</priority>
-    </url>
-    <url>
-        <loc>${siteConfig.baseUrl}/#ss7</loc>
-        <lastmod>${siteConfig.lastmod}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>${siteConfig.priority.categories}</priority>
-    </url>
-    <url>
-        <loc>${siteConfig.baseUrl}/#baseband</loc>
-        <lastmod>${siteConfig.lastmod}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>${siteConfig.priority.categories}</priority>
-    </url>
-    <url>
-        <loc>${siteConfig.baseUrl}/#base-stations</loc>
-        <lastmod>${siteConfig.lastmod}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>${siteConfig.priority.categories}</priority>
-    </url>
-    <url>
-        <loc>${siteConfig.baseUrl}/#fbi</loc>
-        <lastmod>${siteConfig.lastmod}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>${siteConfig.priority.categories}</priority>
-    </url>
-    <url>
-        <loc>${siteConfig.baseUrl}/#fraud</loc>
-        <lastmod>${siteConfig.lastmod}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>${siteConfig.priority.categories}</priority>
-    </url>
-    <url>
-        <loc>${siteConfig.baseUrl}/#gpon</loc>
-        <lastmod>${siteConfig.lastmod}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>${siteConfig.priority.categories}</priority>
-    </url>
-    <url>
-        <loc>${siteConfig.baseUrl}/#motif</loc>
-        <lastmod>${siteConfig.lastmod}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>${siteConfig.priority.categories}</priority>
-    </url>
-    <url>
-        <loc>${siteConfig.baseUrl}/#roaming</loc>
-        <lastmod>${siteConfig.lastmod}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>${siteConfig.priority.categories}</priority>
-    </url>
-    <url>
-        <loc>${siteConfig.baseUrl}/#apns</loc>
-        <lastmod>${siteConfig.lastmod}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>${siteConfig.priority.categories}</priority>
-    </url>
-    <url>
-        <loc>${siteConfig.baseUrl}/#at-commands</loc>
-        <lastmod>${siteConfig.lastmod}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>${siteConfig.priority.categories}</priority>
-    </url>
+    </url>`).join('\n')}
     
 </urlset>`;
 
     // Write sitemap to file
     fs.writeFileSync('sitemap.xml', sitemap);
     console.log('✅ sitemap.xml generated successfully!');
-    console.log(`📊 Total URLs: ${documents.length + 17}`); // documents + static pages
+    console.log(`📊 Total URLs: ${content.documents.length + content.categories.length + 3}`); // documents + categories + static pages
 }
 
 // Generate RSS feed
 function generateRSSFeed() {
     console.log('📡 Generating RSS feed...');
     
+    const content = loadContent();
+    
     const rssFeed = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Telecom Security Documents</title>
-        <link>${siteConfig.baseUrl}</link>
-        <description>Comprehensive collection of telecommunications security research papers, technical documents, and security analysis</description>
+        <title>${content.site.title}</title>
+        <link>${content.site.baseUrl}</link>
+        <description>${content.site.description}</description>
         <language>en-us</language>
         <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-        <atom:link href="${siteConfig.baseUrl}/rss.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="${content.site.baseUrl}/rss.xml" rel="self" type="application/rss+xml" />
         
-${documents.map(doc => `        <item>
+${content.documents.map(doc => `        <item>
             <title>${doc.title}</title>
-            <link>${siteConfig.baseUrl}/documents/${doc.id}.html</link>
+            <link>${content.site.baseUrl}/documents/${doc.id}.html</link>
             <description>${doc.description}</description>
             <category>${doc.category}</category>
             <pubDate>${new Date(doc.date).toUTCString()}</pubDate>
-            <guid>${siteConfig.baseUrl}/documents/${doc.id}.html</guid>
+            <guid>${content.site.baseUrl}/documents/${doc.id}.html</guid>
         </item>`).join('\n')}
         
     </channel>

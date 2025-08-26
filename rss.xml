@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Telecom Security Documents</title>
+        <link>https://telcosec.github.io/Telecom-Security-Documents</link>
+        <description>Comprehensive collection of telecommunications security research papers, technical documents, and security analysis</description>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 26 Aug 2025 06:14:26 GMT</lastBuildDate>
+        <atom:link href="https://telcosec.github.io/Telecom-Security-Documents/rss.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>4G Network Security Overview</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/4g-security-overview.html</link>
+            <description>Comprehensive overview of 4G network security architecture and protocols</description>
+            <category>4G Network Security</category>
+            <pubDate>Mon, 15 Jan 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/4g-security-overview.html</guid>
+        </item>
+        <item>
+            <title>4G Authentication Protocols</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/4g-authentication.html</link>
+            <description>Detailed analysis of LTE authentication mechanisms and security</description>
+            <category>4G Network Security</category>
+            <pubDate>Sat, 20 Jan 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/4g-authentication.html</guid>
+        </item>
+        <item>
+            <title>5G Security Analysis and Threat Assessment</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/5g-security-analysis.html</link>
+            <description>Comprehensive analysis of 5G network security architecture and emerging threats</description>
+            <category>5G Network Security</category>
+            <pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/5g-security-analysis.html</guid>
+        </item>
+        <item>
+            <title>5G Network Slicing Security</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/5g-network-slicing.html</link>
+            <description>Security considerations and vulnerabilities in 5G network slicing</description>
+            <category>5G Network Security</category>
+            <pubDate>Thu, 15 Feb 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/5g-network-slicing.html</guid>
+        </item>
+        <item>
+            <title>SS7 Protocol Security Vulnerabilities</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/ss7-security.html</link>
+            <description>Analysis of SS7 protocol vulnerabilities and attack vectors</description>
+            <category>SS7 Protocol Security</category>
+            <pubDate>Wed, 10 Jan 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/ss7-security.html</guid>
+        </item>
+        <item>
+            <title>SIM Card and UICC Security Analysis</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/sim-card-security.html</link>
+            <description>Comprehensive analysis of SIM card vulnerabilities and security measures</description>
+            <category>SIM Cards & UICC Security</category>
+            <pubDate>Thu, 25 Jan 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/sim-card-security.html</guid>
+        </item>
+        <item>
+            <title>Baseband Processor Security Vulnerabilities</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/baseband-security.html</link>
+            <description>Analysis of baseband processor vulnerabilities and exploitation techniques</description>
+            <category>Baseband Security</category>
+            <pubDate>Mon, 05 Feb 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/baseband-security.html</guid>
+        </item>
+        <item>
+            <title>Base Station Security and Physical Attacks</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/base-station-security.html</link>
+            <description>Security analysis of base stations and physical attack vectors</description>
+            <category>Base Stations</category>
+            <pubDate>Tue, 30 Jan 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/base-station-security.html</guid>
+        </item>
+        <item>
+            <title>FBI Telecom Security Resources and Guidelines</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/fbi-telecom-security.html</link>
+            <description>FBI resources and guidelines for telecom security investigations</description>
+            <category>FBI Resources</category>
+            <pubDate>Fri, 05 Jan 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/fbi-telecom-security.html</guid>
+        </item>
+        <item>
+            <title>Telecom Fraud Detection and Prevention</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/telecom-fraud-analysis.html</link>
+            <description>Analysis of telecom fraud patterns and prevention strategies</description>
+            <category>Fraud Detection & Prevention</category>
+            <pubDate>Sat, 10 Feb 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/telecom-fraud-analysis.html</guid>
+        </item>
+        <item>
+            <title>GPON Network Security Vulnerabilities</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/gpon-security.html</link>
+            <description>Security analysis of GPON networks and attack vectors</description>
+            <category>GPON Security</category>
+            <pubDate>Sat, 20 Jan 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/gpon-security.html</guid>
+        </item>
+        <item>
+            <title>GSMA MoTIF Mobile Threat Intelligence Framework</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/motif-security.html</link>
+            <description>Overview of the GSMA MoTIF framework for mobile threat intelligence</description>
+            <category>MoTIF Framework</category>
+            <pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/motif-security.html</guid>
+        </item>
+        <item>
+            <title>International Roaming Security Analysis</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/roaming-security.html</link>
+            <description>Security analysis of international roaming services and vulnerabilities</description>
+            <category>Roaming Security</category>
+            <pubDate>Mon, 15 Jan 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/roaming-security.html</guid>
+        </item>
+        <item>
+            <title>Access Point Names (APNs) Security Analysis</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/apn-security.html</link>
+            <description>Security analysis of APN configurations and vulnerabilities</description>
+            <category>Access Point Names (APNs)</category>
+            <pubDate>Mon, 05 Feb 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/apn-security.html</guid>
+        </item>
+        <item>
+            <title>AT Commands Security and Fuzzing Analysis</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/at-commands-security.html</link>
+            <description>Security analysis of AT commands and fuzzing techniques</description>
+            <category>AT Commands</category>
+            <pubDate>Thu, 25 Jan 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/at-commands-security.html</guid>
+        </item>
+        
+    </channel>
+</rss>

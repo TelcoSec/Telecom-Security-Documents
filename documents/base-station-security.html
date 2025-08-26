@@ -3,16 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base Station Security Analysis - Telecom Security Documents</title>
-    <meta name="description" content="Comprehensive catalog and security analysis of base station equipment">
+    
+    <!-- Primary Meta Tags -->
+    <title>Base Station Security and Physical Attacks - Telecom Security Documents</title>
+    <meta name="title" content="Base Station Security and Physical Attacks - Telecom Security Documents">
+    <meta name="description" content="Security analysis of base stations and physical attack vectors">
+    <meta name="keywords" content="telecom security, Base Stations, network security, telecommunications, research paper, security analysis">
+    <meta name="author" content="Telecom Security Team">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://telcosec.github.io/Telecom-Security-Documents/documents/base-station-security.html">
+    <meta property="og:title" content="Base Station Security and Physical Attacks - Telecom Security Documents">
+    <meta property="og:description" content="Security analysis of base stations and physical attack vectors">
+    <meta property="og:image" content="https://telcosec.github.io/Telecom-Security-Documents/images/og-image.png">
+    <meta property="og:site_name" content="Telecom Security Documents">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2024-01-30T00:00:00Z">
+    <meta property="article:section" content="Base Stations">
+    <meta property="article:tag" content="telecom security, Base Stations, network security">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://telcosec.github.io/Telecom-Security-Documents/documents/base-station-security.html">
+    <meta property="twitter:title" content="Base Station Security and Physical Attacks - Telecom Security Documents">
+    <meta property="twitter:description" content="Security analysis of base stations and physical attack vectors">
+    <meta property="twitter:image" content="https://telcosec.github.io/Telecom-Security-Documents/images/og-image.png">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://telcosec.github.io/Telecom-Security-Documents/documents/base-station-security.html">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     
     <!-- AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9236847887178276" crossorigin="anonymous"></script>
     
+    <!-- Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="../styles.css" rel="stylesheet">
     <link href="document-styles.css" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": "Base Station Security and Physical Attacks",
+        "description": "Security analysis of base stations and physical attack vectors",
+        "abstract": "This technical report examines the security vulnerabilities of base stations, including physical access attacks, network infiltration techniques, and security measures for protecting cellular infrastructure.",
+        "url": "https://telcosec.github.io/Telecom-Security-Documents/documents/base-station-security.html",
+        "datePublished": "2024-01-30",
+        "dateModified": "2024-01-30",
+        "author": [
+            {{#each RESEARCHERS}}
+            {
+                "@type": "Person",
+                "name": "{{name}}",
+                "affiliation": {
+                    "@type": "Organization",
+                    "name": "{{affiliation}}"
+                }
+            }{{#unless @last}},{{/unless}}
+            {{/each}}
+        ],
+        "publisher": {
+            "@type": "Organization",
+            "name": "Telecom Security Team",
+            "url": "https://telcosec.github.io/Telecom-Security-Documents/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://telcosec.github.io/Telecom-Security-Documents/documents/base-station-security.html"
+        },
+        "genre": "Technical Report",
+        "keywords": "Base Station Security, Physical Attacks, Network Infiltration, Infrastructure Protection, Access Control",
+        "about": [
+            {
+                "@type": "Thing",
+                "name": "Base Stations"
+            }
+        ],
+        "isPartOf": {
+            "@type": "Collection",
+            "name": "Telecom Security Documents",
+            "url": "https://telcosec.github.io/Telecom-Security-Documents/"
+        }
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://telcosec.github.io/Telecom-Security-Documents/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Base Stations",
+                "item": "https://telcosec.github.io/Telecom-Security-Documents/#base-stations"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Base Station Security and Physical Attacks",
+                "item": "https://telcosec.github.io/Telecom-Security-Documents/documents/base-station-security.html"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -51,17 +170,17 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
                     <li class="breadcrumb-item"><a href="../index.html#base-stations">Base Stations</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Base Station Security Analysis</li>
+                    <li class="breadcrumb-item active" aria-current="page">Base Station Security and Physical Attacks</li>
                 </ol>
             </nav>
             
-            <h1 class="display-4">Base Station Security Analysis</h1>
-            <p class="lead">Comprehensive catalog and security analysis of base station equipment</p>
+            <h1 class="display-4">Base Station Security and Physical Attacks</h1>
+            <p class="lead">Security analysis of base stations and physical attack vectors</p>
             
             <div class="document-meta">
-                                 <span class="badge bg-primary">Technical Catalog</span>
-                 <span class="badge bg-secondary">2024-01-12</span>
-                 <span class="badge bg-info">EMEA</span>
+                                 <span class="badge bg-primary">Technical Report</span>
+                 <span class="badge bg-secondary">2024-01-30</span>
+                 <span class="badge bg-info">3GPP</span>
                  <span class="badge bg-success">Research Team</span>
             </div>
         </div>
@@ -77,7 +196,7 @@
                     <h2><i class="fas fa-file-alt me-2"></i>Abstract</h2>
                     <div class="card">
                         <div class="card-body">
-                            <p class="card-text">This technical catalog provides comprehensive information about base station equipment, specifications, and security considerations for telecommunications infrastructure.</p>
+                            <p class="card-text">This technical report examines the security vulnerabilities of base stations, including physical access attacks, network infiltration techniques, and security measures for protecting cellular infrastructure.</p>
                         </div>
                     </div>
                 </section>
@@ -102,22 +221,22 @@
                         <div class="card-body">
                             <div class="pdf-container">
                                 <iframe 
-                                    src="../BaseStations/BaseStations_EMEA 2024 Catalog.pdf#toolbar=1&navpanes=1&scrollbar=1" 
+                                    src="../BaseStations/Base-Station-Security.pdf#toolbar=1&navpanes=1&scrollbar=1" 
                                     width="100%" 
                                     height="600px" 
                                     frameborder="0"
                                     allowfullscreen>
                                     <p>Your browser does not support PDF embedding. 
-                                    <a href="../BaseStations/BaseStations_EMEA 2024 Catalog.pdf" target="_blank" class="btn btn-primary">
+                                    <a href="../BaseStations/Base-Station-Security.pdf" target="_blank" class="btn btn-primary">
                                         <i class="fas fa-download me-2"></i>Download PDF
                                     </a></p>
                                 </iframe>
                             </div>
                             <div class="mt-3">
-                                <a href="../BaseStations/BaseStations_EMEA 2024 Catalog.pdf" target="_blank" class="btn btn-outline-primary">
+                                <a href="../BaseStations/Base-Station-Security.pdf" target="_blank" class="btn btn-outline-primary">
                                     <i class="fas fa-external-link-alt me-2"></i>Open in New Tab
                                 </a>
-                                <a href="../BaseStations/BaseStations_EMEA 2024 Catalog.pdf" download class="btn btn-outline-success">
+                                <a href="../BaseStations/Base-Station-Security.pdf" download class="btn btn-outline-success">
                                     <i class="fas fa-download me-2"></i>Download
                                 </a>
                             </div>
@@ -127,13 +246,15 @@
 
                 <!-- Key Topics Section -->
                 <div class="col-md-6 mb-2">
-                <span class="badge bg-light text-dark border">Base Stations</span>
+                <span class="badge bg-light text-dark border">Base Station Security</span>
             </div><div class="col-md-6 mb-2">
-                <span class="badge bg-light text-dark border">Equipment Specifications</span>
+                <span class="badge bg-light text-dark border">Physical Attacks</span>
             </div><div class="col-md-6 mb-2">
-                <span class="badge bg-light text-dark border">Infrastructure Security</span>
+                <span class="badge bg-light text-dark border">Network Infiltration</span>
             </div><div class="col-md-6 mb-2">
-                <span class="badge bg-light text-dark border">Technical Catalog</span>
+                <span class="badge bg-light text-dark border">Infrastructure Protection</span>
+            </div><div class="col-md-6 mb-2">
+                <span class="badge bg-light text-dark border">Access Control</span>
             </div>
 
                 <!-- AdSense In-Article Ad -->
@@ -157,15 +278,15 @@
                             
             <div class="col-md-6 mb-3">
                 <div class="video-card">
-                    <div class="video-thumbnail" data-video-id="vwx901yza">
-                        <img src="https://img.youtube.com/vi/vwx901yza/mqdefault.jpg" 
-                             alt="Base Station Security Fundamentals" class="img-fluid">
+                    <div class="video-thumbnail" data-video-id="stu901def">
+                        <img src="https://img.youtube.com/vi/stu901def/mqdefault.jpg" 
+                             alt="Base Station Security Overview" class="img-fluid">
                         <div class="play-button">
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
-                    <h5 class="video-title">Base Station Security Fundamentals</h5>
-                    <p class="video-description">Introduction to base station security and infrastructure protection</p>
+                    <h5 class="video-title">Base Station Security Overview</h5>
+                    <p class="video-description">Overview of base station security considerations</p>
                 </div>
             </div>
         
@@ -175,12 +296,12 @@
 
                 <!-- Related Documents Section -->
                 
-            <a href="base-station-security.html" class="list-group-item list-group-item-action">
+            <a href="cellular-infrastructure-security.html" class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                    <h6 class="mb-1">Base Station Security Guidelines</h6>
+                    <h6 class="mb-1">Cellular Infrastructure Security</h6>
                     <small class="text-muted">Base Stations</small>
                 </div>
-                <p class="mb-1">Security guidelines for base station deployment</p>
+                <p class="mb-1">Security considerations for cellular infrastructure</p>
             </a>
         
             </div>
@@ -195,19 +316,19 @@
                     <div class="card-body">
                         <ul class="list-unstyled">
                             <li class="mb-2">
-                                <strong>Type:</strong> Technical Catalog
+                                <strong>Type:</strong> Technical Report
                             </li>
                             <li class="mb-2">
-                                <strong>Date:</strong> 2024-01-12
+                                <strong>Date:</strong> 2024-01-30
                             </li>
                             <li class="mb-2">
-                                <strong>Source:</strong> EMEA
+                                <strong>Source:</strong> 3GPP
                             </li>
                             <li class="mb-2">
                                 <strong>Category:</strong> Base Stations
                             </li>
                             <li class="mb-2">
-                                <strong>File:</strong> BaseStations_EMEA 2024 Catalog.pdf
+                                <strong>File:</strong> Base-Station-Security.pdf
                             </li>
                         </ul>
                     </div>
@@ -234,9 +355,9 @@
                         <i class="fas fa-user-circle fa-2x text-primary"></i>
                     </div>
                     <div>
-                        <h6 class="mb-1">EMEA Technical Team</h6>
-                        <p class="mb-1 text-muted small">EMEA Telecommunications</p>
-                        <span class="badge bg-light text-dark">Infrastructure Specialists</span>
+                        <h6 class="mb-1">Dr. Kevin Brown</h6>
+                        <p class="mb-1 text-muted small">3GPP Security</p>
+                        <span class="badge bg-light text-dark">Infrastructure Security Expert</span>
                     </div>
                 </div>
             </div>
@@ -249,10 +370,10 @@
                     </div>
                     <div class="card-body">
                         <div class="d-grid gap-2">
-                            <a href="../BaseStations/BaseStations_EMEA 2024 Catalog.pdf" target="_blank" class="btn btn-outline-primary btn-sm">
+                            <a href="../BaseStations/Base-Station-Security.pdf" target="_blank" class="btn btn-outline-primary btn-sm">
                                 <i class="fas fa-external-link-alt me-2"></i>Open PDF
                             </a>
-                            <a href="../BaseStations/BaseStations_EMEA 2024 Catalog.pdf" download class="btn btn-outline-success btn-sm">
+                            <a href="../BaseStations/Base-Station-Security.pdf" download class="btn btn-outline-success btn-sm">
                                 <i class="fas fa-download me-2"></i>Download
                             </a>
                             <a href="../index.html#base-stations" class="btn btn-outline-info btn-sm">
