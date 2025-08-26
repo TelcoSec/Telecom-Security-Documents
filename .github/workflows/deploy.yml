@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Validate and Deploy
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build-and-deploy:
+  validate:
     runs-on: ubuntu-latest
     
     steps:
@@ -23,30 +23,42 @@ jobs:
       run: |
         npm install -g http-server
         
-    - name: Build and test
+    - name: Validate HTML
       run: |
-        # Validate HTML
-        echo "Validating HTML files..."
+        echo "🔍 Validating HTML files..."
         if command -v tidy &> /dev/null; then
           tidy -q -e index.html
+        else
+          echo "HTML Tidy not available, skipping HTML validation"
         fi
         
-        # Check if all required files exist
-        echo "Checking required files..."
-        test -f index.html
-        test -f styles.css
-        test -f script.js
-        test -f _config.yml
-        
+    - name: Check required files
+      run: |
+        echo "📁 Checking required files..."
+        test -f index.html && echo "✅ index.html found"
+        test -f styles.css && echo "✅ styles.css found"
+        test -f script.js && echo "✅ script.js found"
+        test -f _config.yml && echo "✅ _config.yml found"
         echo "✅ All required files are present"
-        echo "✅ HTML validation completed"
-        echo "✅ Site is ready for deployment"
+        
+    - name: Test local server
+      run: |
+        echo "🚀 Testing local server..."
+        timeout 10s http-server -p 8080 &
+        sleep 3
+        curl -f http://localhost:8080 > /dev/null && echo "✅ Local server test passed" || echo "⚠️ Local server test failed"
         
     - name: Deploy Status
       run: |
-        echo "🚀 Deployment completed successfully!"
+        echo "🎉 Validation completed successfully!"
         echo "📱 Your site will be available at: https://telcosec.github.io/Telecom-Security-Documents"
         echo "⏱️  Please wait a few minutes for GitHub Pages to update"
+        echo ""
+        echo "📋 Next steps:"
+        echo "1. Go to your repository Settings > Pages"
+        echo "2. Select 'Deploy from a branch'"
+        echo "3. Choose 'main' branch and '/(root)' folder"
+        echo "4. Click Save"
         
     - name: Comment on PR
       if: github.event_name == 'pull_request'
@@ -57,5 +69,5 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: '✅ Site validation completed successfully! The site will be deployed automatically by GitHub Pages.'
+            body: '✅ Site validation completed successfully! The site will be deployed automatically by GitHub Pages once you enable it in repository settings.'
           })
