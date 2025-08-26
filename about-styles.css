@@ -1,0 +1,373 @@
+/* About Page Specific Styles */
+
+/* Hero Section */
+.about-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.about-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-stats {
+    margin-top: 40px;
+}
+
+.stat-item {
+    padding: 20px 10px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.hero-image {
+    text-align: center;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Section Titles */
+.section-title {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 2px;
+}
+
+/* Mission Section */
+.mission-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+    border-radius: 15px;
+    margin: 40px 0;
+}
+
+.mission-section .lead {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #6c757d;
+}
+
+/* Offerings Section */
+.offering-card {
+    padding: 30px 20px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid #e9ecef;
+}
+
+.offering-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    border-color: #667eea;
+}
+
+.offering-icon {
+    margin-bottom: 20px;
+}
+
+.offering-card h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.offering-card p {
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Categories Overview */
+.category-overview {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
+    height: 100%;
+}
+
+.category-overview h4 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+.category-overview ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f8f9fa;
+    transition: all 0.2s ease;
+}
+
+.category-overview ul li:hover {
+    color: #667eea;
+    transform: translateX(5px);
+}
+
+.category-overview ul li:last-child {
+    border-bottom: none;
+}
+
+/* Team Section */
+.team-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    border-color: #667eea;
+}
+
+.team-avatar {
+    margin-bottom: 20px;
+}
+
+.team-card h5 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.team-card p {
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Contact Section */
+.contact-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.contact-card h3 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.contact-card p {
+    margin-bottom: 30px;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.contact-methods .btn {
+    padding: 12px 24px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.contact-methods .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* AdSense Styles */
+.ad-banner, .ad-inline {
+    background: #f8f9fa;
+    border: 1px dashed #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ad-banner {
+    min-height: 90px;
+}
+
+.ad-inline {
+    min-height: 250px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-hero {
+        min-height: auto;
+        padding: 100px 0 60px;
+    }
+    
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-stats .row {
+        margin-top: 30px;
+    }
+    
+    .stat-item {
+        margin-bottom: 20px;
+    }
+    
+    .stat-item h3 {
+        font-size: 2rem;
+    }
+    
+    .mission-section {
+        padding: 40px 20px;
+        margin: 20px 0;
+    }
+    
+    .offering-card, .team-card {
+        margin-bottom: 30px;
+    }
+    
+    .contact-card {
+        padding: 30px 20px;
+    }
+    
+    .contact-methods .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-image i {
+        font-size: 8rem !important;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Print Styles */
+@media print {
+    .ad-banner, .ad-inline {
+        display: none;
+    }
+    
+    .about-hero {
+        background: white !important;
+        color: black !important;
+        min-height: auto;
+    }
+    
+    .hero-image {
+        display: none;
+    }
+    
+    .contact-card {
+        background: white !important;
+        color: black !important;
+        border: 1px solid #ddd;
+    }
+}
+
+/* Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    z-index: 1000;
+    padding: 8px 16px;
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .mission-section {
+        background: #343a40;
+        color: #e9ecef;
+    }
+    
+    .offering-card, .team-card, .category-overview {
+        background: #343a40;
+        border-color: #495057;
+        color: #e9ecef;
+    }
+    
+    .offering-card h4, .team-card h5, .category-overview h4 {
+        color: #e9ecef;
+    }
+    
+    .offering-card p, .team-card p, .category-overview p {
+        color: #adb5bd;
+    }
+    
+    .ad-banner, .ad-inline {
+        background: #343a40;
+        border-color: #495057;
+    }
+}
