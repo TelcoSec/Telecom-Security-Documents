@@ -23,6 +23,16 @@ This repository contains a curated collection of technical documents, research p
 
 ### 🚀 5G Network Security  
 - **FS.40-v3.0-002-19-July.pdf** - 5G security framework and specifications document
+- **5GRAN-Risk-Analysis.pdf** - 5G RAN risk analysis and security assessment
+- **5G_Transport_Network.pdf** - 5G transport network architecture and security
+- **5G_IMS.pdf** - 5G IP Multimedia Subsystem security and implementation
+- **5G_MEC.pdf** - 5G Multi-Access Edge Computing security considerations
+- **5G_Management_System.pdf** - 5G network management system security
+- **5G_RAN.pdf** - 5G Radio Access Network security architecture
+- **5G_Infrastructure.pdf** - 5G infrastructure security and deployment
+- **5G-RAN.pdf** - Additional 5G RAN security specifications
+- **5G Hands on Workshop v2.4.pdf** - Comprehensive 5G security hands-on workshop guide
+- **ENISA Report - NFV Security in 5G - Challenges and Best Practices.pdf** - ENISA report on Network Functions Virtualization security in 5G networks
 
 ### 🌐 Access Point Names (APNs)
 - **DEF CON 32 - Aapo Oksman - Leveraging private APNs for mobile network traffic analysis.pdf** - Conference presentation on using private APNs for network traffic analysis
@@ -88,7 +98,7 @@ This repository contains a curated collection of technical documents, research p
 | Category | Document Count | Key Topics |
 |----------|----------------|------------|
 | 4G Security | 1 | Network impersonation |
-| 5G Security | 1 | Security framework |
+| 5G Security | 11 | Security framework, RAN, MEC, NFV |
 | APNs | 1 | Traffic analysis |
 | AT Commands | 1 | Device security testing |
 | Baseband | 2 | RCE, vulnerabilities |
@@ -99,6 +109,7 @@ This repository contains a curated collection of technical documents, research p
 | MoTIF | 1 | Threat intelligence |
 | Roaming | 1 | Agreement vulnerabilities |
 | SIM Cards & UICC | 20 | UICC profiles, eUICC, S@T, 5G SIM |
+| **Total** | **48** | **All categories combined** |
 | SS7 | 5 | Protocol vulnerabilities |
 
 ## 🤝 Contributing
