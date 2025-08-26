@@ -48,7 +48,9 @@ function checkYAMLFiles() {
                 
                 // Check if PDF file exists
                 if (doc.filePath) {
-                    const pdfPath = path.join(__dirname, doc.filePath);
+                    // Convert relative path from content/ to root directory
+                    const relativePath = doc.filePath.replace('../', '');
+                    const pdfPath = path.join(__dirname, relativePath);
                     if (!fs.existsSync(pdfPath)) {
                         warnings.push(`YAML: PDF file not found: ${doc.filePath}`);
                     }
