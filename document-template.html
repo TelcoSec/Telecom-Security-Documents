@@ -128,22 +128,7 @@
                 </section>
 
                 <!-- Key Topics Section -->
-                {{#if KEY_TOPICS}}
-                <section class="document-section mb-5">
-                    <h2><i class="fas fa-key me-2"></i>Key Topics</h2>
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                {{#each KEY_TOPICS}}
-                                <div class="col-md-6 mb-2">
-                                    <span class="badge bg-light text-dark border">{{this}}</span>
-                                </div>
-                                {{/each}}
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                {{/if}}
+                {{KEY_TOPICS}}
 
                 <!-- AdSense In-Article Ad -->
                 <div class="ad-inline mb-4">
@@ -163,56 +148,13 @@
                     <h2><i class="fas fa-video me-2"></i>Related Videos</h2>
                     <div class="card">
                         <div class="card-body">
-                            {{#if RELATED_VIDEOS}}
-                            <div class="row">
-                                {{#each RELATED_VIDEOS}}
-                                <div class="col-md-6 mb-3">
-                                    <div class="video-card">
-                                        <div class="video-thumbnail" data-video-id="{{this.videoId}}">
-                                            <img src="https://img.youtube.com/vi/{{this.videoId}}/mqdefault.jpg" 
-                                                 alt="{{this.title}}" class="img-fluid">
-                                            <div class="play-button">
-                                                <i class="fas fa-play"></i>
-                                            </div>
-                                        </div>
-                                        <h5 class="video-title">{{this.title}}</h5>
-                                        <p class="video-description">{{this.description}}</p>
-                                    </div>
-                                </div>
-                                {{/each}}
-                            </div>
-                            {{else}}
-                            <div class="text-center py-4">
-                                <i class="fas fa-video fa-3x text-muted mb-3"></i>
-                                <p class="text-muted">No related videos available for this document.</p>
-                                <p class="text-muted">Check our <a href="../index.html#videos">video section</a> for general telecom security content.</p>
-                            </div>
-                            {{/if}}
+                            {{RELATED_VIDEOS}}
                         </div>
                     </div>
                 </section>
 
                 <!-- Related Documents Section -->
-                {{#if RELATED_DOCUMENTS}}
-                <section class="document-section mb-5">
-                    <h2><i class="fas fa-link me-2"></i>Related Documents</h2>
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="list-group">
-                                {{#each RELATED_DOCUMENTS}}
-                                <a href="{{this.url}}" class="list-group-item list-group-item-action">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-1">{{this.title}}</h6>
-                                        <small class="text-muted">{{this.category}}</small>
-                                    </div>
-                                    <p class="mb-1">{{this.description}}</p>
-                                </a>
-                                {{/each}}
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                {{/if}}
+                {{RELATED_DOCUMENTS}}
             </div>
 
             <!-- Sidebar -->
@@ -257,31 +199,7 @@
                 </div>
 
                 <!-- Researchers Section -->
-                {{#if RESEARCHERS}}
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <h5 class="mb-0"><i class="fas fa-users me-2"></i>Research Team</h5>
-                    </div>
-                    <div class="card-body">
-                        {{#each RESEARCHERS}}
-                        <div class="researcher-item mb-3">
-                            <div class="d-flex align-items-center">
-                                <div class="researcher-avatar me-3">
-                                    <i class="fas fa-user-circle fa-2x text-primary"></i>
-                                </div>
-                                <div>
-                                    <h6 class="mb-1">{{this.name}}</h6>
-                                    <p class="mb-1 text-muted small">{{this.affiliation}}</p>
-                                    {{#if this.role}}
-                                    <span class="badge bg-light text-dark">{{this.role}}</span>
-                                    {{/if}}
-                                </div>
-                            </div>
-                        </div>
-                        {{/each}}
-                    </div>
-                </div>
-                {{/if}}
+                {{RESEARCHERS}}
 
                 <!-- Quick Actions -->
                 <div class="card">

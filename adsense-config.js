@@ -3,7 +3,7 @@
 
 const adsenseConfig = {
     // Your AdSense Publisher ID (found in your AdSense account)
-    publisherId: '1234567890123456', // Replace with your actual publisher ID
+    publisherId: 'pub-9236847887178276', // Replace with your actual publisher ID
     
     // Ad Slot IDs for different ad placements
     adSlots: {

@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoTIF Security Framework - Telecom Security Documents</title>
-    <meta name="description" content="Security framework for Mobile Threat Intelligence and Forensics">
+    <title>MoTIF Framework Security - Telecom Security Documents</title>
+    <meta name="description" content="Mobile Threat Intelligence Framework principles and implementation">
+    
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="../styles.css" rel="stylesheet">
@@ -15,7 +19,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
-                <i class="fas fa-shield-alt"></i> Telecom Security
+                <i class="fas fa-shield-alt me-2"></i>
+                Telecom Security
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -31,111 +36,311 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html#videos">Videos</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Document Header -->
-    <section class="document-header">
+    <header class="document-header">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="../index.html#motif">MoTIF</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">MoTIF Security Framework</li>
-                        </ol>
-                    </nav>
-                    <h1 class="display-4">MoTIF Security Framework</h1>
-                    <p class="lead">Security framework for Mobile Threat Intelligence and Forensics</p>
-                    <div class="document-meta">
-                        <span class="badge bg-primary">MoTIF</span>
-                        <span class="badge bg-secondary">Security Framework</span>
-                        <span class="badge bg-info">2024-02-05</span>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html#motif">MoTIF Framework</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">MoTIF Framework Security</li>
+                </ol>
+            </nav>
+            
+            <h1 class="display-4">MoTIF Framework Security</h1>
+            <p class="lead">Mobile Threat Intelligence Framework principles and implementation</p>
+            
+            <div class="document-meta">
+                <span class="badge bg-primary">Framework Document</span>
+                <span class="badge bg-secondary">2024-01-22</span>
+                <span class="badge bg-info">GSMA</span>
+                {{#if RESEARCHERS}}
+                <span class="badge bg-success">Research Team</span>
+                {{/if}}
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Main Content Column -->
+            <div class="col-lg-8">
+                <!-- Abstract Section -->
+                <section class="document-section mb-5">
+                    <h2><i class="fas fa-file-alt me-2"></i>Abstract</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">This framework document outlines the Mobile Threat Intelligence Framework (MoTIF) principles, implementation guidelines, and security considerations for mobile network operators.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AdSense Banner Ad -->
+                <div class="ad-banner mb-4">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-1234567890123456"
+                         data-ad-slot="1234567890"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <!-- PDF Document Section -->
+                <section class="document-section mb-5">
+                    <h2><i class="fas fa-file-pdf me-2"></i>Document</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="pdf-container">
+                                <iframe 
+                                    src="../MoTIF/FS.57-MoTIF-Principles-v1.0.pdf#toolbar=1&navpanes=1&scrollbar=1" 
+                                    width="100%" 
+                                    height="600px" 
+                                    frameborder="0"
+                                    allowfullscreen>
+                                    <p>Your browser does not support PDF embedding. 
+                                    <a href="../MoTIF/FS.57-MoTIF-Principles-v1.0.pdf" target="_blank" class="btn btn-primary">
+                                        <i class="fas fa-download me-2"></i>Download PDF
+                                    </a></p>
+                                </iframe>
+                            </div>
+                            <div class="mt-3">
+                                <a href="../MoTIF/FS.57-MoTIF-Principles-v1.0.pdf" target="_blank" class="btn btn-outline-primary">
+                                    <i class="fas fa-external-link-alt me-2"></i>Open in New Tab
+                                </a>
+                                <a href="../MoTIF/FS.57-MoTIF-Principles-v1.0.pdf" download class="btn btn-outline-success">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Key Topics Section -->
+                <div class="col-md-6 mb-2">
+                <span class="badge bg-light text-dark border">MoTIF Framework</span>
+            </div><div class="col-md-6 mb-2">
+                <span class="badge bg-light text-dark border">Threat Intelligence</span>
+            </div><div class="col-md-6 mb-2">
+                <span class="badge bg-light text-dark border">Implementation Guidelines</span>
+            </div><div class="col-md-6 mb-2">
+                <span class="badge bg-light text-dark border">Security Considerations</span>
+            </div>
+
+                <!-- AdSense In-Article Ad -->
+                <div class="ad-inline mb-4">
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-1234567890123456"
+                         data-ad-slot="0987654321"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <!-- Video Section -->
+                <section class="document-section mb-5">
+                    <h2><i class="fas fa-video me-2"></i>Related Videos</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            
+            <div class="col-md-6 mb-3">
+                <div class="video-card">
+                    <div class="video-thumbnail" data-video-id="tuv123wxy">
+                        <img src="https://img.youtube.com/vi/tuv123wxy/mqdefault.jpg" 
+                             alt="MoTIF Framework Implementation" class="img-fluid">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <h5 class="video-title">MoTIF Framework Implementation</h5>
+                    <p class="video-description">Step-by-step guide to implementing the Mobile Threat Intelligence Framework</p>
+                </div>
+            </div>
+        
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Related Documents Section -->
+                
+            <a href="motif-security.html" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h6 class="mb-1">MoTIF Security Guidelines</h6>
+                    <small class="text-muted">MoTIF Framework</small>
+                </div>
+                <p class="mb-1">Security guidelines for MoTIF implementation</p>
+            </a>
+        
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Document Info Card -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Document Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <strong>Type:</strong> Framework Document
+                            </li>
+                            <li class="mb-2">
+                                <strong>Date:</strong> 2024-01-22
+                            </li>
+                            <li class="mb-2">
+                                <strong>Source:</strong> GSMA
+                            </li>
+                            <li class="mb-2">
+                                <strong>Category:</strong> MoTIF Framework
+                            </li>
+                            <li class="mb-2">
+                                <strong>File:</strong> FS.57-MoTIF-Principles-v1.0.pdf
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- AdSense Sidebar Ad -->
+                <div class="ad-sidebar mb-4">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-1234567890123456"
+                         data-ad-slot="1122334455"
+                         data-ad-format="auto"
+                         data-full-width-responsive="false"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <!-- Researchers Section -->
+                
+            <div class="researcher-item mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="researcher-avatar me-3">
+                        <i class="fas fa-user-circle fa-2x text-primary"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1">GSMA Technical Team</h6>
+                        <p class="mb-1 text-muted small">GSMA</p>
+                        <span class="badge bg-light text-dark">Framework Developers</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        
 
-    <!-- Document Content -->
-    <section class="document-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="document-card">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2>Document Information</h2>
-                                <div class="info-grid">
-                                    <div class="info-item">
-                                        <strong>Title:</strong> MoTIF Security Framework
-                                    </div>
-                                    <div class="info-item">
-                                        <strong>Category:</strong> MoTIF
-                                    </div>
-                                    <div class="info-item">
-                                        <strong>Type:</strong> Security Framework
-                                    </div>
-                                    <div class="info-item">
-                                        <strong>Date:</strong> 2024-02-05
-                                    </div>
-                                    <div class="info-item">
-                                        <strong>Source:</strong> MoTIF Consortium
-                                    </div>
-                                    <div class="info-item">
-                                        <strong>File:</strong> <a href="../MoTIF/MoTIF_Security_Framework.pdf" target="_blank">MoTIF_Security_Framework.pdf</a>
-                                    </div>
-                                </div>
-
-                                <h3>Abstract</h3>
-                                <p>This framework provides guidelines for mobile threat intelligence, forensics, and security incident response in telecommunications.</p>
-
-                                <h3>Key Topics</h3>
-                                <div class="topics-list">
-                                    <span class="topic-tag">Threat Intelligence</span><span class="topic-tag">Forensics</span><span class="topic-tag">Incident Response</span><span class="topic-tag">Mobile Security</span><span class="topic-tag">Security Framework</span>
-                                </div>
-
-                                <h3>Related Documents</h3>
-                                <div class="related-documents">
-                                    <p>No related documents available.</p>
-                                </div>
-
-                                <div class="document-actions">
-                                    <a href="../MoTIF/MoTIF_Security_Framework.pdf" class="btn btn-primary" target="_blank">
-                                        <i class="fas fa-download"></i> Download Document
-                                    </a>
-                                    <a href="../index.html#motif" class="btn btn-outline-secondary">
-                                        <i class="fas fa-arrow-left"></i> Back to MoTIF
-                                    </a>
-                                </div>
-                            </div>
+                <!-- Quick Actions -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0"><i class="fas fa-bolt me-2"></i>Quick Actions</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-grid gap-2">
+                            <a href="../MoTIF/FS.57-MoTIF-Principles-v1.0.pdf" target="_blank" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-external-link-alt me-2"></i>Open PDF
+                            </a>
+                            <a href="../MoTIF/FS.57-MoTIF-Principles-v1.0.pdf" download class="btn btn-outline-success btn-sm">
+                                <i class="fas fa-download me-2"></i>Download
+                            </a>
+                            <a href="../index.html#motif" class="btn btn-outline-info btn-sm">
+                                <i class="fas fa-folder me-2"></i>View Category
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Video Player</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-light">
+    <footer class="footer bg-dark text-light py-5 mt-5">
         <div class="container">
             <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-shield-alt me-2"></i>Telecom Security</h5>
+                    <p class="text-muted">Comprehensive collection of telecommunications security documentation, research papers, and resources for security professionals, researchers, and industry experts.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-muted me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-muted me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-muted me-3"><i class="fab fa-github fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6>Categories</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html#4g" class="text-muted">4G Security</a></li>
+                        <li><a href="../index.html#5g" class="text-muted">5G Security</a></li>
+                        <li><a href="../index.html#sim-cards" class="text-muted">SIM Cards</a></li>
+                        <li><a href="../index.html#ss7" class="text-muted">SS7 Security</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6>Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html#videos" class="text-muted">Videos</a></li>
+                        <li><a href="about.html" class="text-muted">About</a></li>
+                        <li><a href="../README.md" class="text-muted">Documentation</a></li>
+                        <li><a href="#" class="text-muted">API</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6>Newsletter</h6>
+                    <p class="text-muted">Stay updated with the latest telecom security research and developments.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
                 <div class="col-md-6">
-                    <h5>Telecom Security Documents</h5>
-                    <p>Comprehensive collection of telecommunications security documentation and resources.</p>
+                    <p class="mb-0 text-muted">&copy; 2024 Telecom Security. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p>&copy; 2024 Telecom Security. All rights reserved.</p>
-                    <a href="../LICENSE" class="text-light">License</a>
+                    <a href="#" class="text-muted me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted me-3">Terms of Service</a>
+                    <a href="#" class="text-muted">Contact</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../script.js"></script>
+    <script src="document-script.js"></script>
 </body>
 </html>
