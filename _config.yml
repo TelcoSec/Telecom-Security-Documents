@@ -1,0 +1,345 @@
+# GitHub Pages Configuration
+# This file configures the Jekyll site for GitHub Pages
+
+# Site settings
+title: Telecom Security Documents
+description: A comprehensive collection of research papers, technical documents, and security analysis related to telecommunications infrastructure, mobile networks, and network security vulnerabilities.
+author: RFS
+email: 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: your-username
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "default"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include files
+include:
+  - _pages
+  - _posts
+  - _drafts
+
+# Pagination
+paginate: 10
+paginate_path: "/page/:num/"
+
+# Social media
+social:
+  name: RFS
+  links:
+    - https://github.com/your-username
+    - https://twitter.com/your-username
+    - https://linkedin.com/in/your-username
+
+# Analytics (optional)
+google_analytics: # UA-XXXXXXXX-X
+google_analytics_anonymize_ip: true
+
+# Comments (optional)
+disqus:
+  shortname: # your-disqus-shortname
+
+# Search
+search: true
+
+# Theme settings
+theme_settings:
+  # Meta
+  meta:
+    keywords: "telecom, security, 4G, 5G, SS7, mobile networks, cybersecurity, research"
+    description: "Comprehensive telecom security research documents and analysis"
+  
+  # Header
+  header:
+    overlay_image: # path to image
+    overlay_filter: "rgba(0, 0, 0, 0.5)"
+    cta_label: "Browse Documents"
+    cta_url: "#documents"
+  
+  # Footer
+  footer:
+    links:
+      - title: "Documents"
+        links:
+          - label: "4G Security"
+            url: "#4g"
+          - label: "5G Security"
+            url: "#5g"
+          - label: "SS7 Protocol"
+            url: "#ss7"
+      - title: "Resources"
+        links:
+          - label: "Videos"
+            url: "#videos"
+          - label: "About"
+            url: "#about"
+          - label: "GitHub"
+            url: "https://github.com/your-username/Telecom-Security-Documents"
+
+# SEO
+seo:
+  title: "Telecom Security Documents - RFS"
+  description: "Comprehensive collection of telecom security research papers, technical documents, and analysis covering 4G, 5G, SS7, and mobile network vulnerabilities."
+  author: "RFS"
+  image: # path to default image
+  type: "website"
+  twitter:
+    card: "summary_large_image"
+    creator: "@your-username"
+    site: "@your-username"
+
+# Sitemap
+sitemap:
+  changefreq: weekly
+  priority: 0.8
+  lastmod: 2024-01-01
+
+# Feed
+feed:
+  path: atom.xml
+  limit: 10
+
+# Archives
+archives:
+  layout: "archive"
+  permalink: /:year/:month/:day/:title/
+
+# Categories
+categories:
+  layout: "category"
+  permalink: /category/:name/
+
+# Tags
+tags:
+  layout: "tag"
+  permalink: /tag/:name/
+
+# Related posts
+related_posts:
+  enabled: true
+  threshold: 3
+  max_related: 5
+
+# Reading time
+reading_time:
+  enabled: true
+  words_per_minute: 200
+
+# Comments
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: # your-disqus-shortname
+
+# Search
+search_full_content: true
+search_include_headings: true
+
+# MathJax
+mathjax:
+  enabled: true
+  src: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+
+# Syntax highlighting
+syntax_highlighter: rouge
+syntax_highlighter_opts:
+  block:
+    line_numbers: false
+    start_line: 1
+
+# Markdown processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1,2,3
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Liquid processing
+liquid:
+  error_mode: warn
+  strict_filters: true
+  strict_variables: true
+
+# Sass processing
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+  style: compressed
+
+# Assets
+assets:
+  compress:
+    css: true
+    js: true
+    html: true
+  cachebust: hard
+  gzip: true
+  prefix: "/assets"
+
+# Minification
+html_minifier:
+  enabled: true
+  remove_comments: true
+  remove_whitespace: true
+  remove_empty_lines: true
+  remove_blank_lines: true
+  remove_optional_tags: true
+  remove_redundant_attributes: true
+  remove_unused_css: true
+  remove_unused_js: true
+  remove_http_protocol: false
+  remove_https_protocol: false
+  remove_malformed_tags: true
+  remove_processing_instructions: true
+  remove_quotes: false
+  remove_surrounding_spaces: "all"
+  remove_script_type_attributes: true
+  remove_style_type_attributes: true
+  remove_link_type_attributes: true
+  remove_input_attributes: true
+  remove_form_attributes: true
+  remove_meta_http_equiv_attributes: true
+  remove_ie_conditional_comments: true
+  remove_html_comments: true
+  remove_xhtml_protocol: true
+  remove_attributes: []
+  remove_empty_attributes: true
+  remove_optional_attribute_quotes: true
+  remove_optional_attribute_booleans: true
+  remove_optional_end_tags: true
+  remove_optional_start_tags: true
+  remove_optional_doctype: true
+  remove_optional_html: true
+  remove_optional_head: true
+  remove_optional_body: true
+  remove_optional_html5_doctype: true
+  remove_optional_html5_attributes: true
+  remove_optional_html5_elements: true
+  remove_optional_html5_meta: true
+  remove_optional_html5_link: true
+  remove_optional_html5_script: true
+  remove_optional_html5_style: true
+  remove_optional_html5_title: true
+  remove_optional_html5_base: true
+  remove_optional_html5_noscript: true
+  remove_optional_html5_section: true
+  remove_optional_html5_article: true
+  remove_optional_html5_aside: true
+  remove_optional_html5_nav: true
+  remove_optional_html5_header: true
+  remove_optional_html5_footer: true
+  remove_optional_html5_main: true
+  remove_optional_html5_figure: true
+  remove_optional_html5_figcaption: true
+  remove_optional_html5_time: true
+  remove_optional_html5_mark: true
+  remove_optional_html5_ruby: true
+  remove_optional_html5_rt: true
+  remove_optional_html5_rp: true
+  remove_optional_html5_bdi: true
+  remove_optional_html5_bdo: true
+  remove_optional_html5_wbr: true
+  remove_optional_html5_canvas: true
+  remove_optional_html5_map: true
+  remove_optional_html5_area: true
+  remove_optional_html5_svg: true
+  remove_optional_html5_math: true
+  remove_optional_html5_foreignobject: true
+  remove_optional_html5_desc: true
+  remove_optional_html5_title_svg: true
+  remove_optional_html5_metadata: true
+  remove_optional_html5_defs: true
+  remove_optional_html5_g: true
+  remove_optional_html5_symbol: true
+  remove_optional_html5_use: true
+  remove_optional_html5_image: true
+  remove_optional_html5_path: true
+  remove_optional_html5_rect: true
+  remove_optional_html5_circle: true
+  remove_optional_html5_ellipse: true
+  remove_optional_html5_line: true
+  remove_optional_html5_polyline: true
+  remove_optional_html5_polygon: true
+  remove_optional_html5_text: true
+  remove_optional_html5_tspan: true
+  remove_optional_html5_textpath: true
+  remove_optional_html5_animate: true
+  remove_optional_html5_animatemotion: true
+  remove_optional_html5_animatetransform: true
+  remove_optional_html5_animatecolor: true
+  remove_optional_html5_set: true
+  remove_optional_html5_mpath: true
+  remove_optional_html5_altglyph: true
+  remove_optional_html5_altglyphdef: true
+  remove_optional_html5_altglyphitem: true
+  remove_optional_html5_glyphref: true
+  remove_optional_html5_tref: true
+  remove_optional_html5_tbreak: true
+  remove_optional_html5_kern: true
+  remove_optional_html5_vkern: true
+  remove_optional_html5_hkern: true
+  remove_optional_html5_font: true
+  remove_optional_html5_glyph: true
+  remove_optional_html5_missingglyph: true
+  remove_optional_html5_horizoriginx: true
+  remove_optional_html5_horizoriginy: true
+  remove_optional_html5_vertoriginx: true
+  remove_optional_html5_vertoriginy: true
+  remove_optional_html5_fontface: true
+  remove_optional_html5_fontfacesrc: true
+  remove_optional_html5_fontfaceuri: true
+  remove_optional_html5_fontfaceformat: true
+  remove_optional_html5_fontfacename: true
+  remove_optional_html5_definition_src: true
+  remove_optional_html5_definition_uri: true
+  remove_optional_html5_definition_format: true
+  remove_optional_html5_definition_name: true
+  remove_optional_html5_definition_src_uri: true
+  remove_optional_html5_definition_src_format: true
+  remove_optional_html5_definition_src_name: true
+  remove_optional_html5_definition_uri_format: true
+  remove_optional_html5_definition_uri_name: true
+  remove_optional_html5_definition_format_name: true
+  remove_optional_html5_definition_src_uri_format: true
+  remove_optional_html5_definition_src_uri_name: true
+  remove_optional_html5_definition_src_format_name: true
+  remove_optional_html5_definition_uri_format_name: true
+  remove_optional_html5_definition_src_uri_format_name: true
