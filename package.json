@@ -8,9 +8,11 @@
     "generate": "node generate-pages.js",
     "generate:yaml": "node generate-from-yaml.js",
     "generate:watch": "nodemon generate-pages.js",
-    "build": "npm run generate:yaml && npm run seo",
+    "build": "npm run generate:yaml && npm run seo && npm run optimize:images",
     "seo": "node generate-sitemap.js",
-    "test": "echo \"No tests specified\" && exit 0"
+    "test": "echo \"No tests specified\" && exit 0",
+    "optimize:images": "node optimize-images.js",
+    "images:gallery": "node optimize-images.js && echo 'Image gallery ready at images.html'"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,228 @@
+{
+  "version": "1.0",
+  "generated": "2025-08-26T19:54:13.893Z",
+  "images": [
+    {
+      "filename": "og-image.png",
+      "nameWithoutExt": "og-image",
+      "url": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/og-image.png",
+      "webpUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/og-image.webp",
+      "thumbnailUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/og-image-thumb.png",
+      "alt": "Telecom Security Documents - Comprehensive Research Collection by RFS",
+      "title": "Telecom Security Documents - Research Collection",
+      "description": "Comprehensive collection of telecommunications security research papers and technical documents",
+      "keywords": [
+        "telecom security",
+        "research",
+        "documents",
+        "RFS",
+        "telecommunications"
+      ],
+      "metadata": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/og-image.json"
+    },
+    {
+      "filename": "5g-security-architecture.png",
+      "nameWithoutExt": "5g-security-architecture",
+      "url": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/5g-security-architecture.png",
+      "webpUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/5g-security-architecture.webp",
+      "thumbnailUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/5g-security-architecture-thumb.png",
+      "alt": "5G Security Architecture Diagram",
+      "title": "5G Network Security Architecture",
+      "description": "Comprehensive 5G security architecture showing network slicing, authentication, and threat protection",
+      "keywords": [
+        "5G security",
+        "network architecture",
+        "security framework",
+        "telecom security"
+      ],
+      "metadata": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/5g-security-architecture.json"
+    },
+    {
+      "filename": "4g-security-architecture.png",
+      "nameWithoutExt": "4g-security-architecture",
+      "url": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/4g-security-architecture.png",
+      "webpUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/4g-security-architecture.webp",
+      "thumbnailUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/4g-security-architecture-thumb.png",
+      "alt": "4G Security Architecture Diagram",
+      "title": "4G Network Security Architecture",
+      "description": "4G LTE security architecture with authentication, encryption, and integrity protection mechanisms",
+      "keywords": [
+        "4G security",
+        "LTE security",
+        "network architecture",
+        "telecom security"
+      ],
+      "metadata": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/4g-security-architecture.json"
+    },
+    {
+      "filename": "3g-security-architecture.png",
+      "nameWithoutExt": "3g-security-architecture",
+      "url": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/3g-security-architecture.png",
+      "webpUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/3g-security-architecture.webp",
+      "thumbnailUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/3g-security-architecture-thumb.png",
+      "alt": "3G Security Architecture Diagram",
+      "title": "3G Network Security Architecture",
+      "description": "3G UMTS security architecture featuring mutual authentication and encryption protocols",
+      "keywords": [
+        "3G security",
+        "UMTS security",
+        "network architecture",
+        "telecom security"
+      ],
+      "metadata": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/3g-security-architecture.json"
+    },
+    {
+      "filename": "ss7-attack-vectors.png",
+      "nameWithoutExt": "ss7-attack-vectors",
+      "url": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/ss7-attack-vectors.png",
+      "webpUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/ss7-attack-vectors.webp",
+      "thumbnailUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/ss7-attack-vectors-thumb.png",
+      "alt": "SS7 Attack Vectors and Vulnerabilities",
+      "title": "SS7 Protocol Attack Vectors",
+      "description": "Common SS7 protocol vulnerabilities and attack vectors in telecommunications networks",
+      "keywords": [
+        "SS7 security",
+        "protocol vulnerabilities",
+        "attack vectors",
+        "telecom security"
+      ],
+      "metadata": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/ss7-attack-vectors.json"
+    },
+    {
+      "filename": "telecommunications-security-partnership.png",
+      "nameWithoutExt": "telecommunications-security-partnership",
+      "url": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telecommunications-security-partnership.png",
+      "webpUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telecommunications-security-partnership.webp",
+      "thumbnailUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telecommunications-security-partnership-thumb.png",
+      "alt": "Telecommunications Security Partnership Framework",
+      "title": "Security Partnership Framework",
+      "description": "Collaborative framework for telecommunications security partnerships and information sharing",
+      "keywords": [
+        "security partnerships",
+        "collaboration",
+        "information sharing",
+        "telecom security"
+      ],
+      "metadata": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telecommunications-security-partnership.json"
+    },
+    {
+      "filename": "unified-communications.png",
+      "nameWithoutExt": "unified-communications",
+      "url": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/unified-communications.png",
+      "webpUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/unified-communications.webp",
+      "thumbnailUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/unified-communications-thumb.png",
+      "alt": "Unified Communications Security",
+      "title": "Unified Communications Security Framework",
+      "description": "Security framework for unified communications systems and VoIP infrastructure",
+      "keywords": [
+        "unified communications",
+        "VoIP security",
+        "UC security",
+        "telecom security"
+      ],
+      "metadata": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/unified-communications.json"
+    },
+    {
+      "filename": "telcosec-hero-main.png",
+      "nameWithoutExt": "telcosec-hero-main",
+      "url": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telcosec-hero-main.png",
+      "webpUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telcosec-hero-main.webp",
+      "thumbnailUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telcosec-hero-main-thumb.png",
+      "alt": "Telecom Security Hero Image",
+      "title": "Telecom Security Research Collection",
+      "description": "Main hero image representing the comprehensive telecom security research collection",
+      "keywords": [
+        "telecom security",
+        "research collection",
+        "hero image",
+        "security documentation"
+      ],
+      "metadata": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telcosec-hero-main.json"
+    },
+    {
+      "filename": "RFS.jpg",
+      "nameWithoutExt": "RFS",
+      "url": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/RFS.jpg",
+      "webpUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/RFS.webp",
+      "thumbnailUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/RFS-thumb.jpg",
+      "alt": "RFS - Telecommunications Security Researcher",
+      "title": "RFS Telecom Security Researcher",
+      "description": "RFS, specialized telecommunications security researcher dedicated to advancing mobile network security",
+      "keywords": [
+        "RFS",
+        "telecom security researcher",
+        "mobile security",
+        "network security"
+      ],
+      "metadata": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/RFS.json"
+    },
+    {
+      "filename": "telcosec.jpg",
+      "nameWithoutExt": "telcosec",
+      "url": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telcosec.jpg",
+      "webpUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telcosec.webp",
+      "thumbnailUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telcosec-thumb.jpg",
+      "alt": "Telecom Security Team",
+      "title": "Telecom Security Research Team",
+      "description": "Telecom security research team focused on comprehensive security documentation and analysis",
+      "keywords": [
+        "telecom security",
+        "research team",
+        "security analysis",
+        "documentation"
+      ],
+      "metadata": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telcosec.json"
+    },
+    {
+      "filename": "hero.jpeg",
+      "nameWithoutExt": "hero",
+      "url": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/hero.jpeg",
+      "webpUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/hero.webp",
+      "thumbnailUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/hero-thumb.jpeg",
+      "alt": "Telecom Security Hero Banner",
+      "title": "Telecom Security Research Banner",
+      "description": "Hero banner showcasing telecommunications security research and documentation",
+      "keywords": [
+        "telecom security",
+        "hero banner",
+        "research",
+        "security documentation"
+      ],
+      "metadata": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/hero.json"
+    },
+    {
+      "filename": "Telecom-Monitoring.jpg",
+      "nameWithoutExt": "Telecom-Monitoring",
+      "url": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/Telecom-Monitoring.jpg",
+      "webpUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/Telecom-Monitoring.webp",
+      "thumbnailUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/Telecom-Monitoring-thumb.jpg",
+      "alt": "Telecommunications Network Monitoring",
+      "title": "Telecom Network Monitoring and Security",
+      "description": "Telecommunications network monitoring systems and security monitoring capabilities",
+      "keywords": [
+        "network monitoring",
+        "telecom monitoring",
+        "security monitoring",
+        "network security"
+      ],
+      "metadata": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/Telecom-Monitoring.json"
+    },
+    {
+      "filename": "rfs.png",
+      "nameWithoutExt": "rfs",
+      "url": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/rfs.png",
+      "webpUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/rfs.webp",
+      "thumbnailUrl": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/rfs-thumb.png",
+      "alt": "RFS Logo and Branding",
+      "title": "RFS Telecom Security Logo",
+      "description": "RFS logo representing telecommunications security research and expertise",
+      "keywords": [
+        "RFS logo",
+        "telecom security",
+        "branding",
+        "research expertise"
+      ],
+      "metadata": "https://telcosec.github.io/Telecom-Security-Documents/images/optimized/rfs.json"
+    }
+  ]
+}

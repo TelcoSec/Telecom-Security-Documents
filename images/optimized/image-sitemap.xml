@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/og-image.png</loc>
+    <image:image>
+      <image:loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/og-image.png</image:loc>
+      <image:title>Telecom Security Documents - Research Collection</image:title>
+      <image:caption>Comprehensive collection of telecommunications security research papers and technical documents</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/5g-security-architecture.png</loc>
+    <image:image>
+      <image:loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/5g-security-architecture.png</image:loc>
+      <image:title>5G Network Security Architecture</image:title>
+      <image:caption>Comprehensive 5G security architecture showing network slicing, authentication, and threat protection</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/4g-security-architecture.png</loc>
+    <image:image>
+      <image:loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/4g-security-architecture.png</image:loc>
+      <image:title>4G Network Security Architecture</image:title>
+      <image:caption>4G LTE security architecture with authentication, encryption, and integrity protection mechanisms</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/3g-security-architecture.png</loc>
+    <image:image>
+      <image:loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/3g-security-architecture.png</image:loc>
+      <image:title>3G Network Security Architecture</image:title>
+      <image:caption>3G UMTS security architecture featuring mutual authentication and encryption protocols</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/ss7-attack-vectors.png</loc>
+    <image:image>
+      <image:loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/ss7-attack-vectors.png</image:loc>
+      <image:title>SS7 Protocol Attack Vectors</image:title>
+      <image:caption>Common SS7 protocol vulnerabilities and attack vectors in telecommunications networks</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telecommunications-security-partnership.png</loc>
+    <image:image>
+      <image:loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telecommunications-security-partnership.png</image:loc>
+      <image:title>Security Partnership Framework</image:title>
+      <image:caption>Collaborative framework for telecommunications security partnerships and information sharing</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/unified-communications.png</loc>
+    <image:image>
+      <image:loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/unified-communications.png</image:loc>
+      <image:title>Unified Communications Security Framework</image:title>
+      <image:caption>Security framework for unified communications systems and VoIP infrastructure</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telcosec-hero-main.png</loc>
+    <image:image>
+      <image:loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telcosec-hero-main.png</image:loc>
+      <image:title>Telecom Security Research Collection</image:title>
+      <image:caption>Main hero image representing the comprehensive telecom security research collection</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/RFS.jpg</loc>
+    <image:image>
+      <image:loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/RFS.jpg</image:loc>
+      <image:title>RFS Telecom Security Researcher</image:title>
+      <image:caption>RFS, specialized telecommunications security researcher dedicated to advancing mobile network security</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telcosec.jpg</loc>
+    <image:image>
+      <image:loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/telcosec.jpg</image:loc>
+      <image:title>Telecom Security Research Team</image:title>
+      <image:caption>Telecom security research team focused on comprehensive security documentation and analysis</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/hero.jpeg</loc>
+    <image:image>
+      <image:loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/hero.jpeg</image:loc>
+      <image:title>Telecom Security Research Banner</image:title>
+      <image:caption>Hero banner showcasing telecommunications security research and documentation</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/Telecom-Monitoring.jpg</loc>
+    <image:image>
+      <image:loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/Telecom-Monitoring.jpg</image:loc>
+      <image:title>Telecom Network Monitoring and Security</image:title>
+      <image:caption>Telecommunications network monitoring systems and security monitoring capabilities</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/rfs.png</loc>
+    <image:image>
+      <image:loc>https://telcosec.github.io/Telecom-Security-Documents/images/optimized/rfs.png</image:loc>
+      <image:title>RFS Telecom Security Logo</image:title>
+      <image:caption>RFS logo representing telecommunications security research and expertise</image:caption>
+    </image:image>
+  </url>
+</urlset>
