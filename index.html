@@ -10,9 +10,11 @@
      <meta name="description" content="Comprehensive collection of telecommunications security research papers, technical documents, and security analysis by RFS covering 4G, 5G, SS7, SIM cards, and network vulnerabilities.">
      <meta name="keywords" content="RFS, telecom security, 4G security, 5G security, SS7 security, SIM card security, network security, telecommunications, mobile security, baseband security, roaming security, GPON security">
      <meta name="author" content="RFS">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="language" content="English">
     <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="General">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -20,8 +22,11 @@
     <meta property="og:title" content="Telecom Security Library - Comprehensive Research Collection by RFS">
     <meta property="og:description" content="Comprehensive collection of telecommunications security research papers, technical documents, and security analysis by RFS covering 4G, 5G, SS7, SIM cards, and network vulnerabilities.">
     <meta property="og:image" content="https://telcosec.github.io/Telecom-Security-Documents/images/og-image.png">
-    <meta property="og:site_name" content="Telecom Security Library"
+    <meta property="og:site_name" content="Telecom Security Library">
     <meta property="og:locale" content="en_US">
+    <meta property="og:article:author" content="RFS">
+    <meta property="og:article:section" content="Telecommunications Security">
+    <meta property="og:article:tag" content="telecom security, 4G security, 5G security, SS7 security, SIM card security, network security, telecommunications, mobile security, baseband security, roaming security, GPON security">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -29,6 +34,7 @@
          <meta property="twitter:title" content="Telecom Security Library - Comprehensive Research Collection by RFS">
      <meta property="twitter:description" content="Comprehensive collection of telecommunications security research papers, technical documents, and security analysis by RFS covering 4G, 5G, SS7, SIM cards, and network vulnerabilities.">
     <meta property="twitter:image" content="https://telcosec.github.io/Telecom-Security-Documents/images/og-image.png">
+    <meta property="twitter:site" content="@TelcoSec">
     
     <!-- Additional SEO Meta Tags -->
     <meta name="theme-color" content="#667eea">
@@ -39,14 +45,16 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://telcosec.github.io/Telecom-Security-Documents/">
     
-    <!-- Preconnect to external domains -->
+    <!-- Preconnect to external domains for performance -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- DNS Prefetch -->
+    <!-- DNS Prefetch for performance -->
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
     
     <!-- Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -73,6 +81,7 @@
         },
         "sameAs": [
             "https://github.com/TelcoSec/Telecom-Security-Documents",
+            "https://www.youtube.com/@Telecom-Security",
             "https://discord.gg/jkUKw2cBxX",
             "https://www.linkedin.com/company/telco-sec/"
         ]
@@ -111,6 +120,7 @@
         },
         "sameAs": [
             "https://github.com/TelcoSec/Telecom-Security-Documents",
+            "https://www.youtube.com/@Telecom-Security",
             "https://discord.gg/jkUKw2cBxX",
             "https://www.linkedin.com/company/telco-sec/"
         ],
@@ -148,14 +158,14 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-                         <a class="navbar-brand" href="#">
-                 <i class="fas fa-shield-alt"></i> Telecom Security Library
-             </a>
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-shield-alt me-2"></i> Telecom Security Library
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#overview">Overview</a>
                     </li>
@@ -174,16 +184,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-                                            <li class="nav-item">
-                            <a class="nav-link" href="https://discord.gg/jkUKw2cBxX" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-discord"></i> Discord
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.linkedin.com/company/telco-sec/" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-linkedin"></i> LinkedIn
-                            </a>
-                        </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.gg/jkUKw2cBxX" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-discord me-1"></i> Discord
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/company/telco-sec/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin me-1"></i> LinkedIn
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -717,19 +729,27 @@
     <footer class="bg-dark text-white py-4">
         <div class="container">
             <div class="row">
-                                 <div class="col-md-6">
-                     <p>&copy; 2024 Telecom Security Library. All rights reserved. | Research by RFS</p>
-                 </div>
+                <div class="col-md-6">
+                    <p class="text-light mb-2">&copy; 2024 Telecom Security Library. All rights reserved. | Research by RFS</p>
+                    <p class="text-light-50 mb-0">Licensed under Apache License 2.0</p>
+                </div>
                 <div class="col-md-6 text-md-end">
-                    <p>Licensed under Apache License 2.0</p>
-                    <p class="mb-0">
-                        <a href="https://discord.gg/jkUKw2cBxX" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none me-3">
-                            <i class="fab fa-discord"></i> Join our Discord Community
+                    <div class="social-links mb-2">
+                        <a href="https://discord.gg/jkUKw2cBxX" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none me-3">
+                            <i class="fab fa-discord me-1"></i> Join our Discord Community
                         </a>
-                        <a href="https://www.linkedin.com/company/telco-sec/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none">
-                            <i class="fab fa-linkedin"></i> Follow on LinkedIn
+                        <a href="https://www.linkedin.com/company/telco-sec/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">
+                            <i class="fab fa-linkedin me-1"></i> Follow on LinkedIn
                         </a>
-                    </p>
+                    </div>
+                    <div class="quick-links">
+                        <a href="https://github.com/TelcoSec/Telecom-Security-Documents" target="_blank" rel="noopener noreferrer" class="text-light-50 text-decoration-none me-3">
+                            <i class="fab fa-github me-1"></i> GitHub
+                        </a>
+                        <a href="https://www.youtube.com/@Telecom-Security" target="_blank" rel="noopener noreferrer" class="text-light-50 text-decoration-none">
+                            <i class="fab fa-youtube me-1"></i> YouTube
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

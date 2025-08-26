@@ -8,11 +8,16 @@
     <title>GSMA MoTIF Mobile Threat Intelligence Framework - Telecom Security Library</title>
     <meta name="title" content="GSMA MoTIF Mobile Threat Intelligence Framework - Telecom Security Library">
     <meta name="description" content="Overview of the GSMA MoTIF framework for mobile threat intelligence">
-    <meta name="keywords" content="telecom security, MoTIF Framework, network security, telecommunications, research paper, security analysis">
-    <meta name="author" content="Telecom Security Team">
-    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="telecom security, MoTIF Framework, network security, telecommunications, research paper, security analysis, Threat Intelligence, Mobile Security, Analysis Framework, Intelligence Sharing, Security Operations, Threat Detection, Incident Response">
+    <meta name="author" content="RFS - Telecom Security Researcher">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="language" content="English">
     <meta name="revisit-after" content="30 days">
+    <meta name="rating" content="General">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Canonical URL - Critical for SEO -->
+    <link rel="canonical" href="https://telcosec.github.io/Telecom-Security-Documents/documents/motif-security.html">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
@@ -23,8 +28,10 @@
     <meta property="og:site_name" content="Telecom Security Library">
     <meta property="og:locale" content="en_US">
     <meta property="article:published_time" content="2024-02-01T00:00:00Z">
+    <meta property="article:modified_time" content="2024-02-01T00:00:00Z">
     <meta property="article:section" content="MoTIF Framework">
-    <meta property="article:tag" content="telecom security, MoTIF Framework, network security">
+    <meta property="article:tag" content="telecom security, MoTIF Framework, network security, Threat Intelligence, Mobile Security, Analysis Framework, Intelligence Sharing, Security Operations, Threat Detection, Incident Response">
+    <meta property="article:author" content="RFS">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -32,21 +39,24 @@
     <meta property="twitter:title" content="GSMA MoTIF Mobile Threat Intelligence Framework - Telecom Security Library">
     <meta property="twitter:description" content="Overview of the GSMA MoTIF framework for mobile threat intelligence">
     <meta property="twitter:image" content="https://telcosec.github.io/Telecom-Security-Documents/images/og-image.png">
+    <meta property="twitter:site" content="@TelcoSec">
     
     <!-- Additional SEO Meta Tags -->
     <meta name="theme-color" content="#667eea">
     <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://telcosec.github.io/Telecom-Security-Documents/documents/motif-security.html">
-    
-    <!-- Preconnect to external domains -->
+    <!-- Preconnect to external domains for performance -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- DNS Prefetch -->
+    <!-- DNS Prefetch for performance -->
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
     
     <!-- AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9236847887178276" crossorigin="anonymous"></script>
@@ -57,7 +67,7 @@
     <link href="../styles.css" rel="stylesheet">
     <link href="document-styles.css" rel="stylesheet">
     
-    <!-- Structured Data -->
+    <!-- Structured Data for Rich Snippets -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -75,13 +85,18 @@
                 "affiliation": {
                     "@type": "Organization",
                     "name": "GSMA Security"
-                }
+                },
+                "url": "https://telcosec.github.io/Telecom-Security-Documents/about.html"
             }
         ],
         "publisher": {
             "@type": "Organization",
-            "name": "Telecom Security Team",
-            "url": "https://telcosec.github.io/Telecom-Security-Documents/"
+            "name": "Telecom Security Library",
+            "url": "https://telcosec.github.io/Telecom-Security-Documents/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://telcosec.github.io/Telecom-Security-Documents/images/logo.png"
+            }
         },
         "mainEntityOfPage": {
             "@type": "WebPage",
@@ -99,11 +114,22 @@
             "@type": "Collection",
             "name": "Telecom Security Library",
             "url": "https://telcosec.github.io/Telecom-Security-Documents/"
-        }
+        },
+        "mainEntity": {
+            "@type": "CreativeWork",
+            "name": "GSMA MoTIF Mobile Threat Intelligence Framework",
+            "description": "Overview of the GSMA MoTIF framework for mobile threat intelligence"
+        },
+        "sameAs": [
+            "https://github.com/TelcoSec/Telecom-Security-Documents",
+            "https://www.youtube.com/@Telecom-Security",
+            "https://discord.gg/jkUKw2cBxX",
+            "https://www.linkedin.com/company/telco-sec/"
+        ]
     }
     </script>
     
-    <!-- Breadcrumb Schema -->
+    <!-- Breadcrumb Schema for better navigation -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -137,7 +163,7 @@
         <div class="container">
             <a class="navbar-brand" href="../index.html">
                 <i class="fas fa-shield-alt me-2"></i>
-                Telecom Security
+                Telecom Security Library
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -167,10 +193,15 @@
     <!-- Document Header -->
     <header class="document-header">
         <div class="container">
-            <nav aria-label="breadcrumb">
+            <!-- Enhanced Breadcrumb Navigation -->
+            <nav aria-label="breadcrumb" class="mb-3">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../index.html#motif">MoTIF Framework</a></li>
+                    <li class="breadcrumb-item">
+                        <a href="../index.html" title="Return to Homepage">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="../index.html#motif" title="View MoTIF Framework Category">MoTIF Framework</a>
+                    </li>
                     <li class="breadcrumb-item active" aria-current="page">GSMA MoTIF Mobile Threat Intelligence Framework</li>
                 </ol>
             </nav>
@@ -179,10 +210,10 @@
             <p class="lead">Overview of the GSMA MoTIF framework for mobile threat intelligence</p>
             
             <div class="document-meta">
-                                 <span class="badge bg-primary">Framework Guide</span>
-                 <span class="badge bg-secondary">2024-02-01</span>
-                 <span class="badge bg-info">GSMA Security</span>
-                 <span class="badge bg-success">Research Team</span>
+                <span class="badge bg-primary">Framework Guide</span>
+                <span class="badge bg-secondary">2024-02-01</span>
+                <span class="badge bg-info">GSMA Security</span>
+                <span class="badge bg-success">Research by RFS</span>
             </div>
         </div>
     </header>
@@ -226,7 +257,8 @@
                                     width="100%" 
                                     height="600px" 
                                     frameborder="0"
-                                    allowfullscreen>
+                                    allowfullscreen
+                                    title="GSMA MoTIF Mobile Threat Intelligence Framework PDF Document">
                                     <p>Your browser does not support PDF embedding. 
                                     <a href="../MoTIF/FS.57-MoTIF-Principles-v1.0.pdf" target="_blank" class="btn btn-primary">
                                         <i class="fas fa-download me-2"></i>Download PDF
@@ -352,7 +384,8 @@
                                 <strong>Source:</strong> GSMA Security
                             </li>
                             <li class="mb-2">
-                                <strong>Category:</strong> MoTIF Framework
+                                <strong>Category:</strong> 
+                                <a href="../index.html#motif" title="View MoTIF Framework Category">MoTIF Framework</a>
                             </li>
                             <li class="mb-2">
                                 <strong>File:</strong> FS.57-MoTIF-Principles-v1.0.pdf
@@ -432,6 +465,25 @@
                             <a href="../index.html#motif" class="btn btn-outline-info btn-sm">
                                 <i class="fas fa-folder me-2"></i>View Category
                             </a>
+                            <a href="../documents/index.html" class="btn btn-outline-secondary btn-sm">
+                                <i class="fas fa-list me-2"></i>All Documents
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Categories -->
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <h5 class="mb-0"><i class="fas fa-sitemap me-2"></i>Related Categories</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-grid gap-2">
+                            <a href="../index.html#4g" class="btn btn-outline-primary btn-sm">4G Security</a>
+                            <a href="../index.html#5g" class="btn btn-outline-primary btn-sm">5G Security</a>
+                            <a href="../index.html#ss7" class="btn btn-outline-primary btn-sm">SS7 Security</a>
+                            <a href="../index.html#sim-cards" class="btn btn-outline-primary btn-sm">SIM Cards</a>
+                            <a href="../index.html#baseband" class="btn btn-outline-primary btn-sm">Baseband</a>
                         </div>
                     </div>
                 </div>
@@ -449,7 +501,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="ratio ratio-16x9">
-                        <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="videoFrame" src="" frameborder="0" allowfullscreen title="Video Player"></iframe>
                     </div>
                 </div>
             </div>
@@ -461,40 +513,40 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <h5><i class="fas fa-shield-alt me-2"></i>Telecom Security</h5>
+                    <h5><i class="fas fa-shield-alt me-2"></i>Telecom Security Library</h5>
                     <p class="text-muted">Comprehensive collection of telecommunications security documentation, research papers, and resources for security professionals, researchers, and industry experts.</p>
                     <div class="social-links">
-                        <a href="#" class="text-muted me-3"><i class="fab fa-twitter fa-lg"></i></a>
-                        <a href="https://www.linkedin.com/company/telco-sec/" target="_blank" class="text-muted me-3"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="#" class="text-muted me-3"><i class="fab fa-github fa-lg"></i></a>
-                        <a href="https://www.youtube.com/@Telecom-Security" target="_blank" class="text-muted me-3"><i class="fab fa-youtube fa-lg"></i></a>
-                        <a href="https://discord.gg/jkUKw2cBxX" target="_blank" class="text-muted me-3"><i class="fab fa-discord fa-lg"></i></a>
+                        <a href="#" class="text-muted me-3" title="Follow us on Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://www.linkedin.com/company/telco-sec/" target="_blank" class="text-muted me-3" title="Follow us on LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-muted me-3" title="View on GitHub"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="https://www.youtube.com/@Telecom-Security" target="_blank" class="text-muted me-3" title="Subscribe to our YouTube Channel"><i class="fab fa-youtube fa-lg"></i></a>
+                        <a href="https://discord.gg/jkUKw2cBxX" target="_blank" class="text-muted me-3" title="Join our Discord Community"><i class="fab fa-discord fa-lg"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 mb-4">
                     <h6>Categories</h6>
                     <ul class="list-unstyled">
-                        <li><a href="../index.html#4g" class="text-muted">4G Security</a></li>
-                        <li><a href="../index.html#5g" class="text-muted">5G Security</a></li>
-                        <li><a href="../index.html#sim-cards" class="text-muted">SIM Cards</a></li>
-                        <li><a href="../index.html#ss7" class="text-muted">SS7 Security</a></li>
+                        <li><a href="../index.html#4g" class="text-muted" title="4G Network Security">4G Security</a></li>
+                        <li><a href="../index.html#5g" class="text-muted" title="5G Network Security">5G Security</a></li>
+                        <li><a href="../index.html#sim-cards" class="text-muted" title="SIM Cards & UICC Security">SIM Cards</a></li>
+                        <li><a href="../index.html#ss7" class="text-muted" title="SS7 Protocol Security">SS7 Security</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 mb-4">
                     <h6>Resources</h6>
                     <ul class="list-unstyled">
-                        <li><a href="../videos.html" class="text-muted">Videos</a></li>
-                        <li><a href="../images.html" class="text-muted">Images</a></li>
-                        <li><a href="../about.html" class="text-muted">About</a></li>
-                        <li><a href="../README.md" class="text-muted">Documentation</a></li>
-                        <li><a href="#" class="text-muted">API</a></li>
+                        <li><a href="../videos.html" class="text-muted" title="View all videos">Videos</a></li>
+                        <li><a href="../images.html" class="text-muted" title="View all images">Images</a></li>
+                        <li><a href="../about.html" class="text-muted" title="About RFS">About</a></li>
+                        <li><a href="../README.md" class="text-muted" title="Project Documentation">Documentation</a></li>
+                        <li><a href="#" class="text-muted" title="API Documentation">API</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <h6>Newsletter</h6>
                     <p class="text-muted">Stay updated with the latest telecom security research and developments.</p>
                     <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email for newsletter">
                         <button class="btn btn-primary" type="button">Subscribe</button>
                     </div>
                 </div>
@@ -502,12 +554,12 @@
             <hr class="my-4">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="mb-0 text-muted">&copy; 2024 Telecom Security. All rights reserved.</p>
+                    <p class="mb-0 text-muted">&copy; 2024 Telecom Security Library. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <a href="#" class="text-muted me-3">Privacy Policy</a>
-                    <a href="#" class="text-muted me-3">Terms of Service</a>
-                    <a href="#" class="text-muted">Contact</a>
+                    <a href="#" class="text-muted me-3" title="Privacy Policy">Privacy Policy</a>
+                    <a href="#" class="text-muted me-3" title="Terms of Service">Terms of Service</a>
+                    <a href="../about.html" class="text-muted" title="Contact Information">Contact</a>
                 </div>
             </div>
         </div>

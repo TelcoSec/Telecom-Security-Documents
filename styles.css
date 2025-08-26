@@ -535,3 +535,37 @@ footer {
         border: 1px solid #ccc !important;
     }
 }
+
+/* Enhanced Footer Text Colors */
+.text-light-50 {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.text-light-50:hover {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Footer Link Improvements */
+.footer .social-links a,
+.footer .quick-links a {
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover,
+.footer .quick-links a:hover {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+/* Navbar Improvements */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Enhanced Brand Spacing */
+.navbar-brand i {
+    margin-right: 0.5rem;
+}
