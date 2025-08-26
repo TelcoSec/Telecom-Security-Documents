@@ -105,7 +105,7 @@ function initResearcherInteractions() {
     researcherItems.forEach(item => {
         // Add click tracking for researcher profiles
         item.addEventListener('click', function() {
-            const researcherName = this.querySelector('h6').textContent;
+            const researcherName = item.querySelector('h6').textContent;
             trackResearcherClick(researcherName);
         });
         
@@ -113,14 +113,14 @@ function initResearcherInteractions() {
         item.addEventListener('keydown', function(e) {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
-                this.click();
+                item.click();
             }
         });
         
         // Make researcher items focusable
         item.setAttribute('tabindex', '0');
         item.setAttribute('role', 'button');
-        item.setAttribute('aria-label', `View ${this.querySelector('h6').textContent}'s profile`);
+        item.setAttribute('aria-label', `View ${item.querySelector('h6').textContent}'s profile`);
     });
 }
 

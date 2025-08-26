@@ -629,7 +629,7 @@ const documents = [
 
 // AdSense Configuration
 const adsenseConfig = {
-    publisherId: '1234567890123456', // Replace with your actual AdSense publisher ID
+    publisherId: '9236847887178276', // Your actual AdSense publisher ID
     bannerSlot: '1234567890',        // Replace with your banner ad slot
     inlineSlot: '0987654321',        // Replace with your inline ad slot
     sidebarSlot: '1122334455'        // Replace with your sidebar ad slot

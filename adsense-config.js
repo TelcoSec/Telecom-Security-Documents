@@ -9,28 +9,28 @@ const adsenseConfig = {
     adSlots: {
         // Banner ads (horizontal, top of page)
         banner: {
-            slot: '1234567890', // Replace with your banner ad slot ID
+            slot: '2339988187', // Replace with your banner ad slot ID
             format: 'auto',
             responsive: true
         },
         
         // In-article ads (embedded within content)
         inline: {
-            slot: '0987654321', // Replace with your inline ad slot ID
+            slot: '9658933364', // Replace with your inline ad slot ID
             format: 'fluid',
             layout: 'in-article'
         },
         
         // Sidebar ads (vertical, right side)
         sidebar: {
-            slot: '1122334455', // Replace with your sidebar ad slot ID
+            slot: '9876228313', // Replace with your sidebar ad slot ID
             format: 'auto',
             responsive: false
         },
         
         // Footer ads (horizontal, bottom of page)
         footer: {
-            slot: '5566778899', // Replace with your footer ad slot ID
+            slot: '2339988187', // Replace with your footer ad slot ID
             format: 'auto',
             responsive: true
         }
