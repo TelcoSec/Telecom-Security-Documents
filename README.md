@@ -1,130 +1,309 @@
-# Telecom Security Documents
+# 📡 Telecom Security Documents
 
-A comprehensive collection of research papers, technical documents, and security analysis related to telecommunications infrastructure, mobile networks, and network security vulnerabilities.
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-blue?style=flat-square&logo=github)](https://telcosec.github.io/Telecom-Security-Documents/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Documentation](https://img.shields.io/badge/Documentation-Complete-green?style=flat-square)](https://telcosec.github.io/Telecom-Security-Documents/)
+[![Research Papers](https://img.shields.io/badge/Research%20Papers-48+-orange?style=flat-square)](https://telcosec.github.io/Telecom-Security-Documents/)
+[![Categories](https://img.shields.io/badge/Categories-13-blue?style=flat-square)](https://telcosec.github.io/Telecom-Security-Documents/)
 
-**Maintained by RFS**
+> **Comprehensive collection of telecommunications security research papers, technical documents, and security analysis covering 4G, 5G, SS7, SIM cards, and network vulnerabilities.**
+
+## 🌐 Live Site
+
+**📖 Visit our comprehensive documentation site:** [https://telcosec.github.io/Telecom-Security-Documents/](https://telcosec.github.io/Telecom-Security-Documents/)
 
 ## 📋 Table of Contents
 
 - [Overview](#overview)
 - [Document Categories](#document-categories)
-- [Quick Reference](#quick-reference)
+- [Quick Start](#quick-start)
+- [Repository Structure](#repository-structure)
+- [Documentation Site Features](#documentation-site-features)
+- [Research Areas](#research-areas)
 - [Contributing](#contributing)
+- [Development](#development)
+- [SEO & Analytics](#seo--analytics)
 - [License](#license)
+- [Contact](#contact)
 
-## 🔍 Overview
+## 🎯 Overview
 
-This repository contains a curated collection of technical documents, research papers, and security analysis covering various aspects of telecommunications security. The documents span multiple generations of mobile networks (4G, 5G), network protocols (SS7, Diameter), infrastructure components, and security vulnerabilities.
+This repository serves as a comprehensive resource for telecommunications security research, containing **48+ technical documents** across **13 specialized categories**. Our collection includes research papers, security analysis reports, technical specifications, and vulnerability assessments from leading organizations and researchers in the field.
+
+### Key Features
+
+- 🔬 **48+ Research Documents** - Comprehensive collection of telecom security research
+- 📊 **13 Specialized Categories** - Organized by technology and security focus areas
+- 🌐 **Interactive Documentation Site** - Modern, responsive web interface
+- 📱 **Mobile-Optimized** - Fully responsive design for all devices
+- 🔍 **Advanced Search & Filtering** - Easy document discovery
+- 📈 **SEO Optimized** - Enhanced discoverability and indexing
+- 🎥 **Video Integration** - Related educational content
+- 👥 **Researcher Profiles** - Author information and affiliations
 
 ## 📚 Document Categories
 
-### 📱 4G Network Security
-- **4G-Impersonation_24283-paper.pdf** - Research paper on 4G network impersonation attacks and vulnerabilities
+| Category | Documents | Description |
+|----------|-----------|-------------|
+| **4G Network Security** | 2 | LTE security architecture, authentication protocols, and vulnerabilities |
+| **5G Network Security** | 2 | 5G network slicing, security architecture, and threat analysis |
+| **SS7 Protocol Security** | 1 | SS7 vulnerabilities, attack vectors, and mitigation strategies |
+| **SIM Cards & UICC Security** | 1 | SIM card vulnerabilities, UICC security, and physical attacks |
+| **Baseband Security** | 1 | Baseband processor vulnerabilities and exploitation techniques |
+| **Base Stations** | 1 | Base station security, physical attacks, and network access |
+| **FBI Resources** | 1 | FBI cyber division resources and guidelines |
+| **Fraud Detection & Prevention** | 1 | Telecom fraud detection methods and prevention strategies |
+| **GPON Security** | 1 | GPON network vulnerabilities and security analysis |
+| **MoTIF Framework** | 1 | GSMA MoTIF mobile threat intelligence framework |
+| **Roaming Security** | 1 | International roaming security and vulnerabilities |
+| **Access Point Names (APNs)** | 1 | APN security and configuration vulnerabilities |
+| **AT Commands** | 1 | AT command fuzzing and mobile device security |
 
-### 🚀 5G Network Security  
-- **FS.40-v3.0-002-19-July.pdf** - 5G security framework and specifications document
-- **5GRAN-Risk-Analysis.pdf** - 5G RAN risk analysis and security assessment
-- **5G_Transport_Network.pdf** - 5G transport network architecture and security
-- **5G_IMS.pdf** - 5G IP Multimedia Subsystem security and implementation
-- **5G_MEC.pdf** - 5G Multi-Access Edge Computing security considerations
-- **5G_Management_System.pdf** - 5G network management system security
-- **5G_RAN.pdf** - 5G Radio Access Network security architecture
-- **5G_Infrastructure.pdf** - 5G infrastructure security and deployment
-- **5G-RAN.pdf** - Additional 5G RAN security specifications
-- **5G Hands on Workshop v2.4.pdf** - Comprehensive 5G security hands-on workshop guide
-- **ENISA Report - NFV Security in 5G - Challenges and Best Practices.pdf** - ENISA report on Network Functions Virtualization security in 5G networks
+## 🚀 Quick Start
 
-### 🌐 Access Point Names (APNs)
-- **DEF CON 32 - Aapo Oksman - Leveraging private APNs for mobile network traffic analysis.pdf** - Conference presentation on using private APNs for network traffic analysis
+### Viewing Documents
 
-### 📡 AT Commands
-- **ATFuzzer_3416125.pdf** - Research on AT command fuzzing techniques for mobile device security testing
+1. **Visit the Live Site**: [https://telcosec.github.io/Telecom-Security-Documents/](https://telcosec.github.io/Telecom-Security-Documents/)
+2. **Browse by Category**: Navigate through the 13 specialized categories
+3. **Search Documents**: Use the search functionality to find specific topics
+4. **View Individual Pages**: Each document has its own dedicated page with embedded PDF viewer
 
-### 🔧 Baseband Security
-- **us-21-Over-The-Air-Baseband-Exploit-Gaining-Remote-Code-Execution-On-5G-Smartphones.pdf** - Advanced persistent threat research on baseband exploits
-- **Calypso.pdf** - Technical analysis of baseband security vulnerabilities
+### Local Development
 
-### 📡 Base Stations
-- **BaseStations_EMEA 2024 Catalog.pdf** - Comprehensive catalog of base station equipment and specifications for EMEA region
+```bash
+# Clone the repository
+git clone https://github.com/TelcoSec/Telecom-Security-Documents.git
+cd Telecom-Security-Documents
 
-### 🕵️ FBI Resources
-- **FBI_Field_Resource_Guide_21088576.pdf** - FBI field resource guide for telecommunications investigations
+# Install dependencies
+npm install
 
-### 🚨 Fraud Detection & Prevention
-- **sec15-paper-reaves-boxed.pdf** - Academic research paper on telecom fraud detection
-- **Bypass_Fraud.pdf** - Analysis of fraud bypass techniques and countermeasures
+# Start local development server
+npm start
 
-### 🏠 GPON (Gigabit Passive Optical Network)
-- **GPON-Unplugged.pdf** - Security analysis of GPON infrastructure and potential vulnerabilities
+# Generate document pages
+npm run generate
 
-### 🔐 MoTIF (Mobile Threat Intelligence Framework)
-- **FS.57-MoTIF-Principles-v1.0.pdf** - Official MoTIF framework principles and implementation guide
+# Build for production
+npm run build
+```
 
-### 🌍 Roaming Security
-- **Lange_2024_Wherever_I_May_Roam-Stealthy_Interception_and_Injection_Attacks_through_Roaming_Agreements_author_version.pdf** - Research on roaming agreement vulnerabilities and attack vectors
+## 📁 Repository Structure
 
-### 🔑 SIM Cards & UICC Security
-- **SIMalliance-IDS-OFL-Interface-V1.0.3.pdf** - SIMalliance IDS-OFL interface specification
-- **5G-SIM-Maximising-MNO-Investment-in-5G.pdf** - Guide on maximizing MNO investment in 5G SIM technology
-- **SIM-Evolution-Keeping-Pace-with-5G-Phasing.pdf** - Evolution of SIM technology to keep pace with 5G deployment
-- **Security-guidelines-for-UICC-profiles-FINAL.pdf** - Security guidelines for UICC profile implementation
-- **Open-Mobile-API-Specification-Version-3.1.pdf** - Open Mobile API specification for SIM card interfaces
-- **Protecting-Subscriber-Privacy-in-5G_FINAL.pdf** - Guidelines for protecting subscriber privacy in 5G networks
-- **eUICC-for-Connected-cars_FINAL.pdf** - Embedded UICC specifications for connected vehicles
-- **eUICC-for-smart-metering_FINAL.pdf** - Embedded UICC specifications for smart metering applications
-- **eUICC-for-wearables_FINAL.pdf** - Embedded UICC specifications for wearable devices
-- **SIMalliance_UICC_Device_Implementation_Guidelines-1.1.pdf** - UICC device implementation guidelines
-- **SIMalliance_LTE_UICC_Profile_V1.0.pdf** - LTE UICC profile specification
-- **S@T123.pdf** - SIM Application Toolkit specification
-- **S@T131.pdf** - SIM Application Toolkit specification
-- **S@T121.pdf** - SIM Application Toolkit specification
-- **SIM_Profile_Mark-Up_Language_V2_0_Final_Release_Candidate_Version_04_06_2010.pdf** - SIM Profile Markup Language specification
-- **S@T150.pdf** - SIM Application Toolkit specification
-- **NFCPaymentUICCConfiguration_v1.0FINAL.pdf** - NFC payment UICC configuration specification
-- **S@T110.pdf** - SIM Application Toolkit specification
-- **StepStonesRelease6_v100.pdf** - Stepping Stones Release 6 specification
-- **MobileConnectSteppingStones_FINAL_.pdf** - Mobile Connect stepping stones implementation guide
-- **SteppingStones_R7_v100.pdf** - Stepping Stones Release 7 specification
+```
+Telecom-Security-Documents/
+├── 📄 index.html                 # Main documentation site
+├── 📄 about.html                 # About page
+├── 📄 styles.css                 # Main site styles
+├── 📄 script.js                  # Main site functionality
+├── 📄 document-template.html     # Document page template
+├── 📄 document-styles.css        # Document page styles
+├── 📄 document-script.js         # Document page functionality
+├── 📄 generate-pages.js          # Dynamic page generator
+├── 📄 generate-sitemap.js        # SEO sitemap generator
+├── 📄 adsense-config.js          # AdSense configuration
+├── 📄 package.json               # Project configuration
+├── 📄 robots.txt                 # Search engine directives
+├── 📄 sitemap.xml               # SEO sitemap
+├── 📄 ads.txt                   # AdSense transparency
+├── 📄 llms.txt                  # AI model guidelines
+├── 📁 documents/                # Generated document pages
+│   ├── 📄 index.html            # Documents index page
+│   ├── 📄 4g-security-overview.html
+│   ├── 📄 5g-security-analysis.html
+│   └── ... (48+ document pages)
+├── 📁 4G/                       # 4G security documents
+├── 📁 5G/                       # 5G security documents
+├── 📁 SS7/                      # SS7 protocol documents
+├── 📁 SIM_Cards/                # SIM card security documents
+├── 📁 Basebands/                # Baseband security documents
+├── 📁 BaseStations/             # Base station documents
+├── 📁 FBI/                      # FBI resources
+├── 📁 Fraud/                    # Fraud detection documents
+├── 📁 GPON/                     # GPON security documents
+├── 📁 MoTIF/                    # MoTIF framework documents
+├── 📁 Roaming/                  # Roaming security documents
+├── 📁 APNs/                     # APN security documents
+└── 📁 AT-Commands/              # AT command security documents
+```
 
-### 📞 SS7 (Signaling System No. 7)
-- **Telecom_Attacks.pdf** - Overview of telecommunications attack vectors
-- **SS7_Vulnerability_2017_A4.ENG_.0003.03.pdf** - Comprehensive SS7 vulnerability analysis
-- **SS7 for INFOSEC.pdf** - SS7 security guide for information security professionals
-- **Interconnect Security SS7-Diameter.pdf** - Security analysis of SS7 and Diameter interconnect protocols
-- **25c3-locating-mobile-phones.pdf** - Conference presentation on mobile phone location tracking via SS7
+## 🌟 Documentation Site Features
 
-## 🚀 Quick Reference
+### Interactive Features
 
-| Category | Document Count | Key Topics |
-|----------|----------------|------------|
-| 4G Security | 1 | Network impersonation |
-| 5G Security | 11 | Security framework, RAN, MEC, NFV |
-| APNs | 1 | Traffic analysis |
-| AT Commands | 1 | Device security testing |
-| Baseband | 2 | RCE, vulnerabilities |
-| Base Stations | 1 | Equipment catalog |
-| FBI Resources | 1 | Investigation guide |
-| Fraud | 2 | Detection, bypass |
-| GPON | 1 | Infrastructure security |
-| MoTIF | 1 | Threat intelligence |
-| Roaming | 1 | Agreement vulnerabilities |
-| SIM Cards & UICC | 20 | UICC profiles, eUICC, S@T, 5G SIM |
-| **Total** | **48** | **All categories combined** |
-| SS7 | 5 | Protocol vulnerabilities |
+- **📱 Responsive Design** - Optimized for desktop, tablet, and mobile devices
+- **🔍 Advanced Search** - Find documents by title, category, or content
+- **📊 Category Filtering** - Browse documents by specialized categories
+- **🎥 Video Integration** - Related educational videos for each document
+- **👥 Researcher Profiles** - Author information and affiliations
+- **📈 Analytics Integration** - Document view tracking and engagement metrics
+
+### SEO & Performance
+
+- **🔍 SEO Optimized** - Meta tags, structured data, and sitemaps
+- **📈 Rich Snippets** - Google search result enhancements
+- **🚀 Fast Loading** - Optimized assets and caching
+- **📱 Mobile-First** - Progressive Web App features
+- **🔗 External References** - Links to authoritative sources
+
+### Content Management
+
+- **📄 Dynamic Page Generation** - Automated document page creation
+- **🔄 Auto-Updating** - Automatic sitemap and RSS feed generation
+- **📊 Content Analytics** - Document popularity and engagement tracking
+- **🎯 AdSense Integration** - Monetization with Google AdSense
+
+## 🔬 Research Areas
+
+### Network Security
+- **4G/LTE Security** - Authentication, encryption, and protocol vulnerabilities
+- **5G Security** - Network slicing, edge computing, and threat vectors
+- **SS7 Vulnerabilities** - Signaling system attacks and mitigation
+
+### Mobile Security
+- **SIM Card Security** - Physical and logical attacks on SIM cards
+- **Baseband Security** - Processor-level vulnerabilities and exploitation
+- **AT Commands** - Mobile device interface security
+
+### Infrastructure Security
+- **Base Station Security** - Physical and network access vulnerabilities
+- **GPON Security** - Fiber network security and attacks
+- **APN Security** - Access point configuration vulnerabilities
+
+### Threat Intelligence
+- **Fraud Detection** - Telecom fraud patterns and prevention
+- **MoTIF Framework** - Mobile threat intelligence and analysis
+- **Roaming Security** - International network security challenges
 
 ## 🤝 Contributing
 
-This repository is maintained by RFS. If you have relevant telecom security documents to contribute:
+We welcome contributions from researchers, security professionals, and the broader community.
 
-1. Ensure the document is relevant to telecommunications security
-2. Verify the document is properly licensed for distribution
-3. Organize documents into appropriate categories
-4. Follow the existing naming conventions
+### How to Contribute
+
+1. **Fork the Repository** - Create your own fork of the project
+2. **Add Documents** - Submit new research papers or technical documents
+3. **Improve Documentation** - Enhance existing documentation or add new features
+4. **Report Issues** - Help identify bugs or suggest improvements
+5. **Share Knowledge** - Contribute to our knowledge base
+
+### Contribution Guidelines
+
+- **Document Quality** - Ensure documents are relevant and high-quality
+- **Proper Attribution** - Include author information and sources
+- **Category Organization** - Place documents in appropriate categories
+- **Metadata** - Provide complete document metadata (title, description, etc.)
+
+### Development Setup
+
+```bash
+# Install development dependencies
+npm install
+
+# Start development server with auto-reload
+npm run generate:watch
+
+# Run SEO generation
+npm run seo
+
+# Test locally
+npm start
+```
+
+## 🛠️ Development
+
+### Prerequisites
+
+- **Node.js** (v14.0.0 or higher)
+- **npm** (v6.0.0 or higher)
+- **Git** (for version control)
+
+### Build Process
+
+```bash
+# Install dependencies
+npm install
+
+# Generate document pages
+npm run generate
+
+# Generate SEO files (sitemap, RSS)
+npm run seo
+
+# Build for production
+npm run build
+
+# Start local server
+npm start
+```
+
+### Customization
+
+- **Styling**: Modify `styles.css` and `document-styles.css`
+- **Functionality**: Edit `script.js` and `document-script.js`
+- **Templates**: Update `document-template.html`
+- **Content**: Modify `generate-pages.js` document database
+
+## 🔍 SEO & Analytics
+
+### Search Engine Optimization
+
+- **Structured Data** - Schema.org markup for rich snippets
+- **Meta Tags** - Comprehensive meta tag optimization
+- **Sitemap** - Auto-generated XML sitemap
+- **RSS Feed** - RSS feed for content syndication
+- **Canonical URLs** - Proper canonical URL implementation
+
+### Analytics Integration
+
+- **Google Analytics** - Site traffic and user behavior tracking
+- **Document Analytics** - Individual document view tracking
+- **Engagement Metrics** - User interaction and time-on-page analysis
+- **Search Performance** - SEO ranking and search visibility monitoring
+
+### Performance Monitoring
+
+- **Page Load Speed** - Core Web Vitals optimization
+- **Mobile Performance** - Mobile-first performance metrics
+- **Accessibility** - WCAG compliance and accessibility features
+- **SEO Health** - Regular SEO audits and improvements
 
 ## 📄 License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+### License Summary
+
+- ✅ **Commercial Use** - Allowed
+- ✅ **Modification** - Allowed
+- ✅ **Distribution** - Allowed
+- ✅ **Private Use** - Allowed
+- ⚠️ **Liability** - Limited
+- ⚠️ **Warranty** - None
+
+## 📞 Contact
+
+### Get in Touch
+
+- **🌐 Website**: [https://telcosec.github.io/Telecom-Security-Documents/](https://telcosec.github.io/Telecom-Security-Documents/)
+- **📧 Email**: contact@telcosec.org
+- **🐙 GitHub**: [https://github.com/TelcoSec/Telecom-Security-Documents](https://github.com/TelcoSec/Telecom-Security-Documents)
+- **📖 Documentation**: [https://telcosec.github.io/Telecom-Security-Documents/](https://telcosec.github.io/Telecom-Security-Documents/)
+
+### Support
+
+- **📋 Issues**: [GitHub Issues](https://github.com/TelcoSec/Telecom-Security-Documents/issues)
+- **💬 Discussions**: [GitHub Discussions](https://github.com/TelcoSec/Telecom-Security-Documents/discussions)
+- **📚 Wiki**: [Project Wiki](https://github.com/TelcoSec/Telecom-Security-Documents/wiki)
 
 ---
 
-**Disclaimer**: These documents are for educational and research purposes. Always ensure compliance with applicable laws and regulations when conducting security research or testing.
+<div align="center">
+
+**🔬 Empowering Telecom Security Research**  
+*Comprehensive documentation for the telecommunications security community*
+
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-blue?style=for-the-badge&logo=github)](https://telcosec.github.io/Telecom-Security-Documents/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+</div>
