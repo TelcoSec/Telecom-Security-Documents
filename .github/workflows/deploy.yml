@@ -14,6 +14,25 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
       
+    - name: Verify No Jekyll Files
+      run: |
+        echo "🔍 Checking for Jekyll files..."
+        if [ -f "Gemfile" ]; then
+          echo "❌ Gemfile found - this should not exist for a static site"
+          exit 1
+        fi
+        if [ -f "_config.yml" ]; then
+          echo "❌ _config.yml found - this should not exist for a static site"
+          exit 1
+        fi
+        if [ -f ".nojekyll" ]; then
+          echo "✅ .nojekyll file found - GitHub Pages will not use Jekyll"
+        else
+          echo "⚠️ .nojekyll file not found - creating one"
+          touch .nojekyll
+        fi
+        echo "✅ No Jekyll files detected"
+      
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
@@ -86,6 +105,7 @@ jobs:
         echo "5. Wait 5-10 minutes for deployment"
         echo ""
         echo "✨ Your site is ready for GitHub Pages deployment!"
+        echo "🚫 This is NOT a Jekyll site - it's a pure static HTML site"
         
     - name: Comment on PR
       if: github.event_name == 'pull_request'
@@ -96,5 +116,5 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: '✅ Static site validation completed successfully! Your site is ready for GitHub Pages deployment. Follow the instructions in the Actions log to enable GitHub Pages.'
+            body: '✅ Static site validation completed successfully! Your site is ready for GitHub Pages deployment. Follow the instructions in the Actions log to enable GitHub Pages. This is a pure static HTML site, not Jekyll.'
           })
