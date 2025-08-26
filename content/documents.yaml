@@ -760,14 +760,14 @@ site:
   author: "Telecom Security Team"
   contact: "contact@telcosec.org"
   repository: "https://github.com/TelcoSec/Telecom-Security-Documents"
-  youtubeChannel: "https://www.youtube.com/@Telecom-Security"
+  youtubeChannel: "https://www.youtube.com/channel/UC3kO2aM4pP_viPnB8yS2J5w"
   license: "MIT"
   version: "1.0.0"
 
 # YouTube Channel
 youtubeChannel:
   name: "Telecom Security"
-  url: "https://www.youtube.com/@Telecom-Security"
+  url: "https://www.youtube.com/channel/UC3kO2aM4pP_viPnB8yS2J5w"
   description: "Official YouTube channel for telecom security research, analysis, and educational content"
   featured: true
 
