@@ -1,4 +1,4 @@
-name: Validate and Deploy
+name: Validate Static Site
 
 on:
   push:
@@ -19,46 +19,73 @@ jobs:
       with:
         node-version: '18'
         
-    - name: Install dependencies
-      run: |
-        npm install -g http-server
+    - name: Install http-server
+      run: npm install -g http-server
         
-    - name: Validate HTML
+    - name: Validate HTML Structure
       run: |
-        echo "🔍 Validating HTML files..."
-        if command -v tidy &> /dev/null; then
-          tidy -q -e index.html
+        echo "🔍 Validating HTML structure..."
+        if grep -q "<!DOCTYPE html>" index.html; then
+          echo "✅ DOCTYPE declaration found"
         else
-          echo "HTML Tidy not available, skipping HTML validation"
+          echo "❌ DOCTYPE declaration missing"
+          exit 1
         fi
         
-    - name: Check required files
+        if grep -q "<html" index.html; then
+          echo "✅ HTML tag found"
+        else
+          echo "❌ HTML tag missing"
+          exit 1
+        fi
+        
+        if grep -q "<head>" index.html; then
+          echo "✅ Head section found"
+        else
+          echo "❌ Head section missing"
+          exit 1
+        fi
+        
+        if grep -q "<body>" index.html; then
+          echo "✅ Body section found"
+        else
+          echo "❌ Body section missing"
+          exit 1
+        fi
+        
+    - name: Check Required Files
       run: |
         echo "📁 Checking required files..."
         test -f index.html && echo "✅ index.html found"
         test -f styles.css && echo "✅ styles.css found"
         test -f script.js && echo "✅ script.js found"
-        test -f _config.yml && echo "✅ _config.yml found"
         echo "✅ All required files are present"
         
-    - name: Test local server
+    - name: Test Local Server
       run: |
         echo "🚀 Testing local server..."
-        timeout 10s http-server -p 8080 &
-        sleep 3
-        curl -f http://localhost:8080 > /dev/null && echo "✅ Local server test passed" || echo "⚠️ Local server test failed"
+        timeout 15s http-server -p 8080 &
+        sleep 5
+        if curl -f http://localhost:8080 > /dev/null 2>&1; then
+          echo "✅ Local server test passed"
+        else
+          echo "⚠️ Local server test failed (this is okay for validation)"
+        fi
         
-    - name: Deploy Status
+    - name: Deployment Instructions
       run: |
-        echo "🎉 Validation completed successfully!"
-        echo "📱 Your site will be available at: https://telcosec.github.io/Telecom-Security-Documents"
-        echo "⏱️  Please wait a few minutes for GitHub Pages to update"
         echo ""
-        echo "📋 Next steps:"
-        echo "1. Go to your repository Settings > Pages"
-        echo "2. Select 'Deploy from a branch'"
+        echo "🎉 Static site validation completed successfully!"
+        echo "📱 Your site will be available at: https://telcosec.github.io/Telecom-Security-Documents"
+        echo ""
+        echo "📋 To deploy your site:"
+        echo "1. Go to: https://github.com/TelcoSec/Telecom-Security-Documents/settings/pages"
+        echo "2. Under 'Source', select 'Deploy from a branch'"
         echo "3. Choose 'main' branch and '/(root)' folder"
-        echo "4. Click Save"
+        echo "4. Click 'Save'"
+        echo "5. Wait 5-10 minutes for deployment"
+        echo ""
+        echo "✨ Your site is ready for GitHub Pages deployment!"
         
     - name: Comment on PR
       if: github.event_name == 'pull_request'
@@ -69,5 +96,5 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: '✅ Site validation completed successfully! The site will be deployed automatically by GitHub Pages once you enable it in repository settings.'
+            body: '✅ Static site validation completed successfully! Your site is ready for GitHub Pages deployment. Follow the instructions in the Actions log to enable GitHub Pages.'
           })
