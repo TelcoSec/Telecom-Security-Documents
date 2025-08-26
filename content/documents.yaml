@@ -1,4 +1,4 @@
-# Telecom Security Documents Content
+# Telecom Security Library Content
 # This file contains all document metadata and content for the site
 
 documents:
@@ -754,7 +754,7 @@ documents:
 
 # Site Configuration
 site:
-  title: "Telecom Security Documents"
+  title: "Telecom Security Library"
   description: "Comprehensive collection of telecommunications security research papers, technical documents, and security analysis for professionals, researchers, and industry experts"
   baseUrl: "https://telcosec.github.io/Telecom-Security-Documents"
   author: "Telecom Security Team"

@@ -27,8 +27,8 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 // Image metadata for SEO
 const imageMetadata = {
     'og-image.png': {
-        alt: 'Telecom Security Documents - Comprehensive Research Collection by RFS',
-        title: 'Telecom Security Documents - Research Collection',
+        alt: 'Telecom Security Library - Comprehensive Research Collection by RFS',
+        title: 'Telecom Security Library - Research Collection',
         description: 'Comprehensive collection of telecommunications security research papers and technical documents',
         keywords: ['telecom security', 'research', 'documents', 'RFS', 'telecommunications']
     },

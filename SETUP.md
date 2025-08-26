@@ -1,6 +1,6 @@
 # GitHub Pages Deployment Guide
 
-This comprehensive guide will help you deploy your Telecom Security Documents repository as a GitHub Pages website.
+This comprehensive guide will help you deploy your Telecom Security Library repository as a GitHub Pages website.
 
 ## 🚀 Quick Deployment (Recommended)
 
@@ -65,7 +65,7 @@ Before deploying, update these files with your information:
 #### `_config.yml`
 ```yaml
 # Replace with your actual information
-title: Telecom Security Documents
+title: Telecom Security Library
 description: Your description here
 author: Your Name
 github_username: your-actual-username

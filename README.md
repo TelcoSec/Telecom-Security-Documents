@@ -1,4 +1,4 @@
-# 📡 Telecom Security Documents
+# 📡 Telecom Security Library
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-blue?style=flat-square&logo=github)](https://telcosec.github.io/Telecom-Security-Documents/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
@@ -26,7 +26,7 @@
 
 ## 🎯 Project Purpose
 
-**Telecom Security Documents** serves as the premier knowledge hub for telecommunications security research, threat intelligence, and industry best practices. Our mission is to empower organizations, security professionals, and researchers with comprehensive, up-to-date information on telecom security vulnerabilities, attack vectors, and defense strategies.
+**Telecom Security Library** serves as the premier knowledge hub for telecommunications security research, threat intelligence, and industry best practices. Our mission is to empower organizations, security professionals, and researchers with comprehensive, up-to-date information on telecom security vulnerabilities, attack vectors, and defense strategies.
 
 ### What We Provide
 

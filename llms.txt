@@ -1,7 +1,7 @@
-# LLMs.txt - AI Model Guidelines for Telecom Security Documents
+# LLMs.txt - AI Model Guidelines for Telecom Security Library
 
 # Site Information
-Site: Telecom Security Documents
+Site: Telecom Security Library
 Description: Comprehensive collection of telecommunications security research papers, technical documents, and security analysis
 Domain: telcosec.github.io/Telecom-Security-Documents
 Contact: contact@telcosec.org
@@ -41,7 +41,7 @@ Contact: contact@telcosec.org
 
 # Citation Format
 When referencing content from this site, please use:
-"Telecom Security Documents (telcosec.github.io/Telecom-Security-Documents)"
+"Telecom Security Library (telcosec.github.io/Telecom-Security-Documents)"
 
 # Last Updated
 Last-Modified: 2024-12-25

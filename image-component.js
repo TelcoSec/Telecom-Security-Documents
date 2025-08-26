@@ -165,7 +165,7 @@ class OptimizedImage {
             },
             "publisher": {
                 "@type": "Organization",
-                "name": "Telecom Security Documents",
+                "name": "Telecom Security Library",
                 "url": "https://telcosec.github.io/Telecom-Security-Documents/"
             }
         };

@@ -197,7 +197,7 @@ function generateDocumentsIndex(documentsDir, content) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Documents - Telecom Security Documents</title>
+            <title>All Documents - Telecom Security Library</title>
     <meta name="description" content="Browse all telecom security documents by category">
     
     <!-- AdSense -->
@@ -213,7 +213,7 @@ function generateDocumentsIndex(documentsDir, content) {
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
-                <i class="fas fa-shield-alt me-2"></i>Telecom Security Documents
+                <i class="fas fa-shield-alt me-2"></i>Telecom Security Library
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>

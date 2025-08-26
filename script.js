@@ -1,4 +1,4 @@
-// Telecom Security Documents - Interactive JavaScript
+// Telecom Security Library - Interactive JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
     
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initSearchFunctionality();
     initLoadingAnimations();
     
-    console.log('Telecom Security Documents site loaded successfully!');
+    console.log('Telecom Security Library site loaded successfully!');
 });
 
 // Smooth Scrolling for Navigation Links
