@@ -635,6 +635,75 @@ const adsenseConfig = {
     sidebarSlot: '1122334455'        // Replace with your sidebar ad slot
 };
 
+// External references and resources for each category
+const externalReferences = {
+    '4G Network Security': [
+        { name: '3GPP Security Specifications', url: 'https://www.3gpp.org/specifications-groups/sa-plenary/sa3-security' },
+        { name: 'LTE Security Architecture', url: 'https://www.gsma.com/security/lte-security-architecture/' },
+        { name: 'IEEE 4G Security Papers', url: 'https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=4G%20security' }
+    ],
+    '5G Network Security': [
+        { name: '3GPP 5G Security', url: 'https://www.3gpp.org/specifications-groups/sa-plenary/sa3-security' },
+        { name: 'GSMA 5G Security Guidelines', url: 'https://www.gsma.com/security/5g-security-guidelines/' },
+        { name: 'NIST 5G Security Framework', url: 'https://www.nist.gov/cyberframework/5g-security' }
+    ],
+    'SS7 Protocol Security': [
+        { name: 'SS7 Security Vulnerabilities', url: 'https://www.blackhat.com/us-17/briefings.html#ss7' },
+        { name: 'GSMA SS7 Security Guidelines', url: 'https://www.gsma.com/security/ss7-security-guidelines/' },
+        { name: 'ITU-T SS7 Standards', url: 'https://www.itu.int/rec/T-REC-Q.700' }
+    ],
+    'SIM Cards & UICC Security': [
+        { name: 'GSMA SIM Security', url: 'https://www.gsma.com/security/sim-security/' },
+        { name: 'ETSI UICC Standards', url: 'https://www.etsi.org/standards-search?search=UICC' },
+        { name: 'SIMalliance Security', url: 'https://simalliance.org/security/' }
+    ],
+    'Baseband Security': [
+        { name: 'USENIX Security Papers', url: 'https://www.usenix.org/conferences/security' },
+        { name: 'Black Hat Baseband Research', url: 'https://www.blackhat.com/us-21/briefings.html#baseband' },
+        { name: 'DEF CON Baseband Talks', url: 'https://defcon.org/html/defcon-safemode/dc-safemode-index.html' }
+    ],
+    'Base Stations': [
+        { name: '3GPP Base Station Standards', url: 'https://www.3gpp.org/specifications-groups/ran-plenary/tsg-ran' },
+        { name: 'ETSI Base Station Security', url: 'https://www.etsi.org/standards-search?search=base%20station' },
+        { name: 'FCC Base Station Guidelines', url: 'https://www.fcc.gov/wireless/bureau-divisions/technologies-systems-and-innovation-division' }
+    ],
+    'FBI Resources': [
+        { name: 'FBI Cyber Division', url: 'https://www.fbi.gov/investigate/cyber' },
+        { name: 'FBI Field Office Resources', url: 'https://www.fbi.gov/contact-us/field-offices' },
+        { name: 'FBI Cyber Crime Reporting', url: 'https://www.ic3.gov/' }
+    ],
+    'Fraud Detection & Prevention': [
+        { name: 'ACM Digital Library', url: 'https://dl.acm.org/topic/ccs2012/10003120.10003121.10003123' },
+        { name: 'IEEE Fraud Detection', url: 'https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=fraud%20detection' },
+        { name: 'GSMA Fraud Prevention', url: 'https://www.gsma.com/security/fraud-prevention/' }
+    ],
+    'GPON Security': [
+        { name: 'ITU-T GPON Standards', url: 'https://www.itu.int/rec/T-REC-G.984' },
+        { name: 'IEEE GPON Security', url: 'https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=GPON%20security' },
+        { name: 'GPON Security Research', url: 'https://www.blackhat.com/us-18/briefings.html#gpon' }
+    ],
+    'MoTIF Framework': [
+        { name: 'GSMA MoTIF', url: 'https://www.gsma.com/security/motif-framework/' },
+        { name: 'Mobile Threat Intelligence', url: 'https://www.gsma.com/security/mobile-threat-intelligence/' },
+        { name: 'GSMA Security Guidelines', url: 'https://www.gsma.com/security/security-guidelines/' }
+    ],
+    'Roaming Security': [
+        { name: 'GSMA Roaming Security', url: 'https://www.gsma.com/roaming/security/' },
+        { name: 'IR.21 Roaming Database', url: 'https://www.gsma.com/roaming/ir21-roaming-database/' },
+        { name: 'Academic Research on Roaming', url: 'https://scholar.google.com/scholar?q=roaming+security+telecommunications' }
+    ],
+    'Access Point Names (APNs)': [
+        { name: '3GPP APN Standards', url: 'https://www.3gpp.org/specifications-groups/sa-plenary/sa2-architecture' },
+        { name: 'GSMA APN Guidelines', url: 'https://www.gsma.com/iot/apn-guidelines/' },
+        { name: 'DEF CON APN Research', url: 'https://defcon.org/html/defcon-32/dc-32-index.html' }
+    ],
+    'AT Commands': [
+        { name: '3GPP AT Command Standards', url: 'https://www.3gpp.org/specifications-groups/ran-plenary/tsg-ran' },
+        { name: 'ETSI AT Command Standards', url: 'https://www.etsi.org/standards-search?search=AT%20command' },
+        { name: 'Mobile Security Research', url: 'https://www.blackhat.com/us-21/briefings.html#mobile' }
+    ]
+};
+
 // Template replacement function
 function replaceTemplateVariables(template, document, config) {
     let result = template;
@@ -650,6 +719,11 @@ function replaceTemplateVariables(template, document, config) {
     result = result.replace(/\{\{PDF_FILE_PATH\}\}/g, document.filePath);
     result = result.replace(/\{\{PDF_FILE_NAME\}\}/g, document.fileName);
     result = result.replace(/\{\{DOCUMENT_ABSTRACT\}\}/g, document.abstract);
+    result = result.replace(/\{\{DOCUMENT_ID\}\}/g, document.id);
+    
+    // SEO improvements
+    const keyTopicsString = document.keyTopics ? document.keyTopics.join(', ') : '';
+    result = result.replace(/\{\{KEY_TOPICS_STRING\}\}/g, keyTopicsString);
     
     // AdSense configuration
     result = result.replace(/\{\{ADSENSE_PUBLISHER_ID\}\}/g, config.publisherId);

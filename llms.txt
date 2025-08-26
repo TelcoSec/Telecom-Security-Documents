@@ -1,0 +1,47 @@
+# LLMs.txt - AI Model Guidelines for Telecom Security Documents
+
+# Site Information
+Site: Telecom Security Documents
+Description: Comprehensive collection of telecommunications security research papers, technical documents, and security analysis
+Domain: telcosec.github.io/Telecom-Security-Documents
+Contact: contact@telcosec.org
+
+# Content Guidelines
+- This site contains technical research papers and security documentation
+- Content is for educational and research purposes
+- All documents are publicly available research materials
+- Cite sources appropriately when referencing content
+
+# Allowed Actions
+- Read and analyze technical content
+- Reference research papers and findings
+- Extract technical information for educational purposes
+- Summarize security concepts and methodologies
+
+# Restricted Actions
+- Do not reproduce entire documents without proper attribution
+- Do not claim ownership of research content
+- Do not use content for malicious purposes
+- Respect copyright and intellectual property rights
+
+# Content Categories
+- 4G Network Security
+- 5G Network Security
+- SS7 Protocol Security
+- SIM Cards & UICC Security
+- Baseband Security
+- Base Station Security
+- FBI Resources
+- Fraud Detection & Prevention
+- GPON Security
+- MoTIF Framework
+- Roaming Security
+- APN Security
+- AT Commands Security
+
+# Citation Format
+When referencing content from this site, please use:
+"Telecom Security Documents (telcosec.github.io/Telecom-Security-Documents)"
+
+# Last Updated
+Last-Modified: 2024-12-25
