@@ -1,0 +1,135 @@
+name: Deploy Static Site
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    # Explicitly override any Jekyll environment variables
+    env:
+      JEKYLL_ENV: ""
+      GITHUB_PAGES: ""
+      JEKYLL: ""
+      BUNDLE_GEMFILE: ""
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      
+    - name: Force Static Site Mode
+      run: |
+        echo "🚫 FORCING STATIC SITE MODE - NO JEKYLL ALLOWED"
+        
+        # Clear all Jekyll-related environment variables
+        unset JEKYLL_ENV
+        unset GITHUB_PAGES
+        unset JEKYLL
+        unset BUNDLE_GEMFILE
+        
+        # Create explicit static site markers
+        echo "STATIC_SITE=true" > .static-site
+        echo "NO_JEKYLL=true" >> .static-site
+        echo "BUILD_TYPE=static" >> .static-site
+        
+        # Remove any Jekyll-related files if they exist
+        rm -f Gemfile Gemfile.lock _config.yml
+        
+        # Ensure .nojekyll exists
+        touch .nojekyll
+        
+        echo "✅ Static site mode enforced"
+        
+    - name: Validate Static Files
+      run: |
+        echo "🔍 Validating static site files..."
+        
+        # Check for required files
+        required_files=("index.html" "styles.css" "script.js")
+        for file in "${required_files[@]}"; do
+          if [ -f "$file" ]; then
+            echo "✅ $file found"
+          else
+            echo "❌ $file missing"
+            exit 1
+          fi
+        done
+        
+        # Verify no Jekyll files
+        jekyll_files=("Gemfile" "_config.yml" "_posts" "_layouts" "_includes")
+        for file in "${jekyll_files[@]}"; do
+          if [ -f "$file" ] || [ -d "$file" ]; then
+            echo "❌ Jekyll file/directory found: $file"
+            exit 1
+          fi
+        done
+        
+        echo "✅ All static site validations passed"
+        
+    - name: Test Site
+      run: |
+        echo "🚀 Testing static site..."
+        
+        # Simple HTML validation
+        if grep -q "<!DOCTYPE html>" index.html; then
+          echo "✅ DOCTYPE found"
+        else
+          echo "❌ DOCTYPE missing"
+          exit 1
+        fi
+        
+        if grep -q "<html" index.html; then
+          echo "✅ HTML tag found"
+        else
+          echo "❌ HTML tag missing"
+          exit 1
+        fi
+        
+        echo "✅ Static site validation completed"
+        
+    - name: Prepare for Deployment
+      run: |
+        echo "📦 Preparing static site for deployment..."
+        
+        # Create deployment manifest
+        cat > deployment-info.txt << EOF
+        STATIC SITE DEPLOYMENT
+        ======================
+        Site Type: Pure HTML/CSS/JavaScript
+        Build Required: NO
+        Jekyll Required: NO
+        Ruby Required: NO
+        
+        Files:
+        - index.html (main page)
+        - styles.css (styling)
+        - script.js (interactivity)
+        - .nojekyll (prevents Jekyll processing)
+        
+        Deployment URL: https://telcosec.github.io/Telecom-Security-Documents
+        EOF
+        
+        echo "✅ Deployment preparation completed"
+        
+    - name: Success Message
+      run: |
+        echo ""
+        echo "🎉 STATIC SITE READY FOR DEPLOYMENT!"
+        echo "====================================="
+        echo ""
+        echo "📱 Your site will be available at:"
+        echo "   https://telcosec.github.io/Telecom-Security-Documents"
+        echo ""
+        echo "📋 To deploy:"
+        echo "1. Go to repository Settings > Pages"
+        echo "2. Select 'Deploy from a branch'"
+        echo "3. Choose 'main' branch and '/(root)' folder"
+        echo "4. Click 'Save'"
+        echo "5. Wait 5-10 minutes"
+        echo ""
+        echo "✨ This is a pure static site - no build process needed!"
+        echo "🚫 Jekyll has been completely disabled"

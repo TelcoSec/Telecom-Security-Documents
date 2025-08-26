@@ -10,6 +10,12 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     
+    # Explicitly override any Jekyll environment variables
+    env:
+      JEKYLL_ENV: ""
+      GITHUB_PAGES: ""
+      JEKYLL: ""
+    
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -32,6 +38,33 @@ jobs:
           touch .nojekyll
         fi
         echo "✅ No Jekyll files detected"
+        
+        # List all files to debug
+        echo "📁 Current directory contents:"
+        ls -la
+        
+    - name: Force Static Site Configuration
+      run: |
+        echo "🔧 Forcing static site configuration..."
+        
+        # Remove any Jekyll-related environment variables
+        unset JEKYLL_ENV
+        unset GITHUB_PAGES
+        unset JEKYLL
+        
+        # Create explicit static site configuration
+        echo "Static site - no build required" > build.log
+        echo "This is a pure HTML/CSS/JavaScript site" >> build.log
+        
+        # Verify no Jekyll processes are running
+        if pgrep -f jekyll > /dev/null; then
+          echo "❌ Jekyll process detected - stopping it"
+          pkill -f jekyll
+        else
+          echo "✅ No Jekyll processes running"
+        fi
+        
+        echo "✅ Static site configuration enforced"
       
     - name: Setup Node.js
       uses: actions/setup-node@v3
@@ -106,6 +139,7 @@ jobs:
         echo ""
         echo "✨ Your site is ready for GitHub Pages deployment!"
         echo "🚫 This is NOT a Jekyll site - it's a pure static HTML site"
+        echo "🔧 Jekyll environment variables have been cleared"
         
     - name: Comment on PR
       if: github.event_name == 'pull_request'
