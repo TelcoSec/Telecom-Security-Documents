@@ -1,232 +1,201 @@
-# GitHub Pages Setup Guide
+# GitHub Pages Deployment Guide
 
-This guide will help you deploy your Telecom Security Documents repository as a GitHub Pages website.
+This comprehensive guide will help you deploy your Telecom Security Documents repository as a GitHub Pages website.
 
-## 🚀 Quick Setup
+## 🚀 Quick Deployment (Recommended)
 
-### 1. Enable GitHub Pages
+### **Step 1: Enable GitHub Pages**
 
-1. Go to your repository on GitHub
+1. Go to your repository on GitHub: `https://github.com/your-username/Telecom-Security-Documents`
 2. Click on **Settings** tab
-3. Scroll down to **Pages** section
+3. Scroll down to **Pages** section (in the left sidebar)
 4. Under **Source**, select **Deploy from a branch**
 5. Choose **main** branch and **/(root)** folder
 6. Click **Save**
 
-### 2. Configure Repository
+### **Step 2: Wait for Deployment**
 
-Update the following files with your information:
+- GitHub will automatically build and deploy your site
+- You'll see a green checkmark when deployment is complete
+- Your site will be available at: `https://your-username.github.io/Telecom-Security-Documents`
+
+### **Step 3: Verify Deployment**
+
+- Check the **Actions** tab to see deployment status
+- Visit your site URL to ensure everything works correctly
+- Test all navigation links and video modals
+
+## 🔧 Advanced Deployment Options
+
+### **Option A: GitHub Actions (Recommended for Advanced Users)**
+
+The repository includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that will:
+
+- Automatically deploy on every push to main branch
+- Validate HTML files
+- Check for required files
+- Deploy to a `gh-pages` branch
+
+**To use this option:**
+1. The workflow is already configured
+2. Push your changes to the main branch
+3. Check the **Actions** tab to monitor deployment
+4. Update GitHub Pages settings to use `gh-pages` branch as source
+
+### **Option B: Local Testing Before Deployment**
+
+**Prerequisites:**
+- Node.js installed on your system
+- Git configured
+
+**Steps:**
+1. Clone your repository locally
+2. Install dependencies: `npm install`
+3. Start local server: `npm start`
+4. Open http://localhost:8080 in your browser
+5. Test all functionality locally
+6. Push changes and deploy
+
+## ⚙️ Configuration
+
+### **Update Repository Information**
+
+Before deploying, update these files with your information:
 
 #### `_config.yml`
-- Replace `your-username` with your actual GitHub username
-- Update social media links
-- Add your Google Analytics ID (optional)
+```yaml
+# Replace with your actual information
+title: Telecom Security Documents
+description: Your description here
+author: Your Name
+github_username: your-actual-username
+```
 
 #### `index.html`
-- Update the GitHub repository link in the About section
-- Replace placeholder video thumbnails with actual video URLs
+Update the GitHub repository link in the About section:
+```html
+<a href="https://github.com/YOUR_ACTUAL_USERNAME/Telecom-Security-Documents" class="btn btn-outline-light me-3">
+```
 
-### 3. Customize Content
+#### `package.json`
+Update the repository URL and homepage:
+```json
+{
+  "repository": {
+    "url": "https://github.com/YOUR_ACTUAL_USERNAME/Telecom-Security-Documents.git"
+  },
+  "homepage": "https://YOUR_ACTUAL_USERNAME.github.io/Telecom-Security-Documents"
+}
+```
 
-#### Add Real Videos
-Replace the placeholder videos in `index.html` with actual video content:
+### **Add Real Video Content**
+
+Replace placeholder videos in `index.html` with actual video URLs:
 
 ```html
-<!-- Replace placeholder thumbnails -->
-<img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg" alt="Video Title">
-
-<!-- Add actual video URLs to the modal -->
-<div class="video-placeholder">
-    <iframe width="100%" height="400" 
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-            frameborder="0" allowfullscreen>
-    </iframe>
-</div>
-```
-
-#### Update Document Links
-Add direct links to your PDF documents:
-
-```html
-<li>
-    <i class="fas fa-file-pdf"></i> 
-    <a href="4G/4G-Impersonation_24283-paper.pdf" target="_blank">
-        4G-Impersonation_24283-paper.pdf
-    </a>
-</li>
-```
-
-## 🛠️ Local Development
-
-### Prerequisites
-- Ruby 2.7 or higher
-- RubyGems
-- Bundler
-
-### Installation
-
-1. **Install Ruby dependencies:**
-   ```bash
-   bundle install
-   ```
-
-2. **Start local server:**
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-3. **View site:**
-   Open `http://localhost:4000` in your browser
-
-### Development Commands
-
-```bash
-# Build the site
-bundle exec jekyll build
-
-# Serve with live reload
-bundle exec jekyll serve --livereload
-
-# Build for production
-JEKYLL_ENV=production bundle exec jekyll build
-
-# Check for broken links
-bundle exec htmlproofer ./_site
-```
-
-## 📁 File Structure
-
-```
-Telecom-Security-Documents/
-├── index.html              # Main page
-├── styles.css              # Custom styles
-├── script.js               # Interactive features
-├── _config.yml             # Jekyll configuration
-├── Gemfile                 # Ruby dependencies
-├── README.md               # Repository documentation
-├── SETUP.md                # This file
-├── LICENSE                 # License file
-├── 4G/                     # 4G Security documents
-├── 5G/                     # 5G Security documents
-├── APNs/                   # Access Point Names
-├── AT-Commands/            # AT Commands research
-├── Basebands/              # Baseband security
-├── BaseStations/           # Base station catalogs
-├── FBI/                    # FBI resources
-├── Fraud/                  # Fraud detection
-├── GPON/                   # GPON security
-├── MoTIF/                  # MoTIF framework
-├── Roaming/                # Roaming security
-└── SS7/                    # SS7 protocol security
+<!-- Replace placeholder YouTube URLs -->
+<img src="https://img.youtube.com/vi/YOUR_ACTUAL_VIDEO_ID/maxresdefault.jpg" alt="Video Title">
 ```
 
 ## 🎨 Customization
 
-### Colors and Theme
-Edit `styles.css` to customize the appearance:
+### **Styling Customization**
 
-```css
-:root {
-    --primary-color: #007bff;      /* Main brand color */
-    --secondary-color: #6c757d;    /* Secondary text */
-    --success-color: #28a745;      /* Success states */
-    --warning-color: #ffc107;      /* Warning states */
-    --danger-color: #dc3545;       /* Error states */
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-dark: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-}
-```
+Edit `styles.css` to customize:
+- **Colors**: Update CSS variables in `:root` section
+- **Typography**: Modify font families and sizes
+- **Layout**: Adjust spacing and grid systems
+- **Animations**: Customize transitions and effects
 
-### Adding New Categories
-1. Create a new directory for your category
-2. Add documents to the directory
-3. Update `index.html` with a new category card
-4. Update the statistics in the overview section
+### **Content Updates**
 
-### Adding New Videos
-1. Add video thumbnail and metadata to the videos section
-2. Update the video modal with actual embed code
-3. Update the video count in statistics
+- **Add new categories**: Update both `index.html` and `README.md`
+- **Update statistics**: Modify document counts in both files
+- **Add videos**: Include new video cards in the videos section
+- **Modify descriptions**: Update category descriptions and overview text
 
-## 🔧 Advanced Configuration
+### **SEO Optimization**
 
-### SEO Optimization
-Update `_config.yml` with proper SEO settings:
-
-```yaml
-seo:
-  title: "Your Custom Title"
-  description: "Your custom description"
-  keywords: "your, keywords, here"
-  author: "Your Name"
-  image: "/path/to/og-image.jpg"
-```
-
-### Analytics
-Add Google Analytics:
-
-```yaml
-google_analytics: UA-XXXXXXXX-X
-```
-
-### Custom Domain
-1. Add a `CNAME` file to your repository root
-2. Add your domain name to the file
-3. Configure DNS settings with your domain provider
-4. Update `_config.yml` with your domain
-
-## 🚀 Deployment
-
-### Automatic Deployment
-GitHub Pages automatically builds and deploys your site when you push to the main branch.
-
-### Manual Deployment
-If you need to deploy manually:
-
-```bash
-# Build the site
-bundle exec jekyll build
-
-# Push to GitHub
-git add .
-git commit -m "Update site"
-git push origin main
-```
+Update `_config.yml` with:
+- Site title and meta description
+- Author and social media information
+- Google Analytics tracking ID (optional)
+- Open Graph and Twitter Card meta tags
 
 ## 🔍 Troubleshooting
 
-### Common Issues
+### **Common Issues and Solutions**
 
-1. **Site not updating:**
-   - Check GitHub Actions for build errors
-   - Verify `_config.yml` syntax
-   - Clear browser cache
+| Issue | Solution |
+|-------|----------|
+| **Site not updating** | Wait 5-10 minutes for GitHub Pages to rebuild |
+| **404 errors** | Check file paths are correct and case-sensitive |
+| **Styling not loading** | Verify `styles.css` is properly linked |
+| **JavaScript errors** | Check browser console and verify `script.js` reference |
+| **Videos not working** | Ensure video URLs are valid and accessible |
+| **Mobile responsiveness** | Test on different screen sizes |
 
-2. **Styles not loading:**
-   - Check file paths in `index.html`
-   - Verify CSS file is in the root directory
-   - Check for syntax errors in `styles.css`
+### **Performance Optimization**
 
-3. **JavaScript not working:**
-   - Check browser console for errors
-   - Verify `script.js` is properly linked
-   - Test on different browsers
+1. **Image Optimization**
+   - Compress images before uploading
+   - Use appropriate formats (WebP, JPEG, PNG)
+   - Optimize thumbnail sizes
 
-4. **Images not displaying:**
-   - Check file paths and permissions
-   - Verify image files are committed to repository
-   - Use relative paths for local images
+2. **Code Optimization**
+   - Minify CSS and JavaScript for production
+   - Use CDNs for external libraries
+   - Enable gzip compression
 
-### Build Errors
-Check the GitHub Actions tab for detailed error messages and fix accordingly.
+3. **Caching**
+   - Set appropriate cache headers
+   - Use browser caching for static assets
+   - Implement service workers (advanced)
 
-## 📞 Support
+## 📊 Monitoring and Analytics
 
-For issues with:
-- **GitHub Pages:** Check [GitHub Pages documentation](https://pages.github.com/)
-- **Jekyll:** Check [Jekyll documentation](https://jekyllrb.com/)
-- **This site:** Open an issue in the repository
+### **GitHub Pages Analytics**
 
-## 📝 License
+- Monitor deployment status in **Actions** tab
+- Check site performance in **Insights** tab
+- Review traffic analytics in **Settings > Pages**
 
-This setup guide is part of the Telecom Security Documents repository and is licensed under the Apache License 2.0.
+### **External Analytics (Optional)**
+
+Add Google Analytics by updating `_config.yml`:
+```yaml
+google_analytics: YOUR_GA_TRACKING_ID
+```
+
+## 🚀 Post-Deployment Checklist
+
+- [ ] Site loads correctly at the GitHub Pages URL
+- [ ] All navigation links work properly
+- [ ] Video modals function correctly
+- [ ] Mobile responsiveness is working
+- [ ] All document categories are displayed
+- [ ] Statistics are accurate
+- [ ] Custom domain is configured (if applicable)
+- [ ] Analytics are tracking (if enabled)
+
+## 📚 Additional Resources
+
+- [GitHub Pages Documentation](https://pages.github.com/)
+- [Jekyll Documentation](https://jekyllrb.com/docs/)
+- [Bootstrap Documentation](https://getbootstrap.com/docs/)
+- [Font Awesome Icons](https://fontawesome.com/icons)
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+
+## 🆘 Getting Help
+
+If you encounter issues:
+
+1. Check the **Actions** tab for deployment errors
+2. Review browser console for JavaScript errors
+3. Validate HTML using online tools
+4. Test locally using `npm start`
+5. Check GitHub Pages status page
+
+---
+
+**Note**: This site uses static HTML/CSS/JavaScript and doesn't require a build process. Simply enable GitHub Pages in your repository settings to deploy.
