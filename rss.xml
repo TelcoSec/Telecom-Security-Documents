@@ -3,29 +3,21 @@
     <channel>
         <title>Telecom Security Documents</title>
         <link>https://telcosec.github.io/Telecom-Security-Documents</link>
-        <description>Comprehensive collection of telecommunications security research papers, technical documents, and security analysis</description>
+        <description>Comprehensive collection of telecommunications security research papers, technical documents, and security analysis for professionals, researchers, and industry experts</description>
         <language>en-us</language>
-        <lastBuildDate>Tue, 26 Aug 2025 06:33:09 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 26 Aug 2025 17:09:43 GMT</lastBuildDate>
         <atom:link href="https://telcosec.github.io/Telecom-Security-Documents/rss.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>4G Network Security Overview</title>
-            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/4g-security-overview.html</link>
-            <description>Comprehensive overview of 4G network security architecture and protocols</description>
+            <title>4G LTE Impersonation Attack Analysis</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/4g-impersonation-attack.html</link>
+            <description>Comprehensive analysis of 4G LTE impersonation attacks and countermeasures</description>
             <category>4G Network Security</category>
             <pubDate>Mon, 15 Jan 2024 00:00:00 GMT</pubDate>
-            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/4g-security-overview.html</guid>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/4g-impersonation-attack.html</guid>
         </item>
         <item>
-            <title>4G Authentication Protocols</title>
-            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/4g-authentication.html</link>
-            <description>Detailed analysis of LTE authentication mechanisms and security</description>
-            <category>4G Network Security</category>
-            <pubDate>Sat, 20 Jan 2024 00:00:00 GMT</pubDate>
-            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/4g-authentication.html</guid>
-        </item>
-        <item>
-            <title>5G Security Analysis and Threat Assessment</title>
+            <title>5G Network Security Analysis and Threat Assessment</title>
             <link>https://telcosec.github.io/Telecom-Security-Documents/documents/5g-security-analysis.html</link>
             <description>Comprehensive analysis of 5G network security architecture and emerging threats</description>
             <category>5G Network Security</category>
@@ -33,7 +25,7 @@
             <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/5g-security-analysis.html</guid>
         </item>
         <item>
-            <title>5G Network Slicing Security</title>
+            <title>5G Network Slicing Security Analysis</title>
             <link>https://telcosec.github.io/Telecom-Security-Documents/documents/5g-network-slicing.html</link>
             <description>Security considerations and vulnerabilities in 5G network slicing</description>
             <category>5G Network Security</category>
@@ -41,9 +33,9 @@
             <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/5g-network-slicing.html</guid>
         </item>
         <item>
-            <title>SS7 Protocol Security Vulnerabilities</title>
+            <title>SS7 Protocol Security Vulnerabilities and Attack Analysis</title>
             <link>https://telcosec.github.io/Telecom-Security-Documents/documents/ss7-security.html</link>
-            <description>Analysis of SS7 protocol vulnerabilities and attack vectors</description>
+            <description>Comprehensive analysis of SS7 protocol vulnerabilities and attack vectors</description>
             <category>SS7 Protocol Security</category>
             <pubDate>Wed, 10 Jan 2024 00:00:00 GMT</pubDate>
             <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/ss7-security.html</guid>

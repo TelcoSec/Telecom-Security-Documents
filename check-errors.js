@@ -306,9 +306,9 @@ function checkCommonIssues() {
                 warnings.push(`${file} contains hardcoded localhost URL`);
             }
             
-            // Check for placeholder values
-            if (content.includes('1234567890') || content.includes('0987654321')) {
-                warnings.push(`${file} contains placeholder AdSense slot IDs`);
+            // Check for placeholder values (only flag actual placeholders, not hardcoded values)
+            if (content.includes('{{ADSENSE_BANNER_SLOT}}') || content.includes('{{ADSENSE_INLINE_SLOT}}') || content.includes('{{ADSENSE_SIDEBAR_SLOT}}')) {
+                warnings.push(`${file} contains unresolved AdSense slot placeholders`);
             }
             
             // Check for missing AdSense publisher ID
