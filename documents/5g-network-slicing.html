@@ -69,16 +69,14 @@
         "datePublished": "2024-02-15",
         "dateModified": "2024-02-15",
         "author": [
-            {{#each RESEARCHERS}}
             {
                 "@type": "Person",
-                "name": "{{name}}",
+                "name": "Dr. Robert Chen",
                 "affiliation": {
                     "@type": "Organization",
-                    "name": "{{affiliation}}"
+                    "name": "NIST"
                 }
-            }{{#unless @last}},{{/unless}}
-            {{/each}}
+            }
         ],
         "publisher": {
             "@type": "Organization",

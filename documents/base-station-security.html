@@ -69,16 +69,14 @@
         "datePublished": "2024-01-30",
         "dateModified": "2024-01-30",
         "author": [
-            {{#each RESEARCHERS}}
             {
                 "@type": "Person",
-                "name": "{{name}}",
+                "name": "Dr. Kevin Brown",
                 "affiliation": {
                     "@type": "Organization",
-                    "name": "{{affiliation}}"
+                    "name": "3GPP Security"
                 }
-            }{{#unless @last}},{{/unless}}
-            {{/each}}
+            }
         ],
         "publisher": {
             "@type": "Organization",

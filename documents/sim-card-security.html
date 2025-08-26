@@ -69,16 +69,14 @@
         "datePublished": "2024-01-25",
         "dateModified": "2024-01-25",
         "author": [
-            {{#each RESEARCHERS}}
             {
                 "@type": "Person",
-                "name": "{{name}}",
+                "name": "Dr. James Wilson",
                 "affiliation": {
                     "@type": "Organization",
-                    "name": "{{affiliation}}"
+                    "name": "GSMA Security"
                 }
-            }{{#unless @last}},{{/unless}}
-            {{/each}}
+            }
         ],
         "publisher": {
             "@type": "Organization",

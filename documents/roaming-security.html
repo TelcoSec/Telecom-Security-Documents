@@ -69,16 +69,14 @@
         "datePublished": "2024-01-15",
         "dateModified": "2024-01-15",
         "author": [
-            {{#each RESEARCHERS}}
             {
                 "@type": "Person",
-                "name": "{{name}}",
+                "name": "Dr. Thomas Lee",
                 "affiliation": {
                     "@type": "Organization",
-                    "name": "{{affiliation}}"
+                    "name": "GSMA Roaming"
                 }
-            }{{#unless @last}},{{/unless}}
-            {{/each}}
+            }
         ],
         "publisher": {
             "@type": "Organization",

@@ -69,16 +69,14 @@
         "datePublished": "2024-01-20",
         "dateModified": "2024-01-20",
         "author": [
-            {{#each RESEARCHERS}}
             {
                 "@type": "Person",
-                "name": "{{name}}",
+                "name": "Dr. Carlos Rodriguez",
                 "affiliation": {
                     "@type": "Organization",
-                    "name": "{{affiliation}}"
+                    "name": "ITU-T"
                 }
-            }{{#unless @last}},{{/unless}}
-            {{/each}}
+            }
         ],
         "publisher": {
             "@type": "Organization",

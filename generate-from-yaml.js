@@ -78,8 +78,15 @@ function replaceTemplateVariables(template, document, config) {
             </div>
         `).join('');
         result = result.replace(/\{\{RESEARCHERS\}\}/g, researchersHtml);
+        
+        // Set first researcher for structured data
+        const firstResearcher = document.researchers[0];
+        result = result.replace(/\{\{RESEARCHER_NAME\}\}/g, firstResearcher.name);
+        result = result.replace(/\{\{RESEARCHER_AFFILIATION\}\}/g, firstResearcher.affiliation);
     } else {
         result = result.replace(/\{\{RESEARCHERS\}\}/g, '');
+        result = result.replace(/\{\{RESEARCHER_NAME\}\}/g, 'Telecom Security Team');
+        result = result.replace(/\{\{RESEARCHER_AFFILIATION\}\}/g, 'Telecom Security');
     }
     
     // Related videos
