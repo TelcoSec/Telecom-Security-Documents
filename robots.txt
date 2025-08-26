@@ -1,22 +1,55 @@
+# Enhanced Robots.txt for Telecom Security Library
+# Optimized for production SEO and search engine crawling
+
+# Allow all search engines to crawl the site
 User-agent: *
 Allow: /
 
-# Allow all search engines to crawl the site
+# Specific search engine optimizations
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Slurp
 Allow: /
+Crawl-delay: 1
 
-# Disallow crawling of specific directories
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+# Disallow crawling of development and system files
 Disallow: /node_modules/
 Disallow: /.git/
 Disallow: /.github/
+Disallow: /bash.exe.stackdump
+Disallow: /*.stackdump
+Disallow: /check-errors.js
+Disallow: /generate-*.js
+Disallow: /optimize-images.js
+Disallow: /adsense-config.js
 
-# Allow crawling of document directories
+# Disallow crawling of content management files
+Disallow: /content/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /SETUP.md
+Disallow: /ENHANCED-SETUP.md
+Disallow: /DYNAMIC-PAGES.md
+
+# Allow crawling of document directories and content
 Allow: /4G/
 Allow: /5G/
 Allow: /APNs/
@@ -30,9 +63,22 @@ Allow: /MoTIF/
 Allow: /Roaming/
 Allow: /SIM_Cards/
 Allow: /SS7/
+Allow: /VoIP/
+Allow: /2G/
 
-# Sitemap location
+# Allow crawling of generated document pages
+Allow: /documents/
+Allow: /images/
+Allow: /videos/
+
+# Sitemap locations for better indexing
 Sitemap: https://telcosec.github.io/Telecom-Security-Documents/sitemap.xml
+Sitemap: https://telcosec.github.io/Telecom-Security-Documents/sitemap-images.xml
+Sitemap: https://telcosec.github.io/Telecom-Security-Documents/sitemap-videos.xml
+Sitemap: https://telcosec.github.io/Telecom-Security-Documents/sitemap-index.xml
 
-# Crawl delay (optional)
+# Host directive for canonical domain
+Host: https://telcosec.github.io
+
+# Crawl delay for all bots (respectful crawling)
 Crawl-delay: 1
