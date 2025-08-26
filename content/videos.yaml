@@ -1,0 +1,445 @@
+# Telecom Security Videos Content
+# This file contains all video metadata and content for the videos page
+
+videos:
+  # Featured Videos
+  - id: "featured-1"
+    title: "5G Security Architecture Deep Dive"
+    description: "Comprehensive overview of 5G security architecture, network slicing, and emerging threats"
+    youtubeId: "jNQXAC9IVRw"
+    category: "5G Network Security"
+    categoryAnchor: "5g"
+    duration: "45:32"
+    speaker: "Dr. Emily Wang"
+    affiliation: "Carnegie Mellon University"
+    date: "2024-02-15"
+    tags:
+      - "5G Security"
+      - "Network Architecture"
+      - "Network Slicing"
+      - "Threat Analysis"
+    featured: true
+    thumbnail: "https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg"
+    viewCount: "125,430"
+    likeCount: "2,847"
+
+  - id: "featured-2"
+    title: "SS7 Protocol Attack Demonstration"
+    description: "Live demonstration of SS7 protocol vulnerabilities and attack techniques"
+    youtubeId: "dQw4w9WgXcQ"
+    category: "SS7 Protocol Security"
+    categoryAnchor: "ss7"
+    duration: "38:15"
+    speaker: "Dr. Maria Garcia"
+    affiliation: "Black Hat Security Research"
+    date: "2024-01-20"
+    tags:
+      - "SS7 Protocol"
+      - "Attack Demonstration"
+      - "Call Interception"
+      - "SMS Manipulation"
+    featured: true
+    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+    viewCount: "89,234"
+    likeCount: "1,923"
+
+  - id: "featured-3"
+    title: "SIM Card Security Analysis"
+    description: "Technical analysis of SIM card vulnerabilities and physical attack vectors"
+    youtubeId: "9bZkp7q19f0"
+    category: "SIM Cards & UICC Security"
+    categoryAnchor: "sim-cards"
+    duration: "52:18"
+    speaker: "Dr. James Wilson"
+    affiliation: "GSMA Security"
+    date: "2024-01-25"
+    tags:
+      - "SIM Cards"
+      - "UICC Security"
+      - "Physical Attacks"
+      - "Hardware Security"
+    featured: true
+    thumbnail: "https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg"
+    viewCount: "67,891"
+    likeCount: "1,456"
+
+  # 4G Network Security Videos
+  - id: "4g-1"
+    title: "4G LTE Authentication Protocol Analysis"
+    description: "Deep dive into 4G LTE authentication protocols and security vulnerabilities"
+    youtubeId: "kJQP7kiw5Fk"
+    category: "4G Network Security"
+    categoryAnchor: "4g"
+    duration: "41:27"
+    speaker: "Dr. Sarah Chen"
+    affiliation: "Stanford University"
+    date: "2024-01-15"
+    tags:
+      - "4G LTE"
+      - "Authentication"
+      - "Protocol Analysis"
+      - "Security Vulnerabilities"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+    viewCount: "45,123"
+    likeCount: "987"
+
+  - id: "4g-2"
+    title: "LTE Impersonation Attack Techniques"
+    description: "Advanced techniques for LTE impersonation attacks and countermeasures"
+    youtubeId: "jNQXAC9IVRw"
+    category: "4G Network Security"
+    categoryAnchor: "4g"
+    duration: "35:42"
+    speaker: "Prof. Michael Rodriguez"
+    affiliation: "MIT Computer Science"
+    date: "2024-01-10"
+    tags:
+      - "LTE Attacks"
+      - "Impersonation"
+      - "Attack Techniques"
+      - "Countermeasures"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg"
+    viewCount: "32,456"
+    likeCount: "756"
+
+  # 5G Network Security Videos
+  - id: "5g-1"
+    title: "5G Network Slicing Security Implementation"
+    description: "Practical implementation of secure 5G network slicing with isolation mechanisms"
+    youtubeId: "dQw4w9WgXcQ"
+    category: "5G Network Security"
+    categoryAnchor: "5g"
+    duration: "48:33"
+    speaker: "Dr. Robert Chen"
+    affiliation: "NIST Cybersecurity"
+    date: "2024-02-10"
+    tags:
+      - "5G Network Slicing"
+      - "Security Implementation"
+      - "Isolation Mechanisms"
+      - "Best Practices"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+    viewCount: "56,789"
+    likeCount: "1,234"
+
+  - id: "5g-2"
+    title: "5G IoT Security Challenges"
+    description: "Security challenges and solutions for 5G IoT deployments"
+    youtubeId: "9bZkp7q19f0"
+    category: "5G Network Security"
+    categoryAnchor: "5g"
+    duration: "39:15"
+    speaker: "Dr. Lisa Thompson"
+    affiliation: "NIST Cybersecurity"
+    date: "2024-02-05"
+    tags:
+      - "5G IoT"
+      - "IoT Security"
+      - "Security Challenges"
+      - "Deployment Security"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg"
+    viewCount: "43,567"
+    likeCount: "892"
+
+  # SS7 Protocol Security Videos
+  - id: "ss7-1"
+    title: "SS7 Security Overview and Mitigation"
+    description: "Comprehensive overview of SS7 security vulnerabilities and mitigation strategies"
+    youtubeId: "jNQXAC9IVRw"
+    category: "SS7 Protocol Security"
+    categoryAnchor: "ss7"
+    duration: "44:21"
+    speaker: "Prof. James Wilson"
+    affiliation: "University of Maryland"
+    date: "2024-01-08"
+    tags:
+      - "SS7 Security"
+      - "Vulnerabilities"
+      - "Mitigation Strategies"
+      - "Protocol Security"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg"
+    viewCount: "38,901"
+    likeCount: "654"
+
+  # Baseband Security Videos
+  - id: "baseband-1"
+    title: "Baseband Processor Security Analysis"
+    description: "Analysis of baseband processor vulnerabilities and exploitation techniques"
+    youtubeId: "kJQP7kiw5Fk"
+    category: "Baseband Security"
+    categoryAnchor: "baseband"
+    duration: "51:47"
+    speaker: "Dr. Lisa Thompson"
+    affiliation: "USENIX Security"
+    date: "2024-02-05"
+    tags:
+      - "Baseband Processors"
+      - "Hardware Security"
+      - "Exploitation Techniques"
+      - "Device Security"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+    viewCount: "29,876"
+    likeCount: "543"
+
+  - id: "baseband-2"
+    title: "Mobile Device Firmware Security"
+    description: "Security analysis of mobile device firmware and protection mechanisms"
+    youtubeId: "dQw4w9WgXcQ"
+    category: "Baseband Security"
+    categoryAnchor: "baseband"
+    duration: "36:54"
+    speaker: "Dr. Carlos Rodriguez"
+    affiliation: "Mobile Security Labs"
+    date: "2024-01-30"
+    tags:
+      - "Firmware Security"
+      - "Mobile Devices"
+      - "Protection Mechanisms"
+      - "Device Security"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+    viewCount: "25,432"
+    likeCount: "432"
+
+  # Base Station Security Videos
+  - id: "base-station-1"
+    title: "Base Station Physical Security"
+    description: "Physical security measures for protecting base station infrastructure"
+    youtubeId: "9bZkp7q19f0"
+    category: "Base Stations"
+    categoryAnchor: "base-stations"
+    duration: "42:18"
+    speaker: "Dr. Kevin Brown"
+    affiliation: "3GPP Security"
+    date: "2024-01-30"
+    tags:
+      - "Base Stations"
+      - "Physical Security"
+      - "Infrastructure Protection"
+      - "Access Control"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg"
+    viewCount: "21,345"
+    likeCount: "345"
+
+  # Fraud Detection Videos
+  - id: "fraud-1"
+    title: "Telecom Fraud Detection with Machine Learning"
+    description: "Machine learning approaches for detecting and preventing telecom fraud"
+    youtubeId: "jNQXAC9IVRw"
+    category: "Fraud Detection & Prevention"
+    categoryAnchor: "fraud"
+    duration: "47:23"
+    speaker: "Dr. Rachel Green"
+    affiliation: "Stanford University"
+    date: "2024-02-10"
+    tags:
+      - "Fraud Detection"
+      - "Machine Learning"
+      - "Pattern Recognition"
+      - "Anomaly Detection"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg"
+    viewCount: "34,567"
+    likeCount: "678"
+
+  # GPON Security Videos
+  - id: "gpon-1"
+    title: "GPON Network Security Vulnerabilities"
+    description: "Analysis of GPON network vulnerabilities and attack vectors"
+    youtubeId: "kJQP7kiw5Fk"
+    category: "GPON Security"
+    categoryAnchor: "gpon"
+    duration: "40:12"
+    speaker: "Dr. Carlos Rodriguez"
+    affiliation: "ITU-T"
+    date: "2024-01-20"
+    tags:
+      - "GPON Networks"
+      - "Fiber Security"
+      - "Network Vulnerabilities"
+      - "Attack Vectors"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+    viewCount: "18,901"
+    likeCount: "234"
+
+  # MoTIF Framework Videos
+  - id: "motif-1"
+    title: "MoTIF Framework Implementation Guide"
+    description: "Step-by-step guide to implementing the GSMA MoTIF threat intelligence framework"
+    youtubeId: "dQw4w9WgXcQ"
+    category: "MoTIF Framework"
+    categoryAnchor: "motif"
+    duration: "53:45"
+    speaker: "Dr. Rachel Green"
+    affiliation: "GSMA Security"
+    date: "2024-02-01"
+    tags:
+      - "MoTIF Framework"
+      - "Threat Intelligence"
+      - "Implementation Guide"
+      - "Mobile Security"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+    viewCount: "27,890"
+    likeCount: "456"
+
+  # Roaming Security Videos
+  - id: "roaming-1"
+    title: "International Roaming Security Challenges"
+    description: "Security challenges in international roaming services and cross-border attacks"
+    youtubeId: "9bZkp7q19f0"
+    category: "Roaming Security"
+    categoryAnchor: "roaming"
+    duration: "45:33"
+    speaker: "Dr. Thomas Lee"
+    affiliation: "GSMA Roaming"
+    date: "2024-01-15"
+    tags:
+      - "International Roaming"
+      - "Cross-Border Security"
+      - "Roaming Challenges"
+      - "Service Security"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg"
+    viewCount: "22,456"
+    likeCount: "345"
+
+  # APN Security Videos
+  - id: "apn-1"
+    title: "APN Configuration Security Best Practices"
+    description: "Best practices for securing APN configurations and preventing attacks"
+    youtubeId: "jNQXAC9IVRw"
+    category: "Access Point Names (APNs)"
+    categoryAnchor: "apns"
+    duration: "38:27"
+    speaker: "Dr. Patricia White"
+    affiliation: "3GPP Security"
+    date: "2024-02-05"
+    tags:
+      - "APN Security"
+      - "Configuration Security"
+      - "Best Practices"
+      - "Data Services"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg"
+    viewCount: "19,876"
+    likeCount: "234"
+
+  # AT Commands Videos
+  - id: "at-commands-1"
+    title: "AT Command Fuzzing Techniques"
+    description: "Advanced fuzzing techniques for mobile device security testing"
+    youtubeId: "kJQP7kiw5Fk"
+    category: "AT Commands"
+    categoryAnchor: "at-commands"
+    duration: "49:18"
+    speaker: "Dr. Carlos Rodriguez"
+    affiliation: "Mobile Security Labs"
+    date: "2024-01-25"
+    tags:
+      - "AT Commands"
+      - "Fuzzing Techniques"
+      - "Mobile Security"
+      - "Device Testing"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+    viewCount: "16,789"
+    likeCount: "234"
+
+# Video Categories Configuration
+categories:
+  - name: "Featured Videos"
+    anchor: "featured"
+    description: "Highlighted videos showcasing key telecom security concepts"
+    icon: "fas fa-star"
+    color: "#ffc107"
+    
+  - name: "4G Network Security"
+    anchor: "4g"
+    description: "LTE security architecture, authentication protocols, and vulnerabilities"
+    icon: "fas fa-signal"
+    color: "#007bff"
+    
+  - name: "5G Network Security"
+    anchor: "5g"
+    description: "5G network slicing, security architecture, and threat analysis"
+    icon: "fas fa-wifi"
+    color: "#28a745"
+    
+  - name: "SS7 Protocol Security"
+    anchor: "ss7"
+    description: "SS7 vulnerabilities, attack vectors, and mitigation strategies"
+    icon: "fas fa-exchange-alt"
+    color: "#dc3545"
+    
+  - name: "SIM Cards & UICC Security"
+    anchor: "sim-cards"
+    description: "SIM card vulnerabilities, UICC security, and physical attacks"
+    icon: "fas fa-mobile-alt"
+    color: "#ffc107"
+    
+  - name: "Baseband Security"
+    anchor: "baseband"
+    description: "Baseband processor vulnerabilities and exploitation techniques"
+    icon: "fas fa-microchip"
+    color: "#17a2b8"
+    
+  - name: "Base Stations"
+    anchor: "base-stations"
+    description: "Base station security, physical attacks, and network access"
+    icon: "fas fa-broadcast-tower"
+    color: "#6f42c1"
+    
+  - name: "Fraud Detection & Prevention"
+    anchor: "fraud"
+    description: "Telecom fraud detection methods and prevention strategies"
+    icon: "fas fa-search-dollar"
+    color: "#e83e8c"
+    
+  - name: "GPON Security"
+    anchor: "gpon"
+    description: "GPON network vulnerabilities and security analysis"
+    icon: "fas fa-fiber"
+    color: "#20c997"
+    
+  - name: "MoTIF Framework"
+    anchor: "motif"
+    description: "GSMA MoTIF mobile threat intelligence framework"
+    icon: "fas fa-brain"
+    color: "#6c757d"
+    
+  - name: "Roaming Security"
+    anchor: "roaming"
+    description: "International roaming security and vulnerabilities"
+    icon: "fas fa-globe"
+    color: "#007bff"
+    
+  - name: "Access Point Names (APNs)"
+    anchor: "apns"
+    description: "APN security and configuration vulnerabilities"
+    icon: "fas fa-network-wired"
+    color: "#28a745"
+    
+  - name: "AT Commands"
+    anchor: "at-commands"
+    description: "AT command fuzzing and mobile device security"
+    icon: "fas fa-terminal"
+    color: "#dc3545"
+
+# Video Page Configuration
+page:
+  title: "Telecom Security Videos"
+  description: "Comprehensive collection of educational videos, conference presentations, and expert interviews on telecommunications security"
+  featuredCount: 3
+  videosPerPage: 12
+  enableSearch: true
+  enableFiltering: true
+  enableSorting: true

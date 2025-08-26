@@ -8,6 +8,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    margin-top: 76px;
 }
 
 .about-hero::before {
@@ -36,21 +37,17 @@
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-5px);
 }
 
 .stat-item h3 {
     font-size: 2.5rem;
     margin-bottom: 5px;
-}
-
-.hero-image {
-    text-align: center;
-    animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
 }
 
 /* Section Titles */
@@ -76,163 +73,272 @@
 
 /* Mission Section */
 .mission-section {
-    padding: 60px 0;
     background: #f8f9fa;
-    border-radius: 15px;
-    margin: 40px 0;
 }
 
-.mission-section .lead {
-    font-size: 1.3rem;
-    line-height: 1.8;
-    color: #6c757d;
-}
-
-/* Offerings Section */
-.offering-card {
+.mission-card {
+    background: white;
     padding: 30px 20px;
     border-radius: 15px;
-    background: white;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
     transition: all 0.3s ease;
     height: 100%;
-    border: 1px solid #e9ecef;
 }
 
-.offering-card:hover {
+.mission-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
     border-color: #667eea;
 }
 
-.offering-icon {
-    margin-bottom: 20px;
+.mission-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
 }
 
-.offering-card h4 {
+.mission-card:hover .mission-icon {
+    transform: scale(1.1);
+}
+
+.mission-icon i {
+    color: white;
+    font-size: 2rem;
+}
+
+.mission-card h4 {
     color: #2c3e50;
+    font-weight: 600;
     margin-bottom: 15px;
-    font-weight: 600;
 }
 
-.offering-card p {
+.mission-card p {
+    color: #6c757d;
     line-height: 1.6;
-    margin-bottom: 0;
-}
-
-/* Categories Overview */
-.category-overview {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
-    border: 1px solid #e9ecef;
-    height: 100%;
-}
-
-.category-overview h4 {
-    color: #2c3e50;
-    margin-bottom: 20px;
-    font-weight: 600;
-    border-bottom: 2px solid #e9ecef;
-    padding-bottom: 10px;
-}
-
-.category-overview ul li {
-    padding: 8px 0;
-    border-bottom: 1px solid #f8f9fa;
-    transition: all 0.2s ease;
-}
-
-.category-overview ul li:hover {
-    color: #667eea;
-    transform: translateX(5px);
-}
-
-.category-overview ul li:last-child {
-    border-bottom: none;
+    margin: 0;
 }
 
 /* Team Section */
+.team-section {
+    background: #f8f9fa;
+}
+
 .team-card {
     background: white;
-    padding: 30px 20px;
     border-radius: 15px;
+    overflow: hidden;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     border: 1px solid #e9ecef;
     transition: all 0.3s ease;
     height: 100%;
+    padding: 30px 20px;
+    text-align: center;
 }
 
 .team-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
     border-color: #667eea;
 }
 
 .team-avatar {
-    margin-bottom: 20px;
-}
-
-.team-card h5 {
-    color: #2c3e50;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-.team-card p {
-    line-height: 1.6;
-    margin-bottom: 0;
-}
-
-/* Contact Section */
-.contact-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.contact-card h3 {
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-.contact-card p {
-    margin-bottom: 30px;
-    opacity: 0.9;
-    font-size: 1.1rem;
-}
-
-.contact-methods .btn {
-    padding: 12px 24px;
-    font-weight: 600;
-    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
     transition: all 0.3s ease;
 }
 
-.contact-methods .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+.team-card:hover .team-avatar {
+    transform: scale(1.1);
+}
+
+.team-avatar i {
+    color: white;
+    font-size: 3rem;
+}
+
+.team-info h4 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.team-role {
+    color: #667eea;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.team-affiliation {
+    color: #6c757d;
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.team-bio {
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.team-expertise {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.team-expertise .badge {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+}
+
+/* Values Section */
+.values-section {
+    background: white;
+}
+
+.value-card {
+    background: #f8f9fa;
+    padding: 30px 20px;
+    border-radius: 15px;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.value-card:hover {
+    background: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-color: #667eea;
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+    transform: scale(1.1);
+}
+
+.value-icon i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.value-card h5 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    color: #6c757d;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #f8f9fa;
+}
+
+.contact-item {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-color: #667eea;
+}
+
+.contact-item h5 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    color: #6c757d;
+    margin: 0;
+    font-weight: 500;
 }
 
 /* AdSense Styles */
-.ad-banner, .ad-inline {
+.ad-banner {
     background: #f8f9fa;
     border: 1px dashed #dee2e6;
     border-radius: 8px;
     padding: 20px;
     text-align: center;
     margin: 20px 0;
-}
-
-.ad-banner {
     min-height: 90px;
 }
 
-.ad-inline {
-    min-height: 250px;
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.6s ease;
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.6s ease;
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 /* Responsive Design */
@@ -240,6 +346,7 @@
     .about-hero {
         min-height: auto;
         padding: 100px 0 60px;
+        margin-top: 76px;
     }
     
     .about-hero h1 {
@@ -258,23 +365,38 @@
         font-size: 2rem;
     }
     
-    .mission-section {
-        padding: 40px 20px;
-        margin: 20px 0;
+    .mission-card,
+    .team-card,
+    .value-card,
+    .contact-item {
+        margin-bottom: 20px;
     }
     
-    .offering-card, .team-card {
-        margin-bottom: 30px;
+    .team-avatar {
+        width: 80px;
+        height: 80px;
     }
     
-    .contact-card {
-        padding: 30px 20px;
+    .team-avatar i {
+        font-size: 2.5rem;
     }
     
-    .contact-methods .btn {
-        display: block;
-        width: 100%;
-        margin-bottom: 15px;
+    .mission-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .mission-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .value-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .value-icon i {
+        font-size: 1.2rem;
     }
 }
 
@@ -283,30 +405,33 @@
         font-size: 2rem;
     }
     
-    .hero-image i {
-        font-size: 8rem !important;
-    }
-    
     .section-title {
         font-size: 1.8rem;
     }
-}
-
-/* Animation Classes */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+    
+    .mission-card,
+    .team-card,
+    .value-card,
+    .contact-item {
+        padding: 20px 15px;
+    }
+    
+    .team-bio {
+        font-size: 0.85rem;
+    }
+    
+    .value-card p {
+        font-size: 0.85rem;
+    }
+    
+    .hero-stats .row > div {
+        margin-bottom: 15px;
+    }
 }
 
 /* Print Styles */
 @media print {
-    .ad-banner, .ad-inline {
+    .ad-banner {
         display: none;
     }
     
@@ -316,14 +441,14 @@
         min-height: auto;
     }
     
-    .hero-image {
-        display: none;
-    }
-    
-    .contact-card {
-        background: white !important;
-        color: black !important;
-        border: 1px solid #ddd;
+    .mission-card,
+    .team-card,
+    .value-card,
+    .contact-item {
+        break-inside: avoid;
+        margin-bottom: 20px;
+        box-shadow: none;
+        border: 1px solid #ccc;
     }
 }
 
@@ -345,29 +470,133 @@
     top: 6px;
 }
 
+/* Focus styles for keyboard navigation */
+.mission-card:focus,
+.team-card:focus,
+.value-card:focus,
+.contact-item:focus {
+    outline: 3px solid #667eea;
+    outline-offset: 2px;
+}
+
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
-    .mission-section {
+    .mission-section,
+    .team-section,
+    .contact-section {
         background: #343a40;
+    }
+    
+    .mission-card,
+    .team-card,
+    .value-card,
+    .contact-item {
+        background: #495057;
+        border-color: #6c757d;
         color: #e9ecef;
     }
     
-    .offering-card, .team-card, .category-overview {
-        background: #343a40;
-        border-color: #495057;
+    .mission-card h4,
+    .team-info h4,
+    .value-card h5,
+    .contact-item h5 {
         color: #e9ecef;
     }
     
-    .offering-card h4, .team-card h5, .category-overview h4 {
-        color: #e9ecef;
-    }
-    
-    .offering-card p, .team-card p, .category-overview p {
+    .mission-card p,
+    .team-bio,
+    .team-affiliation,
+    .value-card p,
+    .contact-item p {
         color: #adb5bd;
     }
     
-    .ad-banner, .ad-inline {
-        background: #343a40;
-        border-color: #495057;
+    .team-role {
+        color: #667eea;
     }
+    
+    .values-section {
+        background: #343a40;
+    }
+    
+    .value-card {
+        background: #495057;
+    }
+    
+    .ad-banner {
+        background: #343a40;
+        border-color: #6c757d;
+    }
+    
+    .section-title {
+        color: #e9ecef;
+    }
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Hover Effects */
+.mission-card:hover .mission-icon,
+.team-card:hover .team-avatar,
+.value-card:hover .value-icon {
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Gradient Text Effect */
+.gradient-text {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Card Grid Layout */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Enhanced Typography */
+.lead {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #5a6fd8, #6a4190);
 }
