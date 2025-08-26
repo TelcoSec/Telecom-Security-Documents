@@ -237,6 +237,8 @@ We welcome contributions from the telecom security community to expand our knowl
 - **🌐 Web Library**: [https://telcosec.github.io/Telecom-Security-Documents/](https://telcosec.github.io/Telecom-Security-Documents/)
 - **📧 Email**: contact@telcosec.org
 - **🐙 GitHub**: [https://github.com/TelcoSec/Telecom-Security-Documents](https://github.com/TelcoSec/Telecom-Security-Documents)
+- **🎮 Discord**: [Join our Community](https://discord.gg/jkUKw2cBxX)
+- **💼 LinkedIn**: [Follow our Company](https://www.linkedin.com/company/telco-sec/)
 
 ### **Support & Resources**
 
