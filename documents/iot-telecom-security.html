@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>IoT Device Security in Telecom Networks: Threats and Mitigation - Telecom Security Library</title>
+    <meta name="title" content="IoT Device Security in Telecom Networks: Threats and Mitigation - Telecom Security Library">
+    <meta name="description" content="Comprehensive analysis of IoT device security challenges in telecommunications networks">
+    <meta name="keywords" content="telecom security, IoT & Device Security, network security, telecommunications, research paper, security analysis, IoT Device Authentication, Network Infrastructure Security, Data Privacy Protection, Device Management Security, Threat Intelligence, Security Standards">
+    <meta name="author" content="RFS - Telecom Security Researcher">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+    <meta name="rating" content="General">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Canonical URL - Critical for SEO -->
+    <link rel="canonical" href="https://telcosec.github.io/Telecom-Security-Documents/documents/iot-telecom-security.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://telcosec.github.io/Telecom-Security-Documents/documents/iot-telecom-security.html">
+    <meta property="og:title" content="IoT Device Security in Telecom Networks: Threats and Mitigation - Telecom Security Library">
+    <meta property="og:description" content="Comprehensive analysis of IoT device security challenges in telecommunications networks">
+    <meta property="og:image" content="https://telcosec.github.io/Telecom-Security-Documents/images/og-image.png">
+    <meta property="og:site_name" content="Telecom Security Library">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2024-03-01T00:00:00Z">
+    <meta property="article:modified_time" content="2024-03-01T00:00:00Z">
+    <meta property="article:section" content="IoT & Device Security">
+    <meta property="article:tag" content="telecom security, IoT & Device Security, network security, IoT Device Authentication, Network Infrastructure Security, Data Privacy Protection, Device Management Security, Threat Intelligence, Security Standards">
+    <meta property="article:author" content="RFS">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://telcosec.github.io/Telecom-Security-Documents/documents/iot-telecom-security.html">
+    <meta property="twitter:title" content="IoT Device Security in Telecom Networks: Threats and Mitigation - Telecom Security Library">
+    <meta property="twitter:description" content="Comprehensive analysis of IoT device security challenges in telecommunications networks">
+    <meta property="twitter:image" content="https://telcosec.github.io/Telecom-Security-Documents/images/og-image.png">
+    <meta property="twitter:site" content="@TelcoSec">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- DNS Prefetch for performance -->
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    
+    <!-- Google Analytics and Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SDPPC95R4J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SDPPC95R4J');
+    </script>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5DGDDTS8');</script>
+    
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9236847887178276" crossorigin="anonymous"></script>
+    
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+    <link href="document-styles.css" rel="stylesheet">
+    
+    <!-- Structured Data for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": "IoT Device Security in Telecom Networks: Threats and Mitigation",
+        "description": "Comprehensive analysis of IoT device security challenges in telecommunications networks",
+        "abstract": "This report examines the unique security challenges posed by IoT devices in telecommunications networks, including device authentication, data privacy, and network infrastructure protection. The study provides practical mitigation strategies for telecom operators and device manufacturers.",
+        "url": "https://telcosec.github.io/Telecom-Security-Documents/documents/iot-telecom-security.html",
+        "datePublished": "2024-03-01",
+        "dateModified": "2024-03-01",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Dr. Alex Johnson",
+                "affiliation": {
+                    "@type": "Organization",
+                    "name": "IoT Security Consortium"
+                },
+                "url": "https://telcosec.github.io/Telecom-Security-Documents/about.html"
+            }
+        ],
+        "publisher": {
+            "@type": "Organization",
+            "name": "Telecom Security Library",
+            "url": "https://telcosec.github.io/Telecom-Security-Documents/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://telcosec.github.io/Telecom-Security-Documents/images/logo.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://telcosec.github.io/Telecom-Security-Documents/documents/iot-telecom-security.html"
+        },
+        "genre": "Technical Report",
+        "keywords": "IoT Device Authentication, Network Infrastructure Security, Data Privacy Protection, Device Management Security, Threat Intelligence, Security Standards",
+        "about": [
+            {
+                "@type": "Thing",
+                "name": "IoT & Device Security"
+            }
+        ],
+        "isPartOf": {
+            "@type": "Collection",
+            "name": "Telecom Security Library",
+            "url": "https://telcosec.github.io/Telecom-Security-Documents/"
+        },
+        "mainEntity": {
+            "@type": "CreativeWork",
+            "name": "IoT Device Security in Telecom Networks: Threats and Mitigation",
+            "description": "Comprehensive analysis of IoT device security challenges in telecommunications networks"
+        },
+        "sameAs": [
+            "https://github.com/TelcoSec/Telecom-Security-Documents",
+            "https://www.youtube.com/channel/UC3kO2aM4pP_viPnB8yS2J5w",
+            "https://discord.gg/jkUKw2cBxX",
+            "https://www.linkedin.com/company/telco-sec/"
+        ]
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema for better navigation -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://telcosec.github.io/Telecom-Security-Documents/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "IoT & Device Security",
+                "item": "https://telcosec.github.io/Telecom-Security-Documents/#iot"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "IoT Device Security in Telecom Networks: Threats and Mitigation",
+                "item": "https://telcosec.github.io/Telecom-Security-Documents/documents/iot-telecom-security.html"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DGDDTS8"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-shield-alt me-2"></i>
+                Telecom Security Library
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../images.html">Images</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Document Header -->
+    <header class="document-header">
+        <div class="container">
+            <!-- Enhanced Breadcrumb Navigation -->
+            <nav aria-label="breadcrumb" class="mb-3">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="../index.html" title="Return to Homepage">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="../index.html#iot" title="View IoT & Device Security Category">IoT & Device Security</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">IoT Device Security in Telecom Networks: Threats and Mitigation</li>
+                </ol>
+            </nav>
+            
+            <h1 class="display-4">IoT Device Security in Telecom Networks: Threats and Mitigation</h1>
+            <p class="lead">Comprehensive analysis of IoT device security challenges in telecommunications networks</p>
+            
+            <div class="document-meta">
+                <span class="badge bg-primary">Technical Report</span>
+                <span class="badge bg-secondary">2024-03-01</span>
+                <span class="badge bg-info">IoT Security Consortium</span>
+                <span class="badge bg-success">Research by RFS</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Main Content Column -->
+            <div class="col-lg-8">
+                <!-- Abstract Section -->
+                <section class="document-section mb-5">
+                    <h2><i class="fas fa-file-alt me-2"></i>Abstract</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">This report examines the unique security challenges posed by IoT devices in telecommunications networks, including device authentication, data privacy, and network infrastructure protection. The study provides practical mitigation strategies for telecom operators and device manufacturers.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AdSense Banner Ad -->
+                <div class="ad-banner mb-4">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-9236847887178276"
+                         data-ad-slot="1234567890"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <!-- PDF Document Section -->
+                <section class="document-section mb-5">
+                    <h2><i class="fas fa-file-pdf me-2"></i>Document</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="pdf-container">
+                                <iframe 
+                                    src="../IoT/IoT-Telecom-Security-Report.pdf#toolbar=1&navpanes=1&scrollbar=1" 
+                                    width="100%" 
+                                    height="600px" 
+                                    frameborder="0"
+                                    allowfullscreen
+                                    title="IoT Device Security in Telecom Networks: Threats and Mitigation PDF Document">
+                                    <p>Your browser does not support PDF embedding. 
+                                    <a href="../IoT/IoT-Telecom-Security-Report.pdf" target="_blank" class="btn btn-primary">
+                                        <i class="fas fa-download me-2"></i>Download PDF
+                                    </a></p>
+                                </iframe>
+                            </div>
+                            <div class="mt-3">
+                                <a href="../IoT/IoT-Telecom-Security-Report.pdf" target="_blank" class="btn btn-outline-primary">
+                                    <i class="fas fa-external-link-alt me-2"></i>Open in New Tab
+                                </a>
+                                <a href="../IoT/IoT-Telecom-Security-Report.pdf" download class="btn btn-outline-success">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Key Topics Section -->
+                <div class="col-md-6 mb-2">
+                <span class="badge bg-light text-dark border">IoT Device Authentication</span>
+            </div><div class="col-md-6 mb-2">
+                <span class="badge bg-light text-dark border">Network Infrastructure Security</span>
+            </div><div class="col-md-6 mb-2">
+                <span class="badge bg-light text-dark border">Data Privacy Protection</span>
+            </div><div class="col-md-6 mb-2">
+                <span class="badge bg-light text-dark border">Device Management Security</span>
+            </div><div class="col-md-6 mb-2">
+                <span class="badge bg-light text-dark border">Threat Intelligence</span>
+            </div><div class="col-md-6 mb-2">
+                <span class="badge bg-light text-dark border">Security Standards</span>
+            </div>
+
+                <!-- AdSense In-Article Ad -->
+                <div class="ad-inline mb-4">
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-9236847887178276"
+                         data-ad-slot="0987654321"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <!-- Video Section -->
+                <section class="document-section mb-5">
+                    <h2><i class="fas fa-video me-2"></i>Related Videos</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            
+            <div class="col-md-6 mb-3">
+                <div class="video-card">
+                    <div class="video-thumbnail" data-video-id="abc123def">
+                        <img src="https://img.youtube.com/vi/abc123def/mqdefault.jpg" 
+                             alt="IoT Security in Telecom Networks" class="img-fluid">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <h5 class="video-title">IoT Security in Telecom Networks</h5>
+                    <p class="video-description">Overview of IoT security challenges and solutions</p>
+                </div>
+            </div>
+        
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Related Documents Section -->
+                
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Document Info Card -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Document Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <strong>Type:</strong> Technical Report
+                            </li>
+                            <li class="mb-2">
+                                <strong>Date:</strong> 2024-03-01
+                            </li>
+                            <li class="mb-2">
+                                <strong>Source:</strong> IoT Security Consortium
+                            </li>
+                            <li class="mb-2">
+                                <strong>Category:</strong> 
+                                <a href="../index.html#iot" title="View IoT & Device Security Category">IoT & Device Security</a>
+                            </li>
+                            <li class="mb-2">
+                                <strong>File:</strong> IoT-Telecom-Security-Report.pdf
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- AdSense Sidebar Ad -->
+                <div class="ad-sidebar mb-4">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-9236847887178276"
+                         data-ad-slot="1122334455"
+                         data-ad-format="auto"
+                         data-full-width-responsive="false"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <!-- Researchers Section -->
+                
+            <div class="researcher-item mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="researcher-avatar me-3">
+                        <i class="fas fa-user-circle fa-2x text-primary"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1">Dr. Alex Johnson</h6>
+                        <p class="mb-1 text-muted small">IoT Security Consortium</p>
+                        <span class="badge bg-light text-dark">Lead Researcher</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="researcher-item mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="researcher-avatar me-3">
+                        <i class="fas fa-user-circle fa-2x text-primary"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1">Prof. Maria Garcia</h6>
+                        <p class="mb-1 text-muted small">University of Texas</p>
+                        <span class="badge bg-light text-dark">IoT Security Expert</span>
+                    </div>
+                </div>
+            </div>
+        
+
+                <!-- Quick Actions -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0"><i class="fas fa-bolt me-2"></i>Quick Actions</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-grid gap-2">
+                            <a href="../IoT/IoT-Telecom-Security-Report.pdf" target="_blank" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-external-link-alt me-2"></i>Open PDF
+                            </a>
+                            <a href="../IoT/IoT-Telecom-Security-Report.pdf" download class="btn btn-outline-success btn-sm">
+                                <i class="fas fa-download me-2"></i>Download
+                            </a>
+                            <a href="../index.html#iot" class="btn btn-outline-info btn-sm">
+                                <i class="fas fa-folder me-2"></i>View Category
+                            </a>
+                            <a href="../documents/index.html" class="btn btn-outline-secondary btn-sm">
+                                <i class="fas fa-list me-2"></i>All Documents
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Categories -->
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <h5 class="mb-0"><i class="fas fa-sitemap me-2"></i>Related Categories</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-grid gap-2">
+                            <a href="../index.html#4g" class="btn btn-outline-primary btn-sm">4G Security</a>
+                            <a href="../index.html#5g" class="btn btn-outline-primary btn-sm">5G Security</a>
+                            <a href="../index.html#ss7" class="btn btn-outline-primary btn-sm">SS7 Security</a>
+                            <a href="../index.html#sim-cards" class="btn btn-outline-primary btn-sm">SIM Cards</a>
+                            <a href="../index.html#baseband" class="btn btn-outline-primary btn-sm">Baseband</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Video Player</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="videoFrame" src="" frameborder="0" allowfullscreen title="Video Player"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-shield-alt me-2"></i>Telecom Security Library</h5>
+                    <p class="text-muted">Comprehensive collection of telecommunications security documentation, research papers, and resources for security professionals, researchers, and industry experts.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-muted me-3" title="Follow us on Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://www.linkedin.com/company/telco-sec/" target="_blank" class="text-muted me-3" title="Follow us on LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-muted me-3" title="View on GitHub"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="https://www.youtube.com/channel/UC3kO2aM4pP_viPnB8yS2J5w" target="_blank" class="text-muted me-3" title="Subscribe to our YouTube Channel"><i class="fab fa-youtube fa-lg"></i></a>
+                        <a href="https://discord.gg/jkUKw2cBxX" target="_blank" class="text-muted me-3" title="Join our Discord Community"><i class="fab fa-discord fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6>Categories</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html#4g" class="text-muted" title="4G Network Security">4G Security</a></li>
+                        <li><a href="../index.html#5g" class="text-muted" title="5G Network Security">5G Security</a></li>
+                        <li><a href="../index.html#sim-cards" class="text-muted" title="SIM Cards & UICC Security">SIM Cards</a></li>
+                        <li><a href="../index.html#ss7" class="text-muted" title="SS7 Protocol Security">SS7 Security</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6>Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../videos.html" class="text-muted" title="View all videos">Videos</a></li>
+                        <li><a href="../images.html" class="text-muted" title="View all images">Images</a></li>
+                        <li><a href="../about.html" class="text-muted" title="About RFS">About</a></li>
+                        <li><a href="../README.md" class="text-muted" title="Project Documentation">Documentation</a></li>
+                        <li><a href="#" class="text-muted" title="API Documentation">API</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6>Newsletter</h6>
+                    <p class="text-muted">Stay updated with the latest telecom security research and developments.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email for newsletter">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2024 Telecom Security Library. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-muted me-3" title="Privacy Policy">Privacy Policy</a>
+                    <a href="#" class="text-muted me-3" title="Terms of Service">Terms of Service</a>
+                    <a href="../about.html" class="text-muted" title="Contact Information">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+    <script src="document-script.js"></script>
+    <script src="../adsense-config.js"></script>
+</body>
+</html>

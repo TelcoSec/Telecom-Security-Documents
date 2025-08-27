@@ -78,6 +78,110 @@ videos:
     language: "English"
     transcript: true
 
+  # New Featured Videos - IoT Security
+  - id: "featured-4"
+    title: "IoT Security in Telecommunications: Device Vulnerabilities and Network Protection"
+    description: "Comprehensive analysis of IoT device security challenges in telecom networks, including device authentication, data privacy, and infrastructure protection strategies."
+    youtubeId: "xyz789abc"
+    category: "IoT & Device Security"
+    categoryAnchor: "iot"
+    duration: "41:15"
+    speaker: "RFS"
+    affiliation: "Telecom Security Research"
+    date: "2024-03-10"
+    tags:
+      - "IoT Security"
+      - "Device Authentication"
+      - "Network Protection"
+      - "Data Privacy"
+      - "Infrastructure Security"
+      - "Telecom Networks"
+    featured: true
+    thumbnail: "https://img.youtube.com/vi/xyz789abc/maxresdefault.jpg"
+    viewCount: "34,567"
+    likeCount: "892"
+    difficulty: "Intermediate"
+    language: "English"
+    transcript: true
+
+  # New Featured Videos - Quantum Security
+  - id: "featured-5"
+    title: "Quantum Threats to Telecom Security: Post-Quantum Cryptography Solutions"
+    description: "Analysis of quantum computing threats to current cryptographic systems and evaluation of post-quantum cryptographic algorithms for future telecom infrastructure."
+    youtubeId: "def456ghi"
+    category: "Quantum Security"
+    categoryAnchor: "quantum"
+    duration: "48:22"
+    speaker: "RFS"
+    affiliation: "Telecom Security Research"
+    date: "2024-03-20"
+    tags:
+      - "Quantum Computing"
+      - "Post-Quantum Cryptography"
+      - "Lattice-Based Crypto"
+      - "Code-Based Crypto"
+      - "Quantum Key Distribution"
+      - "Migration Strategies"
+    featured: true
+    thumbnail: "https://img.youtube.com/vi/def456ghi/maxresdefault.jpg"
+    viewCount: "28,943"
+    likeCount: "756"
+    difficulty: "Advanced"
+    language: "English"
+    transcript: true
+
+  # New Featured Videos - Satellite Security
+  - id: "featured-6"
+    title: "Satellite Communications Security: Jamming, Spoofing, and Protection Strategies"
+    description: "Comprehensive security analysis of satellite communications systems, including signal jamming protection, spoofing detection, and orbital security challenges."
+    youtubeId: "jkl012mno"
+    category: "Satellite Security"
+    categoryAnchor: "satellite"
+    duration: "39:45"
+    speaker: "RFS"
+    affiliation: "Telecom Security Research"
+    date: "2024-04-05"
+    tags:
+      - "Satellite Security"
+      - "Signal Jamming"
+      - "Spoofing Detection"
+      - "Orbital Security"
+      - "Ground Station Security"
+      - "Interference Mitigation"
+    featured: true
+    thumbnail: "https://img.youtube.com/vi/jkl012mno/maxresdefault.jpg"
+    viewCount: "22,156"
+    likeCount: "634"
+    difficulty: "Intermediate"
+    language: "English"
+    transcript: true
+
+  # New Featured Videos - Cloud Security
+  - id: "featured-7"
+    title: "Cloud-Native Telecom Security: Container Security and Microservices Protection"
+    description: "Security analysis of cloud-native telecommunications infrastructure, including container security, microservices protection, and cloud-native security patterns."
+    youtubeId: "pqr345stu"
+    category: "Cloud Security"
+    categoryAnchor: "cloud"
+    duration: "43:18"
+    speaker: "RFS"
+    affiliation: "Telecom Security Research"
+    date: "2024-04-18"
+    tags:
+      - "Cloud Security"
+      - "Container Security"
+      - "Microservices Security"
+      - "Cloud-Native Patterns"
+      - "Identity Management"
+      - "Data Protection"
+    featured: true
+    thumbnail: "https://img.youtube.com/vi/pqr345stu/maxresdefault.jpg"
+    viewCount: "18,792"
+    likeCount: "521"
+    difficulty: "Advanced"
+    language: "English"
+    transcript: true
+
   # 4G Network Security Videos
   - id: "4g-1"
     title: "4G LTE Authentication Protocol Analysis"
@@ -493,6 +597,48 @@ categories:
     description: "Telecom fraud detection methods and prevention strategies"
     icon: "fas fa-search-dollar"
     color: "#e83e8c"
+    
+  - name: "2G Network Security"
+    anchor: "2g"
+    description: "GSM security architecture, authentication protocols, and legacy vulnerabilities"
+    icon: "fas fa-signal"
+    color: "#6f42c1"
+    
+  - name: "VoIP Security"
+    anchor: "voip"
+    description: "Voice over IP security, encrypted communications, and attack vectors"
+    icon: "fas fa-phone"
+    color: "#fd7e14"
+    
+  - name: "GPRS Security"
+    anchor: "gprs"
+    description: "GPRS network security, APN configurations, and traffic analysis"
+    icon: "fas fa-network-wired"
+    color: "#20c997"
+    
+  - name: "IoT & Device Security"
+    anchor: "iot"
+    description: "IoT device security in telecom networks, authentication, and data protection"
+    icon: "fas fa-robot"
+    color: "#17a2b8"
+    
+  - name: "Quantum Security"
+    anchor: "quantum"
+    description: "Quantum computing threats to telecom security and post-quantum cryptography"
+    icon: "fas fa-atom"
+    color: "#6f42c1"
+    
+  - name: "Satellite Security"
+    anchor: "satellite"
+    description: "Satellite communications security, signal protection, and orbital security"
+    icon: "fas fa-satellite"
+    color: "#fd7e14"
+    
+  - name: "Cloud Security"
+    anchor: "cloud"
+    description: "Cloud-native telecom security, container security, and microservices protection"
+    icon: "fas fa-cloud"
+    color: "#20c997"
     
   - name: "GPON Security"
     anchor: "gpon"
