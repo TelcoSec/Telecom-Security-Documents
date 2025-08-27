@@ -205,8 +205,24 @@ function generateDocumentsIndex(documentsDir, content) {
             <title>All Documents - Telecom Security Library</title>
     <meta name="description" content="Browse all telecom security documents by category">
     
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=${content.googleAnalytics.measurementId}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${content.googleAnalytics.measurementId}');
+    </script>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','${content.googleTagManager.containerId}');</script>
+    
     <!-- AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-${content.adsense.publisherId}" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${content.adsense.publisherId}" crossorigin="anonymous"></script>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -214,6 +230,10 @@ function generateDocumentsIndex(documentsDir, content) {
     <link href="document-styles.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${content.googleTagManager.containerId}"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
@@ -259,7 +279,7 @@ function generateDocumentsIndex(documentsDir, content) {
                 <div class="ad-banner text-center">
                     <ins class="adsbygoogle"
                          style="display:block"
-                         data-ad-client="ca-pub-${content.adsense.publisherId}"
+                         data-ad-client="${content.adsense.publisherId}"
                          data-ad-slot="${content.adsense.slots.banner}"
                          data-ad-format="auto"
                          data-full-width-responsive="true"></ins>

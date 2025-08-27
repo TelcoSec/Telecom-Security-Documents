@@ -653,7 +653,7 @@ documents:
     type: "Technical Report"
     date: "2024-02-05"
     source: "3GPP Security"
-    filePath: "../APNs/DEF CON 32 - Aapo Oksman - Leveraging private APNs for mobile network traffic analysis.pdf"
+    filePath: "../GPRS/DEF CON 32 - Aapo Oksman - Leveraging private APNs for mobile network traffic analysis.pdf"
     fileName: "DEF CON 32 - Aapo Oksman - Leveraging private APNs for mobile network traffic analysis.pdf"
     abstract: "This technical report analyzes security vulnerabilities in Access Point Names (APNs), examining configuration attacks, manipulation techniques, and security measures for protecting data services. The study provides practical guidance for securing APN configurations."
     keyTopics:
@@ -1028,7 +1028,7 @@ googleTagManager:
 
 # AdSense Configuration
 adsense:
-  publisherId: "pub-9236847887178276"
+  publisherId: "ca-pub-9236847887178276"
   slots:
     banner: "1234567890"
     inline: "0987654321"
