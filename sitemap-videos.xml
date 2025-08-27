@@ -3,40 +3,84 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#featured-1</loc>
+        <loc>https://library.telco-sec.com/videos.html#featured-1</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>5G Security Architecture Deep Dive</video:title>
-            <video:description>Comprehensive overview of 5G security architecture, network slicing, and emerging threats</video:description>
+            <video:title>5G Network Security: Threats and Countermeasures</video:title>
+            <video:description>Comprehensive analysis of 5G network security threats, vulnerabilities, and defense strategies. Learn about network slicing security, authentication protocols, and emerging attack vectors.</video:description>
             <video:duration>45:32</video:duration>
             <video:category>5G Network Security</video:category>
-            <video:tags>5G Security, Network Architecture, Network Slicing, Threat Analysis</video:tags>
+            <video:tags>5G Security, Network Architecture, Network Slicing, Threat Analysis, Authentication, Vulnerabilities</video:tags>
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#featured-2</loc>
+        <loc>https://library.telco-sec.com/videos.html#featured-2</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>SS7 Protocol Attack Demonstration</video:title>
-            <video:description>Live demonstration of SS7 protocol vulnerabilities and attack techniques</video:description>
+            <video:title>SS7 Protocol Vulnerabilities: Real-World Attack Scenarios</video:title>
+            <video:description>Live demonstration of SS7 protocol vulnerabilities including call interception, SMS manipulation, and location tracking. Learn about the fundamental flaws in legacy signaling protocols.</video:description>
             <video:duration>38:15</video:duration>
             <video:category>SS7 Protocol Security</video:category>
-            <video:tags>SS7 Protocol, Attack Demonstration, Call Interception, SMS Manipulation</video:tags>
+            <video:tags>SS7 Protocol, Attack Demonstration, Call Interception, SMS Manipulation, Signaling Security, Legacy Protocols</video:tags>
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#featured-3</loc>
+        <loc>https://library.telco-sec.com/videos.html#featured-3</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>SIM Card Security Analysis</video:title>
-            <video:description>Technical analysis of SIM card vulnerabilities and physical attack vectors</video:description>
+            <video:title>SIM Card Security: Hardware Vulnerabilities and Physical Attacks</video:title>
+            <video:description>In-depth technical analysis of SIM card vulnerabilities, UICC security mechanisms, and physical attack vectors. Explore hardware security challenges in mobile authentication.</video:description>
             <video:duration>52:18</video:duration>
             <video:category>SIM Cards & UICC Security</video:category>
-            <video:tags>SIM Cards, UICC Security, Physical Attacks, Hardware Security</video:tags>
+            <video:tags>SIM Cards, UICC Security, Physical Attacks, Hardware Security, Mobile Authentication, Chip Security</video:tags>
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#4g-1</loc>
+        <loc>https://library.telco-sec.com/videos.html#featured-4</loc>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/xyz789abc/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>IoT Security in Telecommunications: Device Vulnerabilities and Network Protection</video:title>
+            <video:description>Comprehensive analysis of IoT device security challenges in telecom networks, including device authentication, data privacy, and infrastructure protection strategies.</video:description>
+            <video:duration>41:15</video:duration>
+            <video:category>IoT & Device Security</video:category>
+            <video:tags>IoT Security, Device Authentication, Network Protection, Data Privacy, Infrastructure Security, Telecom Networks</video:tags>
+        </video:video>
+    </url>
+    <url>
+        <loc>https://library.telco-sec.com/videos.html#featured-5</loc>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/def456ghi/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>Quantum Threats to Telecom Security: Post-Quantum Cryptography Solutions</video:title>
+            <video:description>Analysis of quantum computing threats to current cryptographic systems and evaluation of post-quantum cryptographic algorithms for future telecom infrastructure.</video:description>
+            <video:duration>48:22</video:duration>
+            <video:category>Quantum Security</video:category>
+            <video:tags>Quantum Computing, Post-Quantum Cryptography, Lattice-Based Crypto, Code-Based Crypto, Quantum Key Distribution, Migration Strategies</video:tags>
+        </video:video>
+    </url>
+    <url>
+        <loc>https://library.telco-sec.com/videos.html#featured-6</loc>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/jkl012mno/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>Satellite Communications Security: Jamming, Spoofing, and Protection Strategies</video:title>
+            <video:description>Comprehensive security analysis of satellite communications systems, including signal jamming protection, spoofing detection, and orbital security challenges.</video:description>
+            <video:duration>39:45</video:duration>
+            <video:category>Satellite Security</video:category>
+            <video:tags>Satellite Security, Signal Jamming, Spoofing Detection, Orbital Security, Ground Station Security, Interference Mitigation</video:tags>
+        </video:video>
+    </url>
+    <url>
+        <loc>https://library.telco-sec.com/videos.html#featured-7</loc>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/pqr345stu/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>Cloud-Native Telecom Security: Container Security and Microservices Protection</video:title>
+            <video:description>Security analysis of cloud-native telecommunications infrastructure, including container security, microservices protection, and cloud-native security patterns.</video:description>
+            <video:duration>43:18</video:duration>
+            <video:category>Cloud Security</video:category>
+            <video:tags>Cloud Security, Container Security, Microservices Security, Cloud-Native Patterns, Identity Management, Data Protection</video:tags>
+        </video:video>
+    </url>
+    <url>
+        <loc>https://library.telco-sec.com/videos.html#4g-1</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/kJQP7kiw5Fk/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>4G LTE Authentication Protocol Analysis</video:title>
@@ -47,7 +91,7 @@
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#4g-2</loc>
+        <loc>https://library.telco-sec.com/videos.html#4g-2</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>LTE Impersonation Attack Techniques</video:title>
@@ -58,7 +102,7 @@
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#5g-1</loc>
+        <loc>https://library.telco-sec.com/videos.html#5g-1</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>5G Network Slicing Security Implementation</video:title>
@@ -69,7 +113,7 @@
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#5g-2</loc>
+        <loc>https://library.telco-sec.com/videos.html#5g-2</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>5G IoT Security Challenges</video:title>
@@ -80,7 +124,7 @@
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#ss7-1</loc>
+        <loc>https://library.telco-sec.com/videos.html#ss7-1</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>SS7 Security Overview and Mitigation</video:title>
@@ -91,7 +135,7 @@
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#baseband-1</loc>
+        <loc>https://library.telco-sec.com/videos.html#baseband-1</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/kJQP7kiw5Fk/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>Baseband Processor Security Analysis</video:title>
@@ -102,7 +146,7 @@
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#baseband-2</loc>
+        <loc>https://library.telco-sec.com/videos.html#baseband-2</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>Mobile Device Firmware Security</video:title>
@@ -113,7 +157,7 @@
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#base-station-1</loc>
+        <loc>https://library.telco-sec.com/videos.html#base-station-1</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>Base Station Physical Security</video:title>
@@ -124,7 +168,7 @@
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#fraud-1</loc>
+        <loc>https://library.telco-sec.com/videos.html#fraud-1</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>Telecom Fraud Detection with Machine Learning</video:title>
@@ -135,7 +179,7 @@
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#gpon-1</loc>
+        <loc>https://library.telco-sec.com/videos.html#gpon-1</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/kJQP7kiw5Fk/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>GPON Network Security Vulnerabilities</video:title>
@@ -146,7 +190,7 @@
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#motif-1</loc>
+        <loc>https://library.telco-sec.com/videos.html#motif-1</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>MoTIF Framework Implementation Guide</video:title>
@@ -157,7 +201,7 @@
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#roaming-1</loc>
+        <loc>https://library.telco-sec.com/videos.html#roaming-1</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>International Roaming Security Challenges</video:title>
@@ -168,7 +212,7 @@
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#apn-1</loc>
+        <loc>https://library.telco-sec.com/videos.html#apn-1</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>APN Configuration Security Best Practices</video:title>
@@ -179,7 +223,7 @@
         </video:video>
     </url>
     <url>
-        <loc>https://telcosec.github.io/Telecom-Security-Documents/videos.html#at-commands-1</loc>
+        <loc>https://library.telco-sec.com/videos.html#at-commands-1</loc>
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/kJQP7kiw5Fk/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>AT Command Fuzzing Techniques</video:title>
@@ -187,6 +231,39 @@
             <video:duration>49:18</video:duration>
             <video:category>AT Commands</video:category>
             <video:tags>AT Commands, Fuzzing Techniques, Mobile Security, Device Testing</video:tags>
+        </video:video>
+    </url>
+    <url>
+        <loc>https://library.telco-sec.com/videos.html#2g-1</loc>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/abc123def/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>GSM Security: Legacy Vulnerabilities and Modern Threats</video:title>
+            <video:description>Analysis of GSM security architecture, A5/1 cipher weaknesses, and modern attack techniques against legacy 2G networks</video:description>
+            <video:duration>33:45</video:duration>
+            <video:category>2G Network Security</video:category>
+            <video:tags>GSM Security, A5/1 Cipher, Legacy Networks, 2G Vulnerabilities, Authentication</video:tags>
+        </video:video>
+    </url>
+    <url>
+        <loc>https://library.telco-sec.com/videos.html#voip-1</loc>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/def456ghi/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>VoIP Security: Encrypted Communications and Attack Vectors</video:title>
+            <video:description>Comprehensive analysis of Voice over IP security, encrypted protocols, and practical attack methodologies</video:description>
+            <video:duration>47:22</video:duration>
+            <video:category>VoIP Security</video:category>
+            <video:tags>VoIP Security, Encrypted Communications, Attack Vectors, Protocol Vulnerabilities, Communication Security</video:tags>
+        </video:video>
+    </url>
+    <url>
+        <loc>https://library.telco-sec.com/videos.html#gprs-1</loc>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/ghi789jkl/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>GPRS APN Security: Mobile Network Traffic Analysis</video:title>
+            <video:description>Security analysis of GPRS Access Point Names, traffic interception techniques, and APN configuration vulnerabilities</video:description>
+            <video:duration>39:18</video:duration>
+            <video:category>GPRS Security</video:category>
+            <video:tags>GPRS Security, Access Point Names, Mobile Network Traffic, Traffic Analysis, APN Configuration</video:tags>
         </video:video>
     </url>
 

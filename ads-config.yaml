@@ -1,0 +1,312 @@
+# AdSense Configuration for Telecom Security Library
+# This file defines ad slot configurations for different pages and sections
+
+# Global AdSense Settings
+adsense:
+  publisherId: "ca-pub-9236847887178276"
+  enableAnalytics: true
+  enableAdBlockDetection: true
+
+# Ad Slot Definitions
+adSlots:
+  # Homepage Ad Slots
+  homepage:
+    hero_banner:
+      slot: "homepage-hero-banner"
+      format: "auto"
+      responsive: true
+      position: "after-hero"
+      description: "Banner ad below hero section"
+    
+    sidebar_top:
+      slot: "homepage-sidebar-top"
+      format: "auto"
+      responsive: false
+      position: "sidebar-top"
+      description: "Sidebar ad at the top"
+    
+    sidebar_bottom:
+      slot: "homepage-sidebar-bottom"
+      format: "auto"
+      responsive: false
+      position: "sidebar-bottom"
+      description: "Sidebar ad at the bottom"
+    
+    content_middle:
+      slot: "homepage-content-middle"
+      format: "auto"
+      responsive: true
+      position: "middle-content"
+      description: "Content area middle ad"
+
+  # Documents Page Ad Slots
+  documents:
+    top_banner:
+      slot: "documents-top-banner"
+      format: "auto"
+      responsive: true
+      position: "after-header"
+      description: "Top banner on documents page"
+    
+    sidebar:
+      slot: "documents-sidebar"
+      format: "auto"
+      responsive: false
+      position: "sidebar"
+      description: "Sidebar ad on documents page"
+    
+    document_bottom:
+      slot: "documents-bottom"
+      format: "auto"
+      responsive: true
+      position: "after-document"
+      description: "Ad below document content"
+
+  # Videos Page Ad Slots
+  videos:
+    top_banner:
+      slot: "videos-top-banner"
+      format: "auto"
+      responsive: true
+      position: "after-header"
+      description: "Top banner on videos page"
+    
+    sidebar:
+      slot: "videos-sidebar"
+      format: "auto"
+      responsive: false
+      position: "sidebar"
+      description: "Sidebar ad on videos page"
+    
+    video_bottom:
+      slot: "videos-bottom"
+      format: "auto"
+      responsive: true
+      position: "after-videos"
+      description: "Ad below video content"
+
+  # Tools Page Ad Slots
+  tools:
+    top_banner:
+      slot: "tools-top-banner"
+      format: "auto"
+      responsive: true
+      position: "after-header"
+      description: "Top banner on tools page"
+    
+    sidebar:
+      slot: "tools-sidebar"
+      format: "auto"
+      responsive: false
+      position: "sidebar"
+      description: "Sidebar ad on tools page"
+    
+    tool_bottom:
+      slot: "tools-bottom"
+      format: "auto"
+      responsive: true
+      position: "after-tools"
+      description: "Ad below tools content"
+
+  # Partners Page Ad Slots
+  partners:
+    top_banner:
+      slot: "partners-top-banner"
+      format: "auto"
+      responsive: true
+      position: "after-hero"
+      description: "Top banner below hero section"
+    
+    sidebar:
+      slot: "partners-sidebar"
+      format: "auto"
+      responsive: false
+      position: "sidebar"
+      description: "Sidebar ad on partners page"
+    
+    middle_banner:
+      slot: "partners-middle-banner"
+      format: "auto"
+      responsive: true
+      position: "middle-content"
+      description: "Middle content banner"
+    
+    bottom_banner:
+      slot: "partners-bottom-banner"
+      format: "auto"
+      responsive: true
+      position: "before-footer"
+      description: "Bottom banner before footer"
+
+  # Images Page Ad Slots
+  images:
+    top_banner:
+      slot: "images-top-banner"
+      format: "auto"
+      responsive: true
+      position: "after-header"
+      description: "Top banner on images page"
+    
+    sidebar:
+      slot: "images-sidebar"
+      format: "auto"
+      responsive: false
+      position: "sidebar"
+      description: "Sidebar ad on images page"
+    
+    image_bottom:
+      slot: "images-bottom"
+      format: "auto"
+      responsive: true
+      position: "after-images"
+      description: "Ad below image content"
+
+  # About Page Ad Slots
+  about:
+    top_banner:
+      slot: "about-top-banner"
+      format: "auto"
+      responsive: true
+      position: "after-header"
+      description: "Top banner on about page"
+    
+    sidebar:
+      slot: "about-sidebar"
+      format: "auto"
+      responsive: false
+      position: "sidebar"
+      description: "Sidebar ad on about page"
+    
+    content_bottom:
+      slot: "about-bottom"
+      format: "auto"
+      responsive: true
+      position: "after-content"
+      description: "Ad below about content"
+
+# Ad Placement Rules
+placementRules:
+  # Minimum spacing between ads
+  minSpacing: "100px"
+  
+  # Maximum ads per page
+  maxAdsPerPage: 4
+  
+  # Ad loading strategy
+  loadingStrategy: "lazy"
+  
+  # Ad refresh settings
+  refresh:
+    enabled: true
+    interval: 300000  # 5 minutes in milliseconds
+  
+  # Responsive breakpoints
+  breakpoints:
+    mobile: "768px"
+    tablet: "1024px"
+    desktop: "1200px"
+
+# Performance Settings
+performance:
+  # Enable ad loading optimization
+  optimizeLoading: true
+  
+  # Preload critical ads
+  preloadCritical: true
+  
+  # Ad viewability tracking
+  trackViewability: true
+  
+  # Core Web Vitals monitoring
+  monitorCoreWebVitals: true
+
+# Analytics and Tracking
+analytics:
+  # Track ad impressions
+  trackImpressions: true
+  
+  # Track ad clicks
+  trackClicks: true
+  
+  # Track ad performance
+  trackPerformance: true
+  
+  # Track user engagement
+  trackEngagement: true
+  
+  # Custom events
+  customEvents:
+    - "ad_loaded"
+    - "ad_clicked"
+    - "ad_viewed"
+    - "ad_error"
+
+# A/B Testing
+abTesting:
+  enabled: true
+  variants:
+    - name: "control"
+      description: "Standard ad placement"
+      weight: 50
+    - name: "variant_a"
+      description: "Alternative ad placement"
+      weight: 25
+    - name: "variant_b"
+      description: "Minimal ad placement"
+      weight: 25
+
+# Compliance and Privacy
+compliance:
+  # GDPR compliance
+  gdprCompliant: true
+  
+  # CCPA compliance
+  ccpaCompliant: true
+  
+  # COPPA compliance
+  coppaCompliant: true
+  
+  # Privacy policy link
+  privacyPolicyUrl: "https://library.telco-sec.com/privacy.html"
+  
+  # Cookie consent
+  cookieConsent: true
+
+# Error Handling
+errorHandling:
+  # Retry failed ad loads
+  retryFailed: true
+  
+  # Max retry attempts
+  maxRetries: 3
+  
+  # Retry delay (ms)
+  retryDelay: 1000
+  
+  # Fallback content
+  fallbackContent: true
+  
+  # Log errors
+  logErrors: true
+
+# Monitoring and Alerts
+monitoring:
+  # Performance thresholds
+  thresholds:
+    loadTime: 2000  # 2 seconds
+    viewability: 0.5  # 50%
+    clickThroughRate: 0.01  # 1%
+  
+  # Alert settings
+  alerts:
+    enabled: true
+    email: "alerts@telco-sec.com"
+    slack: "https://hooks.slack.com/services/..."
+  
+  # Health checks
+  healthChecks:
+    enabled: true
+    interval: 60000  # 1 minute
+    endpoints:
+      - "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      - "https://www.googletagmanager.com/gtag/js"

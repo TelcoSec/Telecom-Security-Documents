@@ -5,7 +5,7 @@ const yaml = require('js-yaml');
 // Enhanced Sitemap Generator for Production SEO
 class EnhancedSitemapGenerator {
     constructor() {
-        this.baseUrl = 'https://telcosec.github.io/Telecom-Security-Documents';
+        this.baseUrl = 'https://library.telco-sec.com';
         this.currentDate = new Date().toISOString().split('T')[0];
         this.sitemapUrls = [];
         this.imageSitemapUrls = [];
@@ -20,7 +20,9 @@ class EnhancedSitemapGenerator {
         this.addUrl('/', '1.0', 'weekly', 'Homepage');
         this.addUrl('/about.html', '0.8', 'monthly', 'About Page');
         this.addUrl('/videos.html', '0.9', 'weekly', 'Videos Page');
+        this.addUrl('/tools.html', '0.9', 'weekly', 'Tools Page');
         this.addUrl('/images.html', '0.9', 'weekly', 'Images Page');
+        this.addUrl('/partners.html', '0.8', 'monthly', 'Partners Page');
         this.addUrl('/documents/index.html', '0.9', 'weekly', 'Documents Index');
         
         // Add category landing pages
@@ -94,7 +96,11 @@ class EnhancedSitemapGenerator {
             { path: '/#motif', name: 'MoTIF Framework', priority: '0.8' },
             { path: '/#roaming', name: 'Roaming Security', priority: '0.8' },
             { path: '/#apns', name: 'Access Point Names (APNs)', priority: '0.8' },
-            { path: '/#at-commands', name: 'AT Commands', priority: '0.8' }
+            { path: '/#at-commands', name: 'AT Commands', priority: '0.8' },
+            { path: '/#iot', name: 'IoT & Device Security', priority: '0.8' },
+            { path: '/#quantum', name: 'Quantum Security', priority: '0.8' },
+            { path: '/#satellite', name: 'Satellite Security', priority: '0.8' },
+            { path: '/#cloud', name: 'Cloud Security', priority: '0.8' }
         ];
 
         categories.forEach(category => {
