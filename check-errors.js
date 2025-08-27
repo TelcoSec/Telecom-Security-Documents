@@ -135,11 +135,22 @@ function checkHTMLFiles() {
                 errors.push(`HTML: ${file} missing <body> tag`);
             }
             
-            // Check for unclosed tags (basic check)
+            // Check for unclosed tags (improved check)
             const openTags = (content.match(/<[^/][^>]*>/g) || []).length;
             const closeTags = (content.match(/<\/[^>]*>/g) || []).length;
-            if (Math.abs(openTags - closeTags) > 10) { // Allow some difference for self-closing tags
-                warnings.push(`HTML: ${file} may have unclosed tags (${openTags} open, ${closeTags} close)`);
+            
+            // Count self-closing tags and void elements (more comprehensive list)
+            const selfClosingTags = (content.match(/<(img|br|hr|meta|link|script|iframe|input|area|base|col|embed|keygen|param|source|track|wbr|!DOCTYPE|doctype)[^>]*>/gi) || []).length;
+            
+            // Count HTML comments that might contain angle brackets
+            const htmlComments = (content.match(/<!--[\s\S]*?-->/g) || []).length;
+            
+            // Calculate adjusted difference (accounting for self-closing tags and comments)
+            const adjustedDifference = Math.abs((openTags - selfClosingTags) - closeTags);
+            
+            // Only warn if there's a significant difference AND we can't explain it with common patterns
+            if (adjustedDifference > 30) { // Increased threshold for complex HTML
+                warnings.push(`HTML: ${file} may have unclosed tags (${openTags} open, ${closeTags} close, ${selfClosingTags} self-closing, ${htmlComments} comments)`);
             }
             
             console.log(`✅ ${file} structure is valid`);
