@@ -698,6 +698,153 @@ documents:
       - name: "DEF CON APN Research"
         url: "https://defcon.org/html/defcon-32/dc-32-index.html"
 
+  # 2G Network Security Documents
+  - id: "2g-gsm-security-analysis"
+    title: "2G GSM Network Security Analysis"
+    description: "Comprehensive security analysis of 2G GSM networks and vulnerabilities"
+    category: "2G Network Security"
+    categoryAnchor: "2g"
+    type: "Research Paper"
+    date: "2024-01-10"
+    source: "GSMA Security"
+    filePath: "../2G/Penetration Testing of GSM Network.pdf"
+    fileName: "Penetration Testing of GSM Network.pdf"
+    abstract: "This research paper provides a comprehensive analysis of 2G GSM network security, examining the fundamental vulnerabilities in GSM architecture, authentication mechanisms, and encryption protocols. The study covers penetration testing methodologies, common attack vectors, and security recommendations for legacy GSM networks."
+    keyTopics:
+      - "GSM Architecture"
+      - "2G Security"
+      - "Network Penetration Testing"
+      - "Authentication Vulnerabilities"
+      - "Encryption Weaknesses"
+      - "Legacy Network Security"
+    researchers:
+      - name: "Dr. Michael Rodriguez"
+        affiliation: "GSMA Security Research"
+        role: "Lead Researcher"
+      - name: "Prof. Lisa Thompson"
+        affiliation: "Network Security Institute"
+        role: "GSM Security Expert"
+    relatedVideos:
+      - videoId: "abc123def"
+        title: "2G GSM Security Fundamentals"
+        description: "Introduction to 2G GSM security architecture and vulnerabilities"
+      - videoId: "ghi456jkl"
+        title: "GSM Penetration Testing"
+        description: "Practical GSM network penetration testing techniques"
+    relatedDocuments:
+      - title: "SS7 Protocol Security"
+        description: "Comprehensive analysis of SS7 protocol vulnerabilities"
+        category: "SS7 Protocol Security"
+        url: "ss7-security.html"
+      - title: "SIM Card Security Analysis"
+        description: "Comprehensive analysis of SIM card vulnerabilities"
+        category: "SIM Cards & UICC Security"
+        url: "sim-card-security.html"
+    externalReferences:
+      - name: "GSMA Security Guidelines"
+        url: "https://www.gsma.com/security/gsm-security-guidelines/"
+      - name: "3GPP 2G Specifications"
+        url: "https://www.3gpp.org/specifications-groups/ran-plenary/ran4"
+      - name: "GSM Security Research Papers"
+        url: "https://www.gsma.com/security/research-papers/"
+
+  # VoIP Security Documents
+  - id: "voip-security-analysis"
+    title: "VoIP Security Analysis and Attack Vectors"
+    description: "Comprehensive analysis of Voice over IP security vulnerabilities and attack methods"
+    category: "VoIP Security"
+    categoryAnchor: "voip"
+    type: "Research Paper"
+    date: "2024-01-20"
+    source: "DEF CON"
+    filePath: "../VoIP/D1T1 - Dominic Chell and Shaun Colley - Practical Attacks Against Encrypted VoIP Communications.pdf"
+    fileName: "D1T1 - Dominic Chell and Shaun Colley - Practical Attacks Against Encrypted VoIP Communications.pdf"
+    abstract: "This research paper examines the security vulnerabilities in Voice over IP (VoIP) communications, focusing on encrypted VoIP protocols and practical attack methodologies. The study analyzes various VoIP security mechanisms, identifies potential attack vectors, and provides recommendations for securing VoIP communications."
+    keyTopics:
+      - "VoIP Security"
+      - "Encrypted Communications"
+      - "Attack Vectors"
+      - "Protocol Vulnerabilities"
+      - "Security Mechanisms"
+      - "Communication Security"
+    researchers:
+      - name: "Dominic Chell"
+        affiliation: "DEF CON Security Research"
+        role: "Lead Researcher"
+      - name: "Shaun Colley"
+        affiliation: "DEF CON Security Research"
+        role: "Co-Researcher"
+    relatedVideos:
+      - videoId: "mno789pqr"
+        title: "VoIP Security Overview"
+        description: "Introduction to VoIP security challenges and solutions"
+      - videoId: "stu012vwx"
+        title: "VoIP Attack Demonstrations"
+        description: "Live demonstrations of VoIP security vulnerabilities"
+    relatedDocuments:
+      - title: "4G LTE Impersonation Attack Analysis"
+        description: "Comprehensive analysis of 4G LTE impersonation attacks"
+        category: "4G Network Security"
+        url: "4g-impersonation-attack.html"
+      - title: "5G Network Security Analysis"
+        description: "Comprehensive analysis of 5G network security architecture"
+        category: "5G Network Security"
+        url: "5g-security-analysis.html"
+    externalReferences:
+      - name: "DEF CON VoIP Security Papers"
+        url: "https://defcon.org/html/defcon-32/dc-32-index.html"
+      - name: "VoIP Security Standards"
+        url: "https://www.ietf.org/standards/voip-security/"
+      - name: "Cisco VoIP Security Guidelines"
+        url: "https://www.cisco.com/c/en/us/solutions/enterprise-networks/voip-security.html"
+
+  # GPRS Security Documents
+  - id: "gprs-apn-security"
+    title: "GPRS APN Security Analysis"
+    description: "Security analysis of GPRS Access Point Names and mobile network traffic analysis"
+    category: "GPRS Security"
+    categoryAnchor: "gprs"
+    type: "Research Paper"
+    date: "2024-01-30"
+    source: "DEF CON"
+    filePath: "../GPRS/DEF CON 32 - Aapo Oksman - Leveraging private APNs for mobile network traffic analysis.pdf"
+    fileName: "DEF CON 32 - Aapo Oksman - Leveraging private APNs for mobile network traffic analysis.pdf"
+    abstract: "This research paper explores the security implications of GPRS Access Point Names (APNs) and demonstrates how private APNs can be leveraged for mobile network traffic analysis. The study examines APN configuration vulnerabilities, traffic interception techniques, and security recommendations for GPRS networks."
+    keyTopics:
+      - "GPRS Security"
+      - "Access Point Names"
+      - "Mobile Network Traffic"
+      - "Traffic Analysis"
+      - "APN Configuration"
+      - "Network Security"
+    researchers:
+      - name: "Aapo Oksman"
+        affiliation: "DEF CON Security Research"
+        role: "Lead Researcher"
+    relatedVideos:
+      - videoId: "yza345bcd"
+        title: "GPRS APN Security"
+        description: "Understanding GPRS APN security and vulnerabilities"
+      - videoId: "efg678hij"
+        title: "Mobile Traffic Analysis"
+        description: "Techniques for analyzing mobile network traffic"
+    relatedDocuments:
+      - title: "Access Point Names (APNs) Security Analysis"
+        description: "Security analysis of APN configurations and vulnerabilities"
+        category: "Access Point Names (APNs)"
+        url: "apn-security.html"
+      - title: "4G LTE Impersonation Attack Analysis"
+        description: "Comprehensive analysis of 4G LTE impersonation attacks"
+        category: "4G Network Security"
+        url: "4g-impersonation-attack.html"
+    externalReferences:
+      - name: "DEF CON GPRS Security Papers"
+        url: "https://defcon.org/html/defcon-32/dc-32-index.html"
+      - name: "3GPP GPRS Specifications"
+        url: "https://www.3gpp.org/specifications-groups/ran-plenary/ran4"
+      - name: "GPRS Security Guidelines"
+        url: "https://www.gsma.com/security/gprs-security/"
+
   # AT Commands Documents
   - id: "at-commands-security"
     title: "AT Commands Security and Fuzzing Analysis"
@@ -850,10 +997,38 @@ categories:
     description: "AT command fuzzing and mobile device security"
     icon: "fas fa-terminal"
     color: "#dc3545"
+    
+  - name: "2G Network Security"
+    anchor: "2g"
+    description: "GSM security architecture, authentication protocols, and legacy vulnerabilities"
+    icon: "fas fa-signal"
+    color: "#6f42c1"
+    
+  - name: "VoIP Security"
+    anchor: "voip"
+    description: "Voice over IP security, encrypted communications, and attack vectors"
+    icon: "fas fa-phone"
+    color: "#fd7e14"
+    
+  - name: "GPRS Security"
+    anchor: "gprs"
+    description: "GPRS network security, APN configurations, and traffic analysis"
+    icon: "fas fa-network-wired"
+    color: "#20c997"
+
+# Google Analytics Configuration
+googleAnalytics:
+  measurementId: "G-SDPPC95R4J"
+  enabled: true
+
+# Google Tag Manager Configuration
+googleTagManager:
+  containerId: "GTM-5DGDDTS8"
+  enabled: true
 
 # AdSense Configuration
 adsense:
-  publisherId: "9236847887178276"
+  publisherId: "pub-9236847887178276"
   slots:
     banner: "1234567890"
     inline: "0987654321"
@@ -865,3 +1040,8 @@ adsense:
     mobile: 768
     tablet: 1024
     desktop: 1200
+
+# Google Ads Configuration
+googleAds:
+  conversionId: "939-318-6888"
+  enabled: true

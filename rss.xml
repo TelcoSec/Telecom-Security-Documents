@@ -5,7 +5,7 @@
         <link>https://telcosec.github.io/Telecom-Security-Documents</link>
         <description>Comprehensive collection of telecommunications security research papers, technical documents, and security analysis for professionals, researchers, and industry experts</description>
         <language>en-us</language>
-        <lastBuildDate>Tue, 26 Aug 2025 23:50:27 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 27 Aug 2025 00:54:21 GMT</lastBuildDate>
         <atom:link href="https://telcosec.github.io/Telecom-Security-Documents/rss.xml" rel="self" type="application/rss+xml" />
         
         <item>
@@ -111,6 +111,30 @@
             <category>Access Point Names (APNs)</category>
             <pubDate>Mon, 05 Feb 2024 00:00:00 GMT</pubDate>
             <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/apn-security.html</guid>
+        </item>
+        <item>
+            <title>2G GSM Network Security Analysis</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/2g-gsm-security-analysis.html</link>
+            <description>Comprehensive security analysis of 2G GSM networks and vulnerabilities</description>
+            <category>2G Network Security</category>
+            <pubDate>Wed, 10 Jan 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/2g-gsm-security-analysis.html</guid>
+        </item>
+        <item>
+            <title>VoIP Security Analysis and Attack Vectors</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/voip-security-analysis.html</link>
+            <description>Comprehensive analysis of Voice over IP security vulnerabilities and attack methods</description>
+            <category>VoIP Security</category>
+            <pubDate>Sat, 20 Jan 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/voip-security-analysis.html</guid>
+        </item>
+        <item>
+            <title>GPRS APN Security Analysis</title>
+            <link>https://telcosec.github.io/Telecom-Security-Documents/documents/gprs-apn-security.html</link>
+            <description>Security analysis of GPRS Access Point Names and mobile network traffic analysis</description>
+            <category>GPRS Security</category>
+            <pubDate>Tue, 30 Jan 2024 00:00:00 GMT</pubDate>
+            <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/gprs-apn-security.html</guid>
         </item>
         <item>
             <title>AT Commands Security and Fuzzing Analysis</title>
