@@ -172,12 +172,17 @@ function generateDocumentPages(content) {
     }
     
     // Generate pages for each document
-    content.documents.forEach(doc => {
-        const pageContent = replaceTemplateVariables(template, doc, content.adsense);
-        const pagePath = path.join(documentsDir, `${doc.id}.html`);
-        
-        fs.writeFileSync(pagePath, pageContent);
-        console.log(`✅ Generated: ${doc.id}.html`);
+    content.documents.forEach((doc, index) => {
+        try {
+            console.log(`Processing document ${index + 1}/${content.documents.length}: ${doc.id}`);
+            const pageContent = replaceTemplateVariables(template, doc, content.adsense);
+            const pagePath = path.join(documentsDir, `${doc.id}.html`);
+            
+            fs.writeFileSync(pagePath, pageContent);
+            console.log(`✅ Generated: ${doc.id}.html`);
+        } catch (error) {
+            console.error(`❌ Error generating ${doc.id}.html:`, error.message);
+        }
     });
     
     // Generate documents index page

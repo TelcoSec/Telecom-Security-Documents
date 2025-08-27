@@ -4,64 +4,79 @@
 videos:
   # Featured Videos
   - id: "featured-1"
-    title: "5G Security Architecture Deep Dive"
-    description: "Comprehensive overview of 5G security architecture, network slicing, and emerging threats"
+    title: "5G Network Security: Threats and Countermeasures"
+    description: "Comprehensive analysis of 5G network security threats, vulnerabilities, and defense strategies. Learn about network slicing security, authentication protocols, and emerging attack vectors."
     youtubeId: "jNQXAC9IVRw"
     category: "5G Network Security"
     categoryAnchor: "5g"
     duration: "45:32"
-    speaker: "Dr. Emily Wang"
-    affiliation: "Carnegie Mellon University"
+    speaker: "RFS"
+    affiliation: "Telecom Security Research"
     date: "2024-02-15"
     tags:
       - "5G Security"
       - "Network Architecture"
       - "Network Slicing"
       - "Threat Analysis"
+      - "Authentication"
+      - "Vulnerabilities"
     featured: true
     thumbnail: "https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg"
     viewCount: "125,430"
     likeCount: "2,847"
+    difficulty: "Advanced"
+    language: "English"
+    transcript: true
 
   - id: "featured-2"
-    title: "SS7 Protocol Attack Demonstration"
-    description: "Live demonstration of SS7 protocol vulnerabilities and attack techniques"
+    title: "SS7 Protocol Vulnerabilities: Real-World Attack Scenarios"
+    description: "Live demonstration of SS7 protocol vulnerabilities including call interception, SMS manipulation, and location tracking. Learn about the fundamental flaws in legacy signaling protocols."
     youtubeId: "dQw4w9WgXcQ"
     category: "SS7 Protocol Security"
     categoryAnchor: "ss7"
     duration: "38:15"
-    speaker: "Dr. Maria Garcia"
-    affiliation: "Black Hat Security Research"
+    speaker: "RFS"
+    affiliation: "Telecom Security Research"
     date: "2024-01-20"
     tags:
       - "SS7 Protocol"
       - "Attack Demonstration"
       - "Call Interception"
       - "SMS Manipulation"
+      - "Signaling Security"
+      - "Legacy Protocols"
     featured: true
     thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
     viewCount: "89,234"
     likeCount: "1,923"
+    difficulty: "Intermediate"
+    language: "English"
+    transcript: true
 
   - id: "featured-3"
-    title: "SIM Card Security Analysis"
-    description: "Technical analysis of SIM card vulnerabilities and physical attack vectors"
+    title: "SIM Card Security: Hardware Vulnerabilities and Physical Attacks"
+    description: "In-depth technical analysis of SIM card vulnerabilities, UICC security mechanisms, and physical attack vectors. Explore hardware security challenges in mobile authentication."
     youtubeId: "9bZkp7q19f0"
     category: "SIM Cards & UICC Security"
     categoryAnchor: "sim-cards"
     duration: "52:18"
-    speaker: "Dr. James Wilson"
-    affiliation: "GSMA Security"
+    speaker: "RFS"
+    affiliation: "Telecom Security Research"
     date: "2024-01-25"
     tags:
       - "SIM Cards"
       - "UICC Security"
       - "Physical Attacks"
       - "Hardware Security"
+      - "Mobile Authentication"
+      - "Chip Security"
     featured: true
     thumbnail: "https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg"
     viewCount: "67,891"
     likeCount: "1,456"
+    difficulty: "Advanced"
+    language: "English"
+    transcript: true
 
   # 4G Network Security Videos
   - id: "4g-1"
@@ -354,6 +369,81 @@ videos:
     viewCount: "16,789"
     likeCount: "234"
 
+  # 2G Network Security Videos
+  - id: "2g-1"
+    title: "GSM Security: Legacy Vulnerabilities and Modern Threats"
+    description: "Analysis of GSM security architecture, A5/1 cipher weaknesses, and modern attack techniques against legacy 2G networks"
+    youtubeId: "abc123def"
+    category: "2G Network Security"
+    categoryAnchor: "2g"
+    duration: "33:45"
+    speaker: "RFS"
+    affiliation: "Telecom Security Research"
+    date: "2024-01-28"
+    tags:
+      - "GSM Security"
+      - "A5/1 Cipher"
+      - "Legacy Networks"
+      - "2G Vulnerabilities"
+      - "Authentication"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/abc123def/maxresdefault.jpg"
+    viewCount: "23,456"
+    likeCount: "567"
+    difficulty: "Intermediate"
+    language: "English"
+    transcript: true
+
+  # VoIP Security Videos
+  - id: "voip-1"
+    title: "VoIP Security: Encrypted Communications and Attack Vectors"
+    description: "Comprehensive analysis of Voice over IP security, encrypted protocols, and practical attack methodologies"
+    youtubeId: "def456ghi"
+    category: "VoIP Security"
+    categoryAnchor: "voip"
+    duration: "47:22"
+    speaker: "RFS"
+    affiliation: "Telecom Security Research"
+    date: "2024-01-30"
+    tags:
+      - "VoIP Security"
+      - "Encrypted Communications"
+      - "Attack Vectors"
+      - "Protocol Vulnerabilities"
+      - "Communication Security"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/def456ghi/maxresdefault.jpg"
+    viewCount: "18,234"
+    likeCount: "345"
+    difficulty: "Advanced"
+    language: "English"
+    transcript: true
+
+  # GPRS Security Videos
+  - id: "gprs-1"
+    title: "GPRS APN Security: Mobile Network Traffic Analysis"
+    description: "Security analysis of GPRS Access Point Names, traffic interception techniques, and APN configuration vulnerabilities"
+    youtubeId: "ghi789jkl"
+    category: "GPRS Security"
+    categoryAnchor: "gprs"
+    duration: "39:18"
+    speaker: "RFS"
+    affiliation: "Telecom Security Research"
+    date: "2024-02-01"
+    tags:
+      - "GPRS Security"
+      - "Access Point Names"
+      - "Mobile Network Traffic"
+      - "Traffic Analysis"
+      - "APN Configuration"
+    featured: false
+    thumbnail: "https://img.youtube.com/vi/ghi789jkl/maxresdefault.jpg"
+    viewCount: "12,789"
+    likeCount: "234"
+    difficulty: "Intermediate"
+    language: "English"
+    transcript: true
+
 # Video Categories Configuration
 categories:
   - name: "Featured Videos"
@@ -433,6 +523,24 @@ categories:
     description: "AT command fuzzing and mobile device security"
     icon: "fas fa-terminal"
     color: "#dc3545"
+    
+  - name: "2G Network Security"
+    anchor: "2g"
+    description: "GSM security architecture, authentication protocols, and legacy vulnerabilities"
+    icon: "fas fa-signal"
+    color: "#6f42c1"
+    
+  - name: "VoIP Security"
+    anchor: "voip"
+    description: "Voice over IP security, encrypted communications, and attack vectors"
+    icon: "fas fa-phone"
+    color: "#fd7e14"
+    
+  - name: "GPRS Security"
+    anchor: "gprs"
+    description: "GPRS network security, APN configurations, and traffic analysis"
+    icon: "fas fa-network-wired"
+    color: "#20c997"
 
 # Video Page Configuration
 page:
