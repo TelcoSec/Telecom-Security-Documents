@@ -10,7 +10,7 @@ class VideosPage {
         this.currentCategory = '';
         this.currentSort = 'featured';
         this.searchQuery = '';
-        
+
         this.init();
     }
 
@@ -33,14 +33,14 @@ class VideosPage {
         try {
             const response = await fetch('content/videos.yaml');
             const yamlText = await response.text();
-            
+
             // Parse YAML (using a simple approach - in production, use a proper YAML parser)
             const data = this.parseYAML(yamlText);
-            
+
             this.videos = data.videos || [];
             this.categories = data.categories || [];
             this.filteredVideos = [...this.videos];
-            
+
             console.log(`Loaded ${this.videos.length} videos and ${this.categories.length} categories`);
         } catch (error) {
             console.error('Error loading videos data:', error);
@@ -64,24 +64,24 @@ class VideosPage {
 
         for (let line of lines) {
             line = line.trim();
-            
+
             if (line.startsWith('#') || line === '') continue;
-            
+
             if (line === 'videos:') {
                 currentSection = 'videos';
                 continue;
             }
-            
+
             if (line === 'categories:') {
                 currentSection = 'categories';
                 continue;
             }
-            
+
             if (line === 'page:') {
                 currentSection = 'page';
                 continue;
             }
-            
+
             if (line.startsWith('  - id:')) {
                 if (currentSection === 'videos' && Object.keys(currentVideo).length > 0) {
                     data.videos.push(currentVideo);
@@ -90,7 +90,7 @@ class VideosPage {
                 currentVideo.id = line.split('"')[1];
                 continue;
             }
-            
+
             if (line.startsWith('  - name:')) {
                 if (currentSection === 'categories' && Object.keys(currentCategory).length > 0) {
                     data.categories.push(currentCategory);
@@ -99,7 +99,7 @@ class VideosPage {
                 currentCategory.name = line.split('"')[1];
                 continue;
             }
-            
+
             if (currentSection === 'videos' && line.includes(':')) {
                 const [key, value] = line.split(':').map(s => s.trim());
                 if (value && value !== '') {
@@ -114,7 +114,7 @@ class VideosPage {
                     }
                 }
             }
-            
+
             if (currentSection === 'categories' && line.includes(':')) {
                 const [key, value] = line.split(':').map(s => s.trim());
                 if (value && value !== '') {
@@ -126,7 +126,7 @@ class VideosPage {
                 }
             }
         }
-        
+
         // Add the last items
         if (currentSection === 'videos' && Object.keys(currentVideo).length > 0) {
             data.videos.push(currentVideo);
@@ -134,7 +134,7 @@ class VideosPage {
         if (currentSection === 'categories' && Object.keys(currentCategory).length > 0) {
             data.categories.push(currentCategory);
         }
-        
+
         return data;
     }
 
@@ -143,21 +143,21 @@ class VideosPage {
         this.videos = [
             {
                 id: "sample-1",
-                title: "5G Security Architecture Deep Dive",
-                description: "Comprehensive overview of 5G security architecture, network slicing, and emerging threats",
-                youtubeId: "jNQXAC9IVRw",
-                category: "5G Network Security",
-                duration: "45:32",
-                speaker: "Dr. Emily Wang",
-                affiliation: "Carnegie Mellon University",
+                title: "5G Security: DEFCON Research Presentation",
+                description: "Deep dive into 5G security architecture, network vulnerabilities, and emerging threats presented at DEFCON",
+                youtubeId: "JeTsJCfBE5U",
+                category: "Mobile Core Security",
+                duration: "42:15",
+                speaker: "Philippe Langlois",
+                affiliation: "P1 Security",
                 date: "2024-02-15",
-                tags: ["5G Security", "Network Architecture", "Network Slicing", "Threat Analysis"],
+                tags: ["5G Security", "DEFCON", "P1 Security", "Signal Security"],
                 featured: true,
                 viewCount: "125,430",
                 likeCount: "2,847"
             }
         ];
-        
+
         this.categories = [
             {
                 name: "5G Network Security",
@@ -167,7 +167,7 @@ class VideosPage {
                 color: "#28a745"
             }
         ];
-        
+
         this.filteredVideos = [...this.videos];
     }
 
@@ -258,10 +258,10 @@ class VideosPage {
 
         // Sort videos
         this.sortVideos();
-        
+
         // Reset pagination
         this.currentPage = 0;
-        
+
         // Update display
         this.renderVideos();
         this.updateCategoryFilter();
@@ -309,7 +309,7 @@ class VideosPage {
 
         if (totalVideos) totalVideos.textContent = this.videos.length;
         if (totalCategories) totalCategories.textContent = this.categories.length;
-        
+
         if (totalHours) {
             const totalMinutes = this.videos.reduce((sum, video) => {
                 return sum + this.parseDuration(video.duration);
@@ -324,9 +324,9 @@ class VideosPage {
         if (!featuredContainer) return;
 
         const featuredVideos = this.videos.filter(video => video.featured).slice(0, 3);
-        
+
         featuredContainer.innerHTML = featuredVideos.map(video => this.createVideoCard(video, true)).join('');
-        
+
         // Add click handlers
         featuredContainer.querySelectorAll('.video-card').forEach((card, index) => {
             card.addEventListener('click', () => {
@@ -402,7 +402,7 @@ class VideosPage {
     createVideoCard(video, isFeatured = false) {
         const category = this.categories.find(cat => cat.name === video.category);
         const categoryColor = category ? category.color : '#667eea';
-        
+
         return `
             <div class="col-lg-${isFeatured ? '4' : '3'} col-md-6 mb-4">
                 <div class="video-card fade-in" tabindex="0">
@@ -440,7 +440,7 @@ class VideosPage {
 
     openVideoModal(video) {
         const modal = new bootstrap.Modal(document.getElementById('videoModal'));
-        
+
         // Update modal content
         document.getElementById('videoModalLabel').textContent = video.title;
         document.getElementById('modalVideoTitle').textContent = video.title;
@@ -451,26 +451,26 @@ class VideosPage {
         document.getElementById('modalVideoDate').textContent = video.date;
         document.getElementById('modalVideoViews').textContent = video.viewCount;
         document.getElementById('modalVideoLikes').textContent = video.likeCount;
-        
+
         // Set video iframe
         const iframe = document.getElementById('videoIframe');
         if (iframe) {
             iframe.src = `https://www.youtube.com/embed/${video.youtubeId}?autoplay=1`;
         }
-        
+
         // Update tags
         const tagsContainer = document.getElementById('modalVideoTags');
         if (tagsContainer && video.tags) {
             tagsContainer.innerHTML = video.tags.map(tag => `<span class="video-tag">${tag}</span>`).join('');
         }
-        
+
         modal.show();
     }
 
     toggleView() {
         const videosContainer = document.querySelector('.videos-container');
         const toggleBtn = document.getElementById('toggleView');
-        
+
         if (this.currentView === 'grid') {
             this.currentView = 'list';
             videosContainer.classList.add('list-view');
@@ -493,14 +493,14 @@ class VideosPage {
 
         const currentValue = categoryFilter.value;
         categoryFilter.innerHTML = '<option value="">All Categories</option>';
-        
+
         this.categories.forEach(category => {
             const option = document.createElement('option');
             option.value = category.name;
             option.textContent = category.name;
             categoryFilter.appendChild(option);
         });
-        
+
         categoryFilter.value = currentValue;
     }
 
@@ -553,7 +553,7 @@ function trackVideoView(videoId, videoTitle) {
             'event_label': 'video_engagement'
         });
     }
-    
+
     // Track in localStorage for local analytics
     const videoViews = JSON.parse(localStorage.getItem('videoViews') || '{}');
     videoViews[videoId] = (videoViews[videoId] || 0) + 1;

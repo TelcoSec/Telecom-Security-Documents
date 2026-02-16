@@ -69,9 +69,9 @@ class YouTubeChannelManager {
                     </div>
                 </div>
             `;
-            
+
             playlistsSection.parentNode.insertBefore(videoGridSection, playlistsSection.nextSibling);
-            
+
             // Load sample videos (in a real implementation, this would use the YouTube Data API)
             this.loadSampleVideos();
         }
@@ -81,58 +81,31 @@ class YouTubeChannelManager {
         // Sample video data - in production, this would come from YouTube Data API
         const sampleVideos = [
             {
-                id: 'jNQXAC9IVRw',
-                title: '5G Network Security Analysis',
-                description: 'Comprehensive analysis of 5G network security architecture and vulnerabilities',
-                duration: '45:32',
-                views: '125K',
+                id: 'JeTsJCfBE5U',
+                title: '5G Security: DEFCON Presentation',
+                description: 'Comprehensive analysis of 5G security architecture and vulnerabilities presented at DEFCON',
+                duration: '42:15',
+                views: '12K',
                 date: '2024-02-15',
-                thumbnail: `https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg`
+                thumbnail: `https://img.youtube.com/vi/JeTsJCfBE5U/maxresdefault.jpg`
             },
             {
-                id: 'dQw4w9WgXcQ',
-                title: 'SS7 Protocol Attack Demonstration',
-                description: 'Live demonstration of SS7 protocol vulnerabilities and attack techniques',
-                duration: '38:15',
-                views: '89K',
+                id: 'SfPC9IHCW-U',
+                title: 'SS7 Security: Standardized Gaps',
+                description: 'Deep dive into SS7 protocol vulnerabilities and standardized security gaps',
+                duration: '35:12',
+                views: '8K',
                 date: '2024-01-20',
-                thumbnail: `https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg`
+                thumbnail: `https://img.youtube.com/vi/SfPC9IHCW-U/maxresdefault.jpg`
             },
             {
-                id: '9bZkp7q19f0',
-                title: 'SIM Card Security Analysis',
-                description: 'Technical analysis of SIM card vulnerabilities and physical attack vectors',
-                duration: '52:18',
-                views: '67K',
+                id: 'P1u2T_TELqY',
+                title: 'VoLTE & Geolocation Security',
+                description: 'Technical analysis of VoLTE vulnerabilities and geolocation tracking risks',
+                duration: '28:45',
+                views: '6K',
                 date: '2024-01-25',
-                thumbnail: `https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg`
-            },
-            {
-                id: 'kJQP7kiw5Fk',
-                title: '4G LTE Authentication Protocol Analysis',
-                description: 'Deep dive into 4G LTE authentication protocols and security vulnerabilities',
-                duration: '41:27',
-                views: '45K',
-                date: '2024-01-15',
-                thumbnail: `https://img.youtube.com/vi/kJQP7kiw5Fk/maxresdefault.jpg`
-            },
-            {
-                id: 'jNQXAC9IVRw',
-                title: 'LTE Impersonation Attack Techniques',
-                description: 'Advanced techniques for LTE impersonation attacks and countermeasures',
-                duration: '35:42',
-                views: '38K',
-                date: '2024-01-10',
-                thumbnail: `https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg`
-            },
-            {
-                id: 'dQw4w9WgXcQ',
-                title: 'Baseband Security Research',
-                description: 'Research on baseband vulnerabilities and over-the-air exploits',
-                duration: '48:55',
-                views: '42K',
-                date: '2024-01-05',
-                thumbnail: `https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg`
+                thumbnail: `https://img.youtube.com/vi/P1u2T_TELqY/maxresdefault.jpg`
             }
         ];
 
@@ -194,7 +167,7 @@ function openVideo(videoId) {
 }
 
 // Initialize YouTube Channel Manager when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     new YouTubeChannelManager();
 });
 

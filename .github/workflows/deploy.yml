@@ -71,6 +71,12 @@ jobs:
       with:
         node-version: '18'
         
+    - name: Install Dependencies
+      run: npm install
+        
+    - name: Run Project Validation
+      run: npm run validate
+        
     - name: Install http-server
       run: npm install -g http-server
         

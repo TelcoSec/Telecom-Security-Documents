@@ -10,11 +10,11 @@ function loadContent() {
         const yamlPath = path.join(__dirname, 'content', 'documents.yaml');
         const yamlContent = fs.readFileSync(yamlPath, 'utf8');
         const content = yaml.load(yamlContent);
-        
+
         console.log('✅ Loaded content from YAML file');
         console.log(`📊 Found ${content.documents.length} documents`);
         console.log(`📁 Found ${content.categories.length} categories`);
-        
+
         return content;
     } catch (error) {
         console.error('❌ Error loading YAML content:', error.message);
@@ -25,7 +25,7 @@ function loadContent() {
 // Template replacement function
 function replaceTemplateVariables(template, document, config) {
     let result = template;
-    
+
     // Basic document information
     result = result.replace(/\{\{DOCUMENT_TITLE\}\}/g, document.title);
     result = result.replace(/\{\{DOCUMENT_DESCRIPTION\}\}/g, document.description);
@@ -38,20 +38,41 @@ function replaceTemplateVariables(template, document, config) {
     result = result.replace(/\{\{PDF_FILE_NAME\}\}/g, document.fileName);
     result = result.replace(/\{\{DOCUMENT_ABSTRACT\}\}/g, document.abstract);
     result = result.replace(/\{\{DOCUMENT_ID\}\}/g, document.id);
-    
+
+    // Coming Soon Handling
+    if (document.comingSoon) {
+        const comingSoonHtml = `
+            <div class="coming-soon-placeholder my-5 text-center p-5 bg-light rounded border">
+                <i class="fas fa-clock fa-4x text-primary mb-3"></i>
+                <h3>Research in Progress</h3>
+                <p class="lead">This technical document is currently being finalized by our research team.</p>
+                <div class="progress mb-3" style="height: 10px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%"></div>
+                </div>
+                <p class="text-muted">Expected publication: Q2 2024</p>
+                <button class="btn btn-primary" disabled><i class="fas fa-bell me-2"></i>Notify Me When Published</button>
+            </div>
+        `;
+        result = result.replace(/\{\{COMING_SOON_UI\}\}/g, comingSoonHtml);
+        result = result.replace(/\{\{PDF_VIEWER_CLASS\}\}/g, 'd-none');
+    } else {
+        result = result.replace(/\{\{COMING_SOON_UI\}\}/g, '');
+        result = result.replace(/\{\{PDF_VIEWER_CLASS\}\}/g, '');
+    }
+
     // SEO improvements
     const keyTopicsString = document.keyTopics ? document.keyTopics.join(', ') : '';
     result = result.replace(/\{\{KEY_TOPICS_STRING\}\}/g, keyTopicsString);
-    
+
     // AdSense configuration
     result = result.replace(/\{\{ADSENSE_PUBLISHER_ID\}\}/g, config.publisherId);
     result = result.replace(/\{\{ADSENSE_BANNER_SLOT\}\}/g, config.slots.banner);
     result = result.replace(/\{\{ADSENSE_INLINE_SLOT\}\}/g, config.slots.inline);
     result = result.replace(/\{\{ADSENSE_SIDEBAR_SLOT\}\}/g, config.slots.sidebar);
-    
+
     // Key topics
     if (document.keyTopics && document.keyTopics.length > 0) {
-        const topicsHtml = document.keyTopics.map(topic => 
+        const topicsHtml = document.keyTopics.map(topic =>
             `<div class="col-md-6 mb-2">
                 <span class="badge bg-light text-dark border">${topic}</span>
             </div>`
@@ -60,7 +81,7 @@ function replaceTemplateVariables(template, document, config) {
     } else {
         result = result.replace(/\{\{KEY_TOPICS\}\}/g, '');
     }
-    
+
     // Researchers
     if (document.researchers && document.researchers.length > 0) {
         const researchersHtml = document.researchers.map(researcher => `
@@ -78,7 +99,7 @@ function replaceTemplateVariables(template, document, config) {
             </div>
         `).join('');
         result = result.replace(/\{\{RESEARCHERS\}\}/g, researchersHtml);
-        
+
         // Set first researcher for structured data
         const firstResearcher = document.researchers[0];
         result = result.replace(/\{\{RESEARCHER_NAME\}\}/g, firstResearcher.name);
@@ -88,7 +109,7 @@ function replaceTemplateVariables(template, document, config) {
         result = result.replace(/\{\{RESEARCHER_NAME\}\}/g, 'Telecom Security Team');
         result = result.replace(/\{\{RESEARCHER_AFFILIATION\}\}/g, 'Telecom Security');
     }
-    
+
     // Related videos
     if (document.relatedVideos && document.relatedVideos.length > 0) {
         const videosHtml = document.relatedVideos.map(video => `
@@ -110,7 +131,7 @@ function replaceTemplateVariables(template, document, config) {
     } else {
         result = result.replace(/\{\{RELATED_VIDEOS\}\}/g, '');
     }
-    
+
     // Related documents
     if (document.relatedDocuments && document.relatedDocuments.length > 0) {
         const documentsHtml = document.relatedDocuments.map(doc => `
@@ -126,7 +147,7 @@ function replaceTemplateVariables(template, document, config) {
     } else {
         result = result.replace(/\{\{RELATED_DOCUMENTS\}\}/g, '');
     }
-    
+
     // External references
     if (document.externalReferences && document.externalReferences.length > 0) {
         const referencesHtml = document.externalReferences.map(ref => `
@@ -141,62 +162,62 @@ function replaceTemplateVariables(template, document, config) {
     } else {
         result = result.replace(/\{\{EXTERNAL_REFERENCES\}\}/g, '');
     }
-    
+
     return result;
 }
 
 // Generate individual document pages
 function generateDocumentPages(content) {
     console.log('🚀 Generating individual document pages...');
-    
+
     // Create documents directory if it doesn't exist
     const documentsDir = path.join(__dirname, 'documents');
     if (!fs.existsSync(documentsDir)) {
         fs.mkdirSync(documentsDir, { recursive: true });
     }
-    
+
     // Read the document template
     const templatePath = path.join(__dirname, 'document-template.html');
     const template = fs.readFileSync(templatePath, 'utf8');
-    
+
     // Copy CSS and JS files to documents directory
     const cssPath = path.join(__dirname, 'document-styles.css');
     const jsPath = path.join(__dirname, 'document-script.js');
-    
+
     if (fs.existsSync(cssPath)) {
         fs.copyFileSync(cssPath, path.join(documentsDir, 'document-styles.css'));
     }
-    
+
     if (fs.existsSync(jsPath)) {
         fs.copyFileSync(jsPath, path.join(documentsDir, 'document-script.js'));
     }
-    
+
     // Generate pages for each document
     content.documents.forEach((doc, index) => {
         try {
             console.log(`Processing document ${index + 1}/${content.documents.length}: ${doc.id}`);
             const pageContent = replaceTemplateVariables(template, doc, content.adsense);
             const pagePath = path.join(documentsDir, `${doc.id}.html`);
-            
+
             fs.writeFileSync(pagePath, pageContent);
             console.log(`✅ Generated: ${doc.id}.html`);
         } catch (error) {
             console.error(`❌ Error generating ${doc.id}.html:`, error.message);
         }
     });
-    
+
     // Generate documents index page
     generateDocumentsIndex(documentsDir, content);
-    
+
     console.log('🎉 Document pages generation completed!');
 }
 
 // Generate documents index page
 function generateDocumentsIndex(documentsDir, content) {
     console.log('📋 Generating documents index page...');
-    
+
     const categorySections = generateCategorySections(content);
-    
+
     const indexTemplate = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -338,7 +359,7 @@ function generateDocumentsIndex(documentsDir, content) {
 // Generate category sections for the index
 function generateCategorySections(content) {
     const categories = {};
-    
+
     // Group documents by category
     content.documents.forEach(doc => {
         if (!categories[doc.category]) {
@@ -346,7 +367,7 @@ function generateCategorySections(content) {
         }
         categories[doc.category].push(doc);
     });
-    
+
     // Generate HTML for each category
     return Object.entries(categories).map(([category, docs]) => `
         <div class="category-section mb-5">
@@ -378,9 +399,9 @@ function generateCategorySections(content) {
 // Generate sitemap
 function generateSitemap(content) {
     console.log('🗺️ Generating sitemap.xml...');
-    
+
     const lastmod = new Date().toISOString().split('T')[0];
-    
+
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -436,7 +457,7 @@ ${content.categories.map(cat => `    <url>
 // Generate RSS feed
 function generateRSSFeed(content) {
     console.log('📡 Generating RSS feed...');
-    
+
     const rssFeed = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
@@ -467,20 +488,20 @@ ${content.documents.map(doc => `        <item>
 if (require.main === module) {
     try {
         console.log('📚 Starting YAML-based content generation...');
-        
+
         // Load content from YAML
         const content = loadContent();
-        
+
         // Generate all pages
         generateDocumentPages(content);
         generateSitemap(content);
         generateRSSFeed(content);
-        
+
         console.log('\n🎉 All content generated successfully from YAML!');
         console.log('📁 Check the "documents" folder for the generated pages.');
         console.log('🗺️ sitemap.xml and rss.xml have been generated.');
         console.log('🌐 You can now navigate to individual document pages.');
-        
+
     } catch (error) {
         console.error('❌ Error during generation:', error.message);
         process.exit(1);

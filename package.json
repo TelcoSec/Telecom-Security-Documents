@@ -9,6 +9,7 @@
     "generate:yaml": "node generate-from-yaml.js",
     "generate:watch": "nodemon generate-pages.js",
     "build": "npm run generate:yaml && npm run seo && npm run optimize:images",
+    "validate": "node check-errors.js",
     "seo": "node generate-sitemap.js",
     "test": "echo \"No tests specified\" && exit 0",
     "optimize:images": "node optimize-images.js",

@@ -5,7 +5,7 @@
         <link>https://telcosec.github.io/Telecom-Security-Documents</link>
         <description>Comprehensive collection of telecommunications security research papers, technical documents, and security analysis for professionals, researchers, and industry experts</description>
         <language>en-us</language>
-        <lastBuildDate>Wed, 27 Aug 2025 02:40:04 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 16 Feb 2026 22:49:10 GMT</lastBuildDate>
         <atom:link href="https://telcosec.github.io/Telecom-Security-Documents/rss.xml" rel="self" type="application/rss+xml" />
         
         <item>
@@ -27,33 +27,33 @@
         <item>
             <title>IoT Device Security in Telecom Networks: Threats and Mitigation</title>
             <link>https://telcosec.github.io/Telecom-Security-Documents/documents/iot-telecom-security.html</link>
-            <description>Comprehensive analysis of IoT device security challenges in telecommunications networks</description>
+            <description>Analyzing security challenges and mitigation strategies for IoT devices in telecommunications.</description>
             <category>IoT & Device Security</category>
-            <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
+            <pubDate>Wed, 20 Mar 2024 00:00:00 GMT</pubDate>
             <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/iot-telecom-security.html</guid>
         </item>
         <item>
-            <title>Quantum Threats to Telecommunications: Post-Quantum Cryptography Solutions</title>
+            <title>Quantum Security for Telecommunications</title>
             <link>https://telcosec.github.io/Telecom-Security-Documents/documents/quantum-telecom-security.html</link>
-            <description>Analysis of quantum computing threats to telecom security and post-quantum cryptographic solutions</description>
+            <description>Investigating the impact and applications of quantum computing on telecom security.</description>
             <category>Quantum Security</category>
-            <pubDate>Fri, 15 Mar 2024 00:00:00 GMT</pubDate>
+            <pubDate>Mon, 15 Apr 2024 00:00:00 GMT</pubDate>
             <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/quantum-telecom-security.html</guid>
         </item>
         <item>
-            <title>Satellite Communications Security: Vulnerabilities and Protection Strategies</title>
+            <title>Satellite Communications Security Analysis</title>
             <link>https://telcosec.github.io/Telecom-Security-Documents/documents/satellite-telecom-security.html</link>
-            <description>Comprehensive security analysis of satellite communications systems and protection mechanisms</description>
+            <description>Satellite communications security, signal protection, and orbital security.</description>
             <category>Satellite Security</category>
-            <pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate>
+            <pubDate>Fri, 10 May 2024 00:00:00 GMT</pubDate>
             <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/satellite-telecom-security.html</guid>
         </item>
         <item>
-            <title>Cloud-Native Telecom Security: Challenges and Solutions</title>
+            <title>Cloud-Native Telecom Security</title>
             <link>https://telcosec.github.io/Telecom-Security-Documents/documents/cloud-telecom-security.html</link>
-            <description>Security analysis of cloud-native telecommunications infrastructure and protection strategies</description>
+            <description>Exploring security challenges and solutions for cloud-native telecom infrastructure.</description>
             <category>Cloud Security</category>
-            <pubDate>Mon, 15 Apr 2024 00:00:00 GMT</pubDate>
+            <pubDate>Wed, 05 Jun 2024 00:00:00 GMT</pubDate>
             <guid>https://telcosec.github.io/Telecom-Security-Documents/documents/cloud-telecom-security.html</guid>
         </item>
         <item>

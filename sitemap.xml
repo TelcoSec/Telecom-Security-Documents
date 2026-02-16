@@ -3,480 +3,279 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+    
+    <!-- Home Page -->
     <url>
-        <loc>https://library.telco-sec.com/</loc>
-        <lastmod>2025-08-27</lastmod>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/</loc>
+        <lastmod>2026-02-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+    
+    <!-- About Page -->
     <url>
-        <loc>https://library.telco-sec.com/about.html</loc>
-        <lastmod>2025-08-27</lastmod>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/about.html</loc>
+        <lastmod>2026-02-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    
+    <!-- Documents Index Page -->
     <url>
-        <loc>https://library.telco-sec.com/videos.html</loc>
-        <lastmod>2025-08-27</lastmod>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/index.html</loc>
+        <lastmod>2026-02-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
+    
+    <!-- Individual Document Pages -->
     <url>
-        <loc>https://library.telco-sec.com/tools.html</loc>
-        <lastmod>2025-08-27</lastmod>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/4g-impersonation-attack.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/5g-security-analysis.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/iot-telecom-security.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/quantum-telecom-security.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/satellite-telecom-security.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/cloud-telecom-security.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/5g-network-slicing.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/ss7-security.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/sim-card-security.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/baseband-security.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/base-station-security.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/fbi-telecom-security.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/telecom-fraud-analysis.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/gpon-security.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/motif-security.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/roaming-security.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/apn-security.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/2g-gsm-security-analysis.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/voip-security-analysis.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/gprs-apn-security.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/documents/at-commands-security.html</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Category Pages -->
+    <url>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#4g</loc>
+        <lastmod>2026-02-16</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/images.html</loc>
-        <lastmod>2025-08-27</lastmod>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#5g</loc>
+        <lastmod>2026-02-16</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/partners.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/index.html</loc>
-        <lastmod>2025-08-27</lastmod>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#ss7</loc>
+        <lastmod>2026-02-16</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#4g</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#5g</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#ss7</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#sim-cards</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#baseband</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#base-stations</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#fbi</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/#fraud</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#gpon</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#motif</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#roaming</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#apns</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#at-commands</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#iot</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#quantum</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#satellite</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/#cloud</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/4g-impersonation-attack.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/5g-security-analysis.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#sim-cards</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/ss7-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#baseband</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/5g-security-analysis.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/5g-network-slicing.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#base-stations</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/sim-card-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#fbi</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/iot-telecom-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/quantum-telecom-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/satellite-telecom-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/cloud-telecom-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/5g-network-slicing.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/5g-security-analysis.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#fraud</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/baseband-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#gpon</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/ss7-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/4g-impersonation-attack.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#motif</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/5g-security-analysis.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#roaming</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/sim-card-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/ss7-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#apns</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/baseband-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#at-commands</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/baseband-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/sim-card-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#2g</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/base-station-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#voip</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/base-station-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/baseband-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#gprs</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/fbi-telecom-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#iot</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/fbi-telecom-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/base-station-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#quantum</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/telecom-fraud-analysis.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#satellite</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://library.telco-sec.com/documents/telecom-fraud-analysis.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/fbi-telecom-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://telcosec.github.io/Telecom-Security-Documents/#cloud</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/gpon-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/gpon-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/telecom-fraud-analysis.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/roaming-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/motif-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/gpon-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/apn-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/roaming-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/motif-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/at-commands-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/apn-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/roaming-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/baseband-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/2g-gsm-security-analysis.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/ss7-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/sim-card-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/voip-security-analysis.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/4g-impersonation-attack.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/5g-security-analysis.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/gprs-apn-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/apn-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/4g-impersonation-attack.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/at-commands-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/apn-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://library.telco-sec.com/documents/sim-card-security.html</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
+    
 </urlset>
