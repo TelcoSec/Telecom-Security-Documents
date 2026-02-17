@@ -1016,7 +1016,7 @@ documents:
 site:
   title: "Telecom Security Library"
   description: "Comprehensive collection of telecommunications security research papers, technical documents, and security analysis for professionals, researchers, and industry experts"
-  baseUrl: "https://telcosec.github.io/Telecom-Security-Documents"
+  baseUrl: "https://library.telco-sec.com"
   author: "Telecom Security Team"
   contact: "contact@telcosec.org"
   repository: "https://github.com/TelcoSec/Telecom-Security-Documents"

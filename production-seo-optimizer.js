@@ -5,7 +5,7 @@ const yaml = require('js-yaml');
 // Production SEO Optimizer for Telecom Security Library
 class ProductionSEOOptimizer {
     constructor() {
-        this.baseUrl = 'https://telcosec.github.io/Telecom-Security-Documents';
+        this.baseUrl = 'https://library.telco-sec.com';
         this.currentDate = new Date().toISOString().split('T')[0];
         this.optimizations = [];
     }
@@ -13,26 +13,26 @@ class ProductionSEOOptimizer {
     // Run all production optimizations
     async runAll() {
         console.log('🚀 Starting Production SEO Optimization...\n');
-        
+
         try {
             // 1. Generate enhanced sitemaps
             await this.generateEnhancedSitemaps();
-            
+
             // 2. Optimize robots.txt
             await this.optimizeRobotsTxt();
-            
+
             // 3. Enhance internal linking
             await this.enhanceInternalLinking();
-            
+
             // 4. Generate SEO reports
             await this.generateSEOReports();
-            
+
             // 5. Create production checklist
             await this.createProductionChecklist();
-            
+
             console.log('\n🎉 Production SEO Optimization Completed Successfully!');
             this.displaySummary();
-            
+
         } catch (error) {
             console.error('❌ Error during optimization:', error.message);
         }
@@ -41,16 +41,16 @@ class ProductionSEOOptimizer {
     // Generate enhanced sitemaps
     async generateEnhancedSitemaps() {
         console.log('🗺️ Generating enhanced sitemaps...');
-        
+
         try {
             // Import and run the enhanced sitemap generator
             const EnhancedSitemapGenerator = require('./generate-enhanced-sitemap.js');
             const generator = new EnhancedSitemapGenerator();
             generator.generateAll();
-            
+
             this.optimizations.push('✅ Enhanced sitemaps generated (main, images, videos, index)');
             console.log('✅ Enhanced sitemaps generated');
-            
+
         } catch (error) {
             console.error('❌ Error generating sitemaps:', error.message);
             throw error;
@@ -60,17 +60,17 @@ class ProductionSEOOptimizer {
     // Optimize robots.txt
     async optimizeRobotsTxt() {
         console.log('🤖 Optimizing robots.txt...');
-        
+
         try {
             const robotsContent = fs.readFileSync('robots.txt', 'utf8');
-            
+
             // Check if robots.txt is already optimized
             if (robotsContent.includes('Enhanced Robots.txt for Telecom Security Library')) {
                 console.log('✅ Robots.txt already optimized');
                 this.optimizations.push('✅ Robots.txt already optimized');
                 return;
             }
-            
+
             // Create optimized robots.txt
             const optimizedRobots = `# Enhanced Robots.txt for Telecom Security Library
 # Optimized for production SEO and search engine crawling
@@ -156,11 +156,11 @@ Host: https://telcosec.github.io
 
 # Crawl delay for all bots (respectful crawling)
 Crawl-delay: 1`;
-            
+
             fs.writeFileSync('robots.txt', optimizedRobots);
             this.optimizations.push('✅ Robots.txt optimized for production');
             console.log('✅ Robots.txt optimized');
-            
+
         } catch (error) {
             console.error('❌ Error optimizing robots.txt:', error.message);
             throw error;
@@ -170,16 +170,16 @@ Crawl-delay: 1`;
     // Enhance internal linking
     async enhanceInternalLinking() {
         console.log('🔗 Enhancing internal linking...');
-        
+
         try {
             // Import and run the internal linking enhancer
             const InternalLinkingEnhancer = require('./enhance-internal-linking.js');
             const enhancer = new InternalLinkingEnhancer();
             enhancer.run();
-            
+
             this.optimizations.push('✅ Internal linking enhanced with related content');
             console.log('✅ Internal linking enhanced');
-            
+
         } catch (error) {
             console.error('❌ Error enhancing internal linking:', error.message);
             throw error;
@@ -189,23 +189,23 @@ Crawl-delay: 1`;
     // Generate comprehensive SEO reports
     async generateSEOReports() {
         console.log('📊 Generating SEO reports...');
-        
+
         try {
             // Generate main SEO report
             const seoReport = this.generateMainSEOReport();
             fs.writeFileSync('SEO-OPTIMIZATION-REPORT.md', seoReport);
-            
+
             // Generate technical SEO checklist
             const technicalChecklist = this.generateTechnicalChecklist();
             fs.writeFileSync('TECHNICAL-SEO-CHECKLIST.md', technicalChecklist);
-            
+
             // Generate performance optimization guide
             const performanceGuide = this.generatePerformanceGuide();
             fs.writeFileSync('PERFORMANCE-OPTIMIZATION-GUIDE.md', performanceGuide);
-            
+
             this.optimizations.push('✅ Comprehensive SEO reports generated');
             console.log('✅ SEO reports generated');
-            
+
         } catch (error) {
             console.error('❌ Error generating SEO reports:', error.message);
             throw error;
@@ -699,7 +699,7 @@ The Telecom Security Library has been successfully optimized for production SEO 
     // Create production checklist
     async createProductionChecklist() {
         console.log('📋 Creating production checklist...');
-        
+
         try {
             const checklist = `# Production Readiness Checklist - Telecom Security Library
 
@@ -832,11 +832,11 @@ The Telecom Security Library has been successfully optimized for production SEO 
 ---
 *Checklist generated by Production SEO Optimizer v1.0*
 *Date: ${this.currentDate}*`;
-            
+
             fs.writeFileSync('PRODUCTION-CHECKLIST.md', checklist);
             this.optimizations.push('✅ Production checklist created');
             console.log('✅ Production checklist created');
-            
+
         } catch (error) {
             console.error('❌ Error creating production checklist:', error.message);
             throw error;
@@ -847,11 +847,11 @@ The Telecom Security Library has been successfully optimized for production SEO 
     displaySummary() {
         console.log('\n📊 Optimization Summary:');
         console.log('========================');
-        
+
         this.optimizations.forEach((optimization, index) => {
             console.log(`${index + 1}. ${optimization}`);
         });
-        
+
         console.log('\n📁 Generated Files:');
         console.log('====================');
         console.log('   📄 sitemap.xml (main sitemap)');
@@ -866,7 +866,7 @@ The Telecom Security Library has been successfully optimized for production SEO 
         console.log('   🔧 TECHNICAL-SEO-CHECKLIST.md (technical checklist)');
         console.log('   ⚡ PERFORMANCE-OPTIMIZATION-GUIDE.md (performance guide)');
         console.log('   ✅ PRODUCTION-CHECKLIST.md (launch checklist)');
-        
+
         console.log('\n💡 Next Steps:');
         console.log('===============');
         console.log('   1. Review all generated reports');
@@ -875,7 +875,7 @@ The Telecom Security Library has been successfully optimized for production SEO 
         console.log('   4. Submit sitemaps to search engines');
         console.log('   5. Monitor performance and SEO metrics');
         console.log('   6. Launch and track results');
-        
+
         console.log('\n🎉 Your Telecom Security Library is now production-ready!');
     }
 }

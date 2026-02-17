@@ -130,15 +130,15 @@ function optimizeImage(imagePath) {
     const filename = path.basename(imagePath);
     const nameWithoutExt = path.parse(filename).name;
     const ext = path.parse(filename).ext.toLowerCase();
-    
+
     if (!imageMetadata[filename]) {
         console.log(`⚠️  No metadata found for ${filename}`);
         return;
     }
-    
+
     const metadata = imageMetadata[filename];
     const outputPath = path.join(OUTPUT_DIR, filename);
-    
+
     try {
         // Create optimized version
         if (checkImageMagick()) {
@@ -147,12 +147,12 @@ function optimizeImage(imagePath) {
                 execSync(`magick "${imagePath}" -strip -quality ${WEBP_QUALITY} "${outputPath}"`, { stdio: 'ignore' });
                 console.log(`✅ Optimized ${filename}`);
             }
-            
+
             // Create WebP version
             const webpPath = path.join(OUTPUT_DIR, `${nameWithoutExt}.webp`);
             execSync(`magick "${imagePath}" -strip -quality ${WEBP_QUALITY} "${webpPath}"`, { stdio: 'ignore' });
             console.log(`✅ Created WebP version: ${nameWithoutExt}.webp`);
-            
+
             // Create thumbnail
             const thumbnailPath = path.join(OUTPUT_DIR, `${nameWithoutExt}-thumb${ext}`);
             execSync(`magick "${imagePath}" -strip -resize ${THUMBNAIL_SIZE} -quality ${WEBP_QUALITY} "${thumbnailPath}"`, { stdio: 'ignore' });
@@ -162,12 +162,12 @@ function optimizeImage(imagePath) {
             fs.copyFileSync(imagePath, outputPath);
             console.log(`⚠️  ImageMagick not available, copied ${filename} without optimization`);
         }
-        
+
         // Create metadata file
         const metadataPath = path.join(OUTPUT_DIR, `${nameWithoutExt}.json`);
         fs.writeFileSync(metadataPath, JSON.stringify(metadata, null, 2));
         console.log(`✅ Created metadata: ${nameWithoutExt}.json`);
-        
+
     } catch (error) {
         console.error(`❌ Error processing ${filename}:`, error.message);
     }
@@ -178,12 +178,12 @@ function optimizeImage(imagePath) {
  */
 function generateImageSitemap() {
     const sitemapPath = path.join(OUTPUT_DIR, 'image-sitemap.xml');
-    const baseUrl = 'https://telcosec.github.io/Telecom-Security-Documents/images/optimized/';
-    
+    const baseUrl = 'https://library.telco-sec.com/images/optimized/';
+
     let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
     sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
     sitemap += '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n';
-    
+
     Object.entries(imageMetadata).forEach(([filename, metadata]) => {
         const nameWithoutExt = path.parse(filename).name;
         sitemap += '  <url>\n';
@@ -195,9 +195,9 @@ function generateImageSitemap() {
         sitemap += '    </image:image>\n';
         sitemap += '  </url>\n';
     });
-    
+
     sitemap += '</urlset>';
-    
+
     fs.writeFileSync(sitemapPath, sitemap);
     console.log('✅ Generated image sitemap: image-sitemap.xml');
 }
@@ -207,8 +207,8 @@ function generateImageSitemap() {
  */
 function generateImageManifest() {
     const manifestPath = path.join(OUTPUT_DIR, 'image-manifest.json');
-    const baseUrl = 'https://telcosec.github.io/Telecom-Security-Documents/images/optimized/';
-    
+    const baseUrl = 'https://library.telco-sec.com/images/optimized/';
+
     const manifest = {
         version: '1.0',
         generated: new Date().toISOString(),
@@ -228,7 +228,7 @@ function generateImageManifest() {
             };
         })
     };
-    
+
     fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
     console.log('✅ Generated image manifest: image-manifest.json');
 }
@@ -238,30 +238,30 @@ function generateImageManifest() {
  */
 function main() {
     console.log('🚀 Starting image optimization...\n');
-    
+
     if (!fs.existsSync(IMAGES_DIR)) {
         console.error('❌ Images directory not found');
         process.exit(1);
     }
-    
+
     const imageFiles = fs.readdirSync(IMAGES_DIR)
         .filter(file => /\.(png|jpg|jpeg|gif|webp)$/i.test(file))
         .map(file => path.join(IMAGES_DIR, file));
-    
+
     if (imageFiles.length === 0) {
         console.log('ℹ️  No image files found to process');
         return;
     }
-    
+
     console.log(`📁 Found ${imageFiles.length} images to process\n`);
-    
+
     // Process each image
     imageFiles.forEach(optimizeImage);
-    
+
     // Generate sitemap and manifest
     generateImageSitemap();
     generateImageManifest();
-    
+
     console.log('\n🎉 Image optimization complete!');
     console.log(`📁 Check the ${OUTPUT_DIR} directory for optimized images`);
     console.log('📋 Generated files:');

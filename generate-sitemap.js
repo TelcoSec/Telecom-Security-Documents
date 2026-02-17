@@ -10,7 +10,7 @@ function loadContent() {
         const yamlPath = path.join(__dirname, 'content', 'documents.yaml');
         const yamlContent = fs.readFileSync(yamlPath, 'utf8');
         const content = yaml.load(yamlContent);
-        
+
         return content;
     } catch (error) {
         console.error('❌ Error loading YAML content:', error.message);
@@ -20,7 +20,7 @@ function loadContent() {
 
 // Site configuration
 const siteConfig = {
-    baseUrl: 'https://telcosec.github.io/Telecom-Security-Documents',
+    baseUrl: 'https://library.telco-sec.com',
     lastmod: new Date().toISOString().split('T')[0], // YYYY-MM-DD format
     changefreq: 'weekly',
     priority: {
@@ -34,9 +34,9 @@ const siteConfig = {
 // Generate sitemap XML
 function generateSitemap() {
     console.log('🗺️ Generating sitemap.xml...');
-    
+
     const content = loadContent();
-    
+
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -94,9 +94,9 @@ ${content.categories.map(cat => `    <url>
 // Generate RSS feed
 function generateRSSFeed() {
     console.log('📡 Generating RSS feed...');
-    
+
     const content = loadContent();
-    
+
     const rssFeed = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>

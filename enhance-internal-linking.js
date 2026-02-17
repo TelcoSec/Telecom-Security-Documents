@@ -5,7 +5,7 @@ const yaml = require('js-yaml');
 // Enhanced Internal Linking System for SEO
 class InternalLinkingEnhancer {
     constructor() {
-        this.baseUrl = 'https://telcosec.github.io/Telecom-Security-Documents';
+        this.baseUrl = 'https://library.telco-sec.com';
         this.documents = [];
         this.categories = new Map();
         this.internalLinks = new Map();
@@ -18,7 +18,7 @@ class InternalLinkingEnhancer {
             console.log('📚 Loading documents from YAML...');
             const documentsYaml = fs.readFileSync('content/documents.yaml', 'utf8');
             const data = yaml.load(documentsYaml);
-            
+
             if (data && data.documents) {
                 this.documents = data.documents;
                 this.analyzeCategories();
@@ -38,7 +38,7 @@ class InternalLinkingEnhancer {
             }
             this.categories.get(doc.category).push(doc);
         });
-        
+
         console.log(`📂 Found ${this.categories.size} categories`);
     }
 
@@ -46,7 +46,7 @@ class InternalLinkingEnhancer {
     buildRelatedContent() {
         this.documents.forEach(doc => {
             const related = [];
-            
+
             // Find documents in the same category
             const sameCategory = this.categories.get(doc.category) || [];
             sameCategory.forEach(otherDoc => {
@@ -61,7 +61,7 @@ class InternalLinkingEnhancer {
                     });
                 }
             });
-            
+
             // Find documents with similar key topics
             this.documents.forEach(otherDoc => {
                 if (otherDoc.id !== doc.id && otherDoc.id !== doc.category) {
@@ -79,7 +79,7 @@ class InternalLinkingEnhancer {
                     }
                 }
             });
-            
+
             // Sort by relevance and limit to top 5
             related.sort((a, b) => b.relevance - a.relevance);
             this.relatedContent.set(doc.id, related.slice(0, 5));
@@ -89,21 +89,21 @@ class InternalLinkingEnhancer {
     // Calculate relevance between documents
     calculateRelevance(doc1, doc2) {
         let score = 0;
-        
+
         // Same category bonus
         if (doc1.category === doc2.category) {
             score += 10;
         }
-        
+
         // Common key topics
         const commonTopics = this.findCommonTopics(doc1, doc2);
         score += commonTopics.length * 5;
-        
+
         // Similar document type
         if (doc1.type === doc2.type) {
             score += 3;
         }
-        
+
         // Date proximity (newer documents get slight bonus)
         if (doc1.date && doc2.date) {
             const date1 = new Date(doc1.date);
@@ -112,7 +112,7 @@ class InternalLinkingEnhancer {
             if (diffDays < 30) score += 2;
             else if (diffDays < 90) score += 1;
         }
-        
+
         return score;
     }
 
@@ -127,13 +127,13 @@ class InternalLinkingEnhancer {
     generateInternalLinkingHTML(documentId) {
         const related = this.relatedContent.get(documentId) || [];
         if (related.length === 0) return '';
-        
+
         let html = `
         <!-- Enhanced Internal Linking Section -->
         <section class="internal-linking-section mb-5">
             <h3><i class="fas fa-link me-2"></i>Related Research</h3>
             <div class="row">`;
-        
+
         related.forEach(item => {
             html += `
                 <div class="col-md-6 mb-3">
@@ -164,11 +164,11 @@ class InternalLinkingEnhancer {
                     </div>
                 </div>`;
         });
-        
+
         html += `
             </div>
         </section>`;
-        
+
         return html;
     }
 
@@ -176,13 +176,13 @@ class InternalLinkingEnhancer {
     generateCategoryNavigationHTML(currentCategory) {
         const categoryDocs = this.categories.get(currentCategory) || [];
         if (categoryDocs.length <= 1) return '';
-        
+
         let html = `
         <!-- Category Navigation -->
         <section class="category-navigation mb-4">
             <h4><i class="fas fa-folder-open me-2"></i>More ${currentCategory}</h4>
             <div class="row">`;
-        
+
         categoryDocs.forEach(doc => {
             html += `
                 <div class="col-md-4 mb-2">
@@ -192,11 +192,11 @@ class InternalLinkingEnhancer {
                     </a>
                 </div>`;
         });
-        
+
         html += `
             </div>
         </section>`;
-        
+
         return html;
     }
 
@@ -204,35 +204,35 @@ class InternalLinkingEnhancer {
     generateTopicBasedLinkingHTML(documentId) {
         const doc = this.documents.find(d => d.id === documentId);
         if (!doc || !doc.keyTopics) return '';
-        
+
         const topicGroups = new Map();
-        
+
         // Group documents by key topics
         doc.keyTopics.forEach(topic => {
-            const relatedDocs = this.documents.filter(d => 
-                d.id !== documentId && 
-                d.keyTopics && 
+            const relatedDocs = this.documents.filter(d =>
+                d.id !== documentId &&
+                d.keyTopics &&
                 d.keyTopics.includes(topic)
             );
-            
+
             if (relatedDocs.length > 0) {
                 topicGroups.set(topic, relatedDocs);
             }
         });
-        
+
         if (topicGroups.size === 0) return '';
-        
+
         let html = `
         <!-- Topic-Based Linking -->
         <section class="topic-linking-section mb-4">
             <h4><i class="fas fa-tags me-2"></i>Related by Topics</h4>`;
-        
+
         topicGroups.forEach((docs, topic) => {
             html += `
             <div class="topic-group mb-3">
                 <h6 class="text-primary">${topic}</h6>
                 <div class="row">`;
-            
+
             docs.slice(0, 3).forEach(relatedDoc => {
                 html += `
                     <div class="col-md-4 mb-2">
@@ -242,15 +242,15 @@ class InternalLinkingEnhancer {
                         </a>
                     </div>`;
             });
-            
+
             html += `
                 </div>
             </div>`;
         });
-        
+
         html += `
         </section>`;
-        
+
         return html;
     }
 
@@ -258,7 +258,7 @@ class InternalLinkingEnhancer {
     generateBreadcrumbHTML(documentId) {
         const doc = this.documents.find(d => d.id === documentId);
         if (!doc) return '';
-        
+
         return `
         <!-- Enhanced Breadcrumb Navigation -->
         <nav aria-label="breadcrumb" class="mb-4">
@@ -303,14 +303,14 @@ class InternalLinkingEnhancer {
             'Access Point Names (APNs)': 'apns',
             'AT Commands': 'at-commands'
         };
-        
+
         return anchorMap[categoryName] || categoryName.toLowerCase().replace(/\s+/g, '-');
     }
 
     // Generate sitemap for internal linking
     generateInternalSitemap() {
         console.log('🗺️ Generating internal sitemap...');
-        
+
         let sitemap = `# Internal Site Structure for SEO
 
 ## Main Pages
@@ -322,20 +322,20 @@ class InternalLinkingEnhancer {
 
 ## Category Pages
 `;
-        
+
         this.categories.forEach((docs, category) => {
             const anchor = this.getCategoryAnchor(category);
             sitemap += `- [${category}](../index.html#${anchor}) - ${docs.length} documents\n`;
         });
-        
+
         sitemap += `
 ## Document Pages
 `;
-        
+
         this.documents.forEach(doc => {
             sitemap += `- [${doc.title}](./${doc.id}.html) - ${doc.category}\n`;
         });
-        
+
         fs.writeFileSync('INTERNAL-SITEMAP.md', sitemap);
         console.log('✅ Internal sitemap generated');
     }
@@ -343,15 +343,15 @@ class InternalLinkingEnhancer {
     // Generate enhanced document template with internal linking
     enhanceDocumentTemplate() {
         console.log('🔗 Enhancing document template with internal linking...');
-        
+
         const templatePath = 'document-template.html';
         if (!fs.existsSync(templatePath)) {
             console.error('❌ Document template not found');
             return;
         }
-        
+
         let template = fs.readFileSync(templatePath, 'utf8');
-        
+
         // Add internal linking placeholders
         template = template.replace(
             '<!-- Related Documents Section -->',
@@ -360,13 +360,13 @@ class InternalLinkingEnhancer {
             {{CATEGORY_NAVIGATION}}
             {{TOPIC_BASED_LINKING}}`
         );
-        
+
         // Add breadcrumb placeholder
         template = template.replace(
             '<!-- Enhanced Breadcrumb Navigation -->',
             '{{ENHANCED_BREADCRUMB}}'
         );
-        
+
         fs.writeFileSync('document-template-enhanced.html', template);
         console.log('✅ Enhanced document template created');
     }
@@ -374,7 +374,7 @@ class InternalLinkingEnhancer {
     // Generate linking report
     generateLinkingReport() {
         console.log('📊 Generating internal linking report...');
-        
+
         let report = `# Internal Linking Report
 
 ## Summary
@@ -387,26 +387,26 @@ class InternalLinkingEnhancer {
 
 ## Category Distribution
 `;
-        
+
         this.categories.forEach((docs, category) => {
             report += `- **${category}**: ${docs.length} documents\n`;
         });
-        
+
         report += `
 ## Top Related Content
 `;
-        
+
         const topRelated = Array.from(this.relatedContent.entries())
             .sort((a, b) => b[1].length - a[1].length)
             .slice(0, 10);
-        
+
         topRelated.forEach(([docId, related]) => {
             const doc = this.documents.find(d => d.id === docId);
             if (doc) {
                 report += `- **${doc.title}**: ${related.length} related documents\n`;
             }
         });
-        
+
         fs.writeFileSync('INTERNAL-LINKING-REPORT.md', report);
         console.log('✅ Internal linking report generated');
     }
@@ -414,12 +414,12 @@ class InternalLinkingEnhancer {
     // Run all enhancements
     run() {
         console.log('🚀 Starting internal linking enhancement...\n');
-        
+
         this.loadDocuments();
         this.generateInternalSitemap();
         this.enhanceDocumentTemplate();
         this.generateLinkingReport();
-        
+
         console.log('\n🎉 Internal linking enhancement completed!');
         console.log('\n📁 Generated Files:');
         console.log('   - INTERNAL-SITEMAP.md (site structure)');
