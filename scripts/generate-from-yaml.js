@@ -7,7 +7,7 @@ const yaml = require('js-yaml');
 // Load content from YAML file
 function loadContent() {
     try {
-        const yamlPath = path.join(__dirname, 'content', 'documents.yaml');
+        const yamlPath = path.join(__dirname, '..', 'content', 'documents.yaml');
         const yamlContent = fs.readFileSync(yamlPath, 'utf8');
         const content = yaml.load(yamlContent);
 
@@ -171,26 +171,27 @@ function generateDocumentPages(content) {
     console.log('🚀 Generating individual document pages...');
 
     // Create documents directory if it doesn't exist
-    const documentsDir = path.join(__dirname, 'documents');
+    const documentsDir = path.join(__dirname, '..', 'documents');
     if (!fs.existsSync(documentsDir)) {
         fs.mkdirSync(documentsDir, { recursive: true });
     }
 
     // Read the document template
-    const templatePath = path.join(__dirname, 'document-template.html');
+    const templatePath = path.join(__dirname, '..', 'document-template.html');
     const template = fs.readFileSync(templatePath, 'utf8');
 
     // Copy CSS and JS files to documents directory
-    const cssPath = path.join(__dirname, 'document-styles.css');
-    const jsPath = path.join(__dirname, 'document-script.js');
+    // Link to src directly, no need to copy
+    // const cssPath = path.join(__dirname, '..', 'src', 'css', 'document-styles.css');
+    // const jsPath = path.join(__dirname, '..', 'src', 'js', 'document-script.js');
 
-    if (fs.existsSync(cssPath)) {
-        fs.copyFileSync(cssPath, path.join(documentsDir, 'document-styles.css'));
-    }
+    // if (fs.existsSync(cssPath)) {
+    //     fs.copyFileSync(cssPath, path.join(documentsDir, 'document-styles.css'));
+    // }
 
-    if (fs.existsSync(jsPath)) {
-        fs.copyFileSync(jsPath, path.join(documentsDir, 'document-script.js'));
-    }
+    // if (fs.existsSync(jsPath)) {
+    //     fs.copyFileSync(jsPath, path.join(documentsDir, 'document-script.js'));
+    // }
 
     // Generate pages for each document
     content.documents.forEach((doc, index) => {
@@ -450,7 +451,7 @@ ${content.categories.map(cat => `    <url>
     
 </urlset>`;
 
-    fs.writeFileSync('sitemap.xml', sitemap);
+    fs.writeFileSync(path.join(__dirname, '..', 'sitemap.xml'), sitemap);
     console.log('✅ sitemap.xml generated successfully!');
 }
 
@@ -480,7 +481,7 @@ ${content.documents.map(doc => `        <item>
     </channel>
 </rss>`;
 
-    fs.writeFileSync('rss.xml', rssFeed);
+    fs.writeFileSync(path.join(__dirname, '..', 'rss.xml'), rssFeed);
     console.log('✅ RSS feed generated successfully!');
 }
 
