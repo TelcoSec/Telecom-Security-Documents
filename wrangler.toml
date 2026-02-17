@@ -1,0 +1,12 @@
+name = "telecom-security-documents"
+pages_build_output_dir = "."
+
+[vars]
+# Add any environment variables here
+
+[site]
+bucket = "."
+
+[[routes]]
+pattern = "/*"
+script = "index.html"

@@ -1,0 +1,9 @@
+# Redirects for Cloudflare Pages
+# Format: [source] [destination] [code]
+
+/index.html / 301
+/about.html /about 301
+/documents/index.html /documents 301
+
+# Clean URLs for documents (optional, depends on if user wants to hide .html)
+#/documents/:id /documents/:id.html 200

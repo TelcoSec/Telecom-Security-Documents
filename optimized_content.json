@@ -1,0 +1,148 @@
+[
+    {
+        "id": "83BnWkrh38c",
+        "original_title": "🛡️ Watchers Being Watched: Exploiting Surveillance Systems & Supply Chains (DEF CON 32)",
+        "optimized_title": "Hacking Surveillance Systems: Supply Chain Vulnerabilities Exposed | DEF CON 32",
+        "optimized_description": "Discover how surveillance systems are vulnerable to supply chain attacks. In this DEF CON 32 presentation, we explore the 'Watchers Being Watched' concept, revealing critical security flaws in modern CCTV and monitoring infrastructure.\n\n🔍 Key Topics:\n- Supply Chain Exploitation\n- Surveillance System Hacking\n- Mitigation Strategies\n\n#DEFCON #CyberSecurity #SurveillanceHacking #SupplyChainSecurity",
+        "tags": [
+            "DEF CON 32",
+            "Surveillance Hacking",
+            "Supply Chain Security",
+            "CCTV Vulnerabilities",
+            "IoT Security",
+            "Cybersecurity Research",
+            "Red Teaming"
+        ]
+    },
+    {
+        "id": "oQI3wPRkH0s",
+        "original_title": "Leveraging Private APNs for Mobile Network Traffic Analysis (DEF CON 32)",
+        "optimized_title": "Mobile Network Traffic Analysis using Private APNs | DEF CON 32 Guide",
+        "optimized_description": "Learn the techniques for analyzing mobile network traffic by leveraging Private APNs. This technical deep-dive from DEF CON 32 demonstrates how to set up and utilize private Access Point Names for granular traffic inspection and security research.\n\n🚀 Learn about:\n- Private APN Architecture\n- Traffic Analysis Techniques\n- Mobile Network Security\n\n#MobileSecurity #APN #NetworkAnalysis #DEFCON32 #5GSecurity",
+        "tags": [
+            "Private APN",
+            "Traffic Analysis",
+            "Mobile Network Security",
+            "DEF CON 32",
+            "LTE Security",
+            "5G Hacking",
+            "Network Forensics"
+        ]
+    },
+    {
+        "id": "MEDHeTuFrWw",
+        "original_title": "Samsung Galaxy S5 Secret Codes (USSD)",
+        "optimized_title": "Samsung Galaxy S5 Secret Codes & USSD Menus Revealed",
+        "optimized_description": "Unlock the hidden potential of your Samsung Galaxy S5. We reveal the secret USSD codes used by technicians and developers to access diagnostic menus, test hardware, and view network configurations.\n\n📱 Codes Covered:\n- Diagnostic Menu\n- General Test Mode\n- IMEI & Firmware Info\n\n#SamsungGalaxy #USSDCodes #MobileHacking #AndroidTips #TechTricks",
+        "tags": [
+            "Samsung S5",
+            "USSD Codes",
+            "Android Secret Codes",
+            "Mobile Diagnostics",
+            "Phone Hacking",
+            "Samsung Hidden Menu"
+        ]
+    },
+    {
+        "id": "wAoLkKQa5uw",
+        "original_title": "Samsung S5: Exploits",
+        "optimized_title": "Exploiting the Samsung S5: A Mobile Security Case Study",
+        "optimized_description": "A technical look at known exploits and vulnerabilities in the Samsung Galaxy S5. Understand the attack vectors that affect legacy Android devices and what they teach us about mobile security hardening.\n\n⚠️ Disclaimer: For educational and research purposes only.\n\n#AndroidExploits #MobileSecurity #SamsungHacking #EthicalHacking #CyberSecurity",
+        "tags": [
+            "Android Exploits",
+            "Samsung S5 Vulnerabilities",
+            "Mobile Security",
+            "Ethical Hacking",
+            "Penetration Testing",
+            "Legacy Android Security"
+        ]
+    },
+    {
+        "id": "_cKOZ0kZtoM",
+        "original_title": "osmodevcon2024 175 eng Detailed workings of OTA for SIM USIM eUICC",
+        "optimized_title": "Deep Dive: OTA Updates for SIM, USIM & eUICC | OsmoDevCon 2024",
+        "optimized_description": "An in-depth technical presentation on the mechanics of Over-The-Air (OTA) updates for SIM, USIM, and eUICC cards. Recorded at OsmoDevCon 2024, this session covers the protocols and security mechanisms involved in remote SIM provisioning.\n\n🔧 Technical Breakdown:\n- OTA Architecture\n- USIM vs eUICC specifications\n- Security Domains\n\n#TelecomSecurity #eSIM #OTA #OsmoDevCon #SimCard",
+        "tags": [
+            "OTA Updates",
+            "SIM Card Technology",
+            "eUICC",
+            "OsmoDevCon",
+            "Telecom Engineering",
+            "Remote Provisioning",
+            "Mobile Security"
+        ]
+    },
+    {
+        "id": "1abd5zJFANM",
+        "original_title": "SS7 and SIGTRAN in 2G 3G networks",
+        "optimized_title": "SS7 & SIGTRAN Fundamentals: Signaling in 2G/3G Networks",
+        "optimized_description": "Understand the backbone of mobile signaling. This comprehensive guide explains SS7 (Signaling System No. 7) and SIGTRAN protocols used in 2G and 3G networks, covering architecture, message flows, and security implications.\n\n📡 Topics:\n- SS7 Stack Architecture\n- SIGTRAN Adaptation Layers\n- 2G/3G Network Topologies\n\n#SS7 #SIGTRAN #TelecomEngineering #2G #3G #NetworkSignaling",
+        "tags": [
+            "SS7 Protocol",
+            "SIGTRAN",
+            "2G Networks",
+            "3G Networks",
+            "Telecom Signaling",
+            "Network Architecture",
+            "Core Network"
+        ]
+    },
+    {
+        "id": "hcK1SvffNzM",
+        "original_title": "OpenRAN 5G Hacking Just Got a Lot mode Interesting",
+        "optimized_title": "Hacking OpenRAN 5G: New Attack Vectors & Vulnerabilities",
+        "optimized_description": "OpenRAN changes the game for 5G security. We explore the latest research into Open Radio Access Network vulnerabilities, demonstrating why identifying and mitigating these new attack surfaces is critical for the future of 5G.\n\n🔓 What's Inside:\n- OpenRAN Architecture Overview\n- Threat Surface Analysis\n- Practical Attack Scenarios\n\n#OpenRAN #5GSecurity #EthicalHacking #TelecomCybersecurity #FutureTech",
+        "tags": [
+            "OpenRAN",
+            "5G Security",
+            "Telecom Hacking",
+            "Radio Access Network",
+            "Cybersecurity Research",
+            "Network Vulnerabilities"
+        ]
+    },
+    {
+        "id": "7dEa6AVfIq0",
+        "original_title": "The SHOCKING Truth About GlobalPlatform SIM Cards Nobody Tells You",
+        "optimized_title": "GlobalPlatform Revealed: The Hidden Tech Inside Your SIM Card",
+        "optimized_description": "What is GlobalPlatform and why does it control your SIM card? We strip away the complexity to reveal how GlobalPlatform standards manage applications on secure elements like SIMs and banking chips.\n\n💡 Insights:\n- Secure Element Management\n- Java Card Technology\n- GlobalPlatform Specifications\n\n#GlobalPlatform #SIMCards #SecureElement #HardwareSecurity #TechExplained",
+        "tags": [
+            "GlobalPlatform",
+            "SIM Security",
+            "Java Card",
+            "Secure Element",
+            "Smart Card Technology",
+            "Embedded Security"
+        ]
+    },
+    {
+        "id": "blQ6KMg-aL0",
+        "original_title": "Dissecting VoLTE",
+        "optimized_title": "Dissecting VoLTE: Architecture, Protocol & Security Analysis",
+        "optimized_description": "Voice over LTE (VoLTE) is the standard for modern voice calls. This video dissects the VoLTE protocol stack, explaining SIP signaling, dedicated bearers, and the security challenges inherent in IP-based voice communications.\n\n📞 Deep Dive:\n- IMS & SIP Protocols\n- VolTE Call Flow\n- Security Vulnerabilities\n\n#VoLTE #TelecomSecurity #IMS #SIP #4G #NetworkEngineering",
+        "tags": [
+            "VoLTE",
+            "Voice over LTE",
+            "IMS Architecture",
+            "SIP Protocol",
+            "Telecom Security",
+            "4G LTE",
+            "Network Analysis"
+        ]
+    },
+    {
+        "id": "BM4oei_vDRg",
+        "original_title": "Mastering SS7 & SIGTRAN: From TDM Links to IP Adaptation (SCTP/M3UA)",
+        "optimized_title": "Mastering SS7 & SIGTRAN: From TDM to IP Adaptation (SCTP/M3UA)",
+        "optimized_description": "From legacy TDM links to modern IP adaptation, master the evolution of signaling. We focus on SCTP and M3UA protocols, bridging the gap between traditional SS7 and IP-based SIGTRAN networks.\n\n🎓 Course Content:\n- MTP Layers vs M3UA\n- SCTP Association Setup\n- Real-world Packet Analysis\n\n#SCTP #M3UA #SS7 #SIGTRAN #TelecomTraining #IPNetworking",
+        "tags": [
+            "SCTP",
+            "M3UA",
+            "SS7 over IP",
+            "SIGTRAN",
+            "Telecom Protocols",
+            "Network Engineering",
+            "Core Network"
+        ]
+    }
+]

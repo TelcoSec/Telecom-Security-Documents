@@ -74,8 +74,17 @@ jobs:
     - name: Install Dependencies
       run: npm install
         
+    - name: Run Build
+      run: |
+        echo "🏗️ Running build scripts..."
+        npm run build
+        echo "✅ Build completed"
+        
     - name: Run Project Validation
-      run: npm run validate
+      run: |
+        echo "🔍 Running technical validation..."
+        npm run validate
+        echo "✅ Validation passed"
         
     - name: Install http-server
       run: npm install -g http-server

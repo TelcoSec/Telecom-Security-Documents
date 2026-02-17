@@ -2,21 +2,24 @@
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-blue?style=flat-square&logo=github)](https://telcosec.github.io/Telecom-Security-Documents/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Documentation](https://img.shields.io/badge/Documentation-Complete-green?style=flat-square)](https://telcosec.github.io/Telecom-Security-Documents/)
-[![Research Papers](https://img.shields.io/badge/Research%20Papers-48+-orange?style=flat-square)](https://telcosec.github.io/Telecom-Security-Documents/)
-[![Categories](https://img.shields.io/badge/Categories-13-blue?style=flat-square)](https://telcosec.github.io/Telecom-Security-Documents/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Issues](https://img.shields.io/github/issues/TelcoSec/Telecom-Security-Documents?style=flat-square)](https://github.com/TelcoSec/Telecom-Security-Documents/issues)
+[![Contributors](https://img.shields.io/github/contributors/TelcoSec/Telecom-Security-Documents?style=flat-square)](https://github.com/TelcoSec/Telecom-Security-Documents/graphs/contributors)
+[![Videos](https://img.shields.io/badge/Videos-10-red?style=flat-square&logo=youtube)](https://telcosec.github.io/Telecom-Security-Documents/videos.html)
 
 > **Your comprehensive resource for telecommunications security research, threat intelligence, and industry best practices. Empowering companies, researchers, and security professionals with cutting-edge telecom security knowledge.**
 
 ## 🌐 Live Documentation Library
 
 **📖 Access our comprehensive telecom security library:** [https://telcosec.github.io/Telecom-Security-Documents/](https://telcosec.github.io/Telecom-Security-Documents/)
+**🎥 Watch our technical deep-dives:** [Video Library](https://telcosec.github.io/Telecom-Security-Documents/videos.html)
 
 ## 📋 Table of Contents
 
 - [Project Purpose](#project-purpose)
 - [Who This Is For](#who-this-is-for)
 - [Business Value](#business-value)
+- [Video Library](#-video-library)
 - [Use Cases](#use-cases)
 - [Document Categories](#document-categories)
 - [Getting Started](#getting-started)
@@ -81,7 +84,19 @@
 - **Faster Incident Response** - Access relevant information when you need it
 - **Reduced Research Time** - Comprehensive library saves hours of searching
 - **Informed Decision Making** - Make security decisions based on real data
-- **Training Resources** - Educate your team with current research
+
+## 🎥 Video Library
+
+Our technical deep-dives provide visual and technical insights into various telecom security domains.
+
+| Category | Featured Video | Topics Covered |
+|----------|----------------|----------------|
+| **IoT & Device Security** | [Hacking Surveillance Systems](https://www.youtube.com/watch?v=83BnWkrh38c) | Supply chain vulnerabilities, DEF CON 32 |
+| **5G Security** | [OpenRAN Hacking 101](https://www.youtube.com/watch?v=R9K1o5DToO0) | O-RAN architecture, exploitation vectors |
+| **SS7 Security** | [SS7/SIGTRAN Fundamentals](https://www.youtube.com/watch?v=O_fE7z47tE4) | Signaling vulnerabilities, interception |
+| **SIM Security** | [SIM Card OTA Updates](https://www.youtube.com/watch?v=T-H0X6_jF4) | Remote management, vulnerability analysis |
+
+**Explore all 10 authentic videos in our [Interactive Video Library](https://telcosec.github.io/Telecom-Security-Documents/videos.html).**
 
 ## 🎯 Use Cases
 
@@ -211,9 +226,7 @@
 - **MoTIF Framework** - Mobile threat intelligence, analysis methodologies
 - **Roaming Security** - International threats, cross-border attacks, regulatory compliance
 
-## 🤝 Contributing
-
-We welcome contributions from the telecom security community to expand our knowledge base and improve security across the industry.
+We welcome contributions from the telecom security community to expand our knowledge base and improve security across the industry. Please read our **[Contributing Guidelines](CONTRIBUTING.md)** and **[Code of Conduct](CODE_OF_CONDUCT.md)** before submitting your first contribution.
 
 ### **How You Can Contribute**
 

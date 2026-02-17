@@ -1,0 +1,63 @@
+name: 🔬 Research Submission
+description: Submit a new research paper or technical document to the library
+labels: ["research"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Paper Title
+      description: The official title of the research paper or document.
+    validations:
+      required: true
+  - type: input
+    id: authors
+    attributes:
+      label: Authors
+      description: List of primary authors.
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Select the most relevant category.
+      options:
+        - 2G Network Security
+        - 4G Network Security
+        - 5G Network Security
+        - SS7 Protocol Security
+        - SIM Cards & UICC Security
+        - Baseband Security
+        - Base Stations
+        - Fraud Detection & Prevention
+        - GPON Security
+        - Roaming Security
+        - Access Point Names (APNs)
+        - AT Commands
+        - VoIP Security
+        - IoT & Device Security
+        - Quantum Security
+        - Satellite Security
+        - Cloud Security
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary/Abstract
+      description: Provide a brief summary of the research findings (100-200 words).
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link to Document
+      description: Provide a URL to the paper or indicate if you will attach it in a comment.
+  - type: checkboxes
+    id: attribution
+    attributes:
+      label: Attribution & Rights
+      options:
+        - label: I confirm that I have the right to share this research or that it is publicly available.
+          required: true
+        - label: I understand that this submission will be reviewed for technical accuracy and relevance.
+          required: true
