@@ -13,8 +13,7 @@
     "seo": "node generate-sitemap.js",
     "test": "echo \"No tests specified\" && exit 0",
     "optimize:images": "node optimize-images.js",
-    "images:gallery": "node optimize-images.js && echo 'Image gallery ready at images.html'",
-    "deploy": "wrangler pages deploy ."
+    "images:gallery": "node optimize-images.js && echo 'Image gallery ready at images.html'"
   },
   "repository": {
     "type": "git",

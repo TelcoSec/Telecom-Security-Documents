@@ -56,35 +56,20 @@ The project implements several advanced SEO strategies:
 
 ## 🚀 Deployment
 
-The site is configured for deployment to **Cloudflare Pages** on the custom domain [library.telco-sec.com](https://library.telco-sec.com).
+The site is automatically deployed to **GitHub Pages** via GitHub Actions on every push to the `main` branch.
 
-### Configuration Files
-- `_headers`: Defines security headers (CSP, HSTS, etc.) and caching rules.
-- `_redirects`: Handles URL redirections.
-- `wrangler.toml`: Project configuration for the Cloudflare Wrangler CLI.
+### Configuration
+- **Workflow**: `.github/workflows/gh-pages.yml` handles the build and deployment.
+- **Custom Domain**: Configured via the `CNAME` file (points to `library.telco-sec.com`).
 
 ### Deployment Steps
-
-#### Automatic (GitHub Integration) - RECOMMENDED
-The project is set up to deploy automatically on every push to the `main` branch.
-1. Log in to the [Cloudflare Dashboard](https://dash.cloudflare.com/).
-2. Navigate to **Workers & Pages** > **Create application** > **Pages** > **Connect to Git**.
-3. Select this repository.
-4. Set **Build command**: `npm run build`.
-5. Set **Build output directory**: `.` (root).
-6. Click **Save and Deploy**.
-7. Go to the **Custom Domains** tab and add `library.telco-sec.com`.
-
-#### Manual (Wrangler CLI)
-You can also deploy manually if needed:
-```bash
-npm run deploy
-```
-*Note: This requires you to be logged into your Cloudflare account via `npx wrangler login`.*
+1. Push changes to the `main` branch.
+2. The GitHub Action "Deploy to GitHub Pages" will automatically trigger.
+3. Monitor progress in the **Actions** tab of the repository.
 
 ## 🏠 Project Metadata
 - **Custom Domain**: `library.telco-sec.com`
-- **Legacy URL**: `https://telcosec.github.io/Telecom-Security-Documents`
+- **GitHub URL**: `https://telcosec.github.io/Telecom-Security-Documents`
 
 ## 🔧 Troubleshooting
 
