@@ -34,14 +34,14 @@
 .stat-item {
     padding: 20px 10px;
     border-radius: 8px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
 }
 
 .stat-item:hover {
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     transform: translateY(-5px);
 }
 
@@ -80,7 +80,7 @@
     background: white;
     padding: 30px 20px;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     border: 1px solid #e9ecef;
     transition: all 0.3s ease;
     height: 100%;
@@ -88,7 +88,7 @@
 
 .mission-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     border-color: #667eea;
 }
 
@@ -134,7 +134,7 @@
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     border: 1px solid #e9ecef;
     transition: all 0.3s ease;
     height: 100%;
@@ -144,7 +144,7 @@
 
 .team-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     border-color: #667eea;
 }
 
@@ -225,7 +225,7 @@
 .value-card:hover {
     background: white;
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-color: #667eea;
 }
 
@@ -272,7 +272,7 @@
     padding: 20px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     border: 1px solid #e9ecef;
     transition: all 0.3s ease;
     height: 100%;
@@ -280,7 +280,7 @@
 
 .contact-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     border-color: #667eea;
 }
 
@@ -348,53 +348,53 @@
         padding: 100px 0 60px;
         margin-top: 76px;
     }
-    
+
     .about-hero h1 {
         font-size: 2.5rem;
     }
-    
+
     .hero-stats .row {
         margin-top: 30px;
     }
-    
+
     .stat-item {
         margin-bottom: 20px;
     }
-    
+
     .stat-item h3 {
         font-size: 2rem;
     }
-    
+
     .mission-card,
     .team-card,
     .value-card,
     .contact-item {
         margin-bottom: 20px;
     }
-    
+
     .team-avatar {
         width: 80px;
         height: 80px;
     }
-    
+
     .team-avatar i {
         font-size: 2.5rem;
     }
-    
+
     .mission-icon {
         width: 60px;
         height: 60px;
     }
-    
+
     .mission-icon i {
         font-size: 1.5rem;
     }
-    
+
     .value-icon {
         width: 50px;
         height: 50px;
     }
-    
+
     .value-icon i {
         font-size: 1.2rem;
     }
@@ -404,27 +404,27 @@
     .about-hero h1 {
         font-size: 2rem;
     }
-    
+
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .mission-card,
     .team-card,
     .value-card,
     .contact-item {
         padding: 20px 15px;
     }
-    
+
     .team-bio {
         font-size: 0.85rem;
     }
-    
+
     .value-card p {
         font-size: 0.85rem;
     }
-    
-    .hero-stats .row > div {
+
+    .hero-stats .row>div {
         margin-bottom: 15px;
     }
 }
@@ -434,13 +434,13 @@
     .ad-banner {
         display: none;
     }
-    
+
     .about-hero {
         background: white !important;
         color: black !important;
         min-height: auto;
     }
-    
+
     .mission-card,
     .team-card,
     .value-card,
@@ -481,12 +481,13 @@
 
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
+
     .mission-section,
     .team-section,
     .contact-section {
         background: #343a40;
     }
-    
+
     .mission-card,
     .team-card,
     .value-card,
@@ -495,14 +496,14 @@
         border-color: #6c757d;
         color: #e9ecef;
     }
-    
+
     .mission-card h4,
     .team-info h4,
     .value-card h5,
     .contact-item h5 {
         color: #e9ecef;
     }
-    
+
     .mission-card p,
     .team-bio,
     .team-affiliation,
@@ -510,24 +511,24 @@
     .contact-item p {
         color: #adb5bd;
     }
-    
+
     .team-role {
         color: #667eea;
     }
-    
+
     .values-section {
         background: #343a40;
     }
-    
+
     .value-card {
         background: #495057;
     }
-    
+
     .ad-banner {
         background: #343a40;
         border-color: #6c757d;
     }
-    
+
     .section-title {
         color: #e9ecef;
     }
@@ -538,14 +539,16 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 3px solid rgba(255,255,255,.3);
+    border: 3px solid rgba(255, 255, 255, .3);
     border-radius: 50%;
     border-top-color: #fff;
     animation: spin 1s ease-in-out infinite;
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* Hover Effects */

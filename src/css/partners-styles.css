@@ -32,7 +32,7 @@
 
 .hero-actions .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Section Titles */
@@ -64,7 +64,7 @@
     background: #fff;
     border-radius: 15px;
     padding: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     height: 100%;
     border-left: 4px solid transparent;
@@ -72,7 +72,7 @@
 
 .partner-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .partner-card.research-partner {
@@ -170,7 +170,7 @@
     background: #fff;
     border-radius: 10px;
     padding: 25px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .stat-item {
@@ -202,7 +202,7 @@
     background: #fff;
     border-radius: 15px;
     padding: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     height: 100%;
     text-align: center;
@@ -210,7 +210,7 @@
 
 .opportunity-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .card-icon {
@@ -265,7 +265,7 @@
     background: #fff;
     border-radius: 15px;
     padding: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     height: 100%;
     position: relative;
@@ -299,7 +299,7 @@
 
 .sponsor-tier:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .tier-header {
@@ -379,7 +379,7 @@
 
 .cta-buttons .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Ad Sections */
@@ -400,28 +400,28 @@
     .hero-section {
         padding: 60px 0;
     }
-    
+
     .hero-actions .btn {
         display: block;
         width: 100%;
         margin-bottom: 15px;
     }
-    
+
     .partner-card,
     .opportunity-card,
     .sponsor-tier {
         margin-bottom: 20px;
     }
-    
+
     .sidebar-content {
         position: static;
         margin-top: 30px;
     }
-    
+
     .contact-method {
         margin-bottom: 20px;
     }
-    
+
     .cta-buttons .btn {
         display: block;
         width: 100%;
@@ -433,19 +433,19 @@
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .partner-card,
     .opportunity-card,
     .sponsor-tier {
         padding: 20px;
     }
-    
+
     .card-icon {
         width: 60px;
         height: 60px;
         font-size: 24px;
     }
-    
+
     .partner-icon {
         width: 50px;
         height: 50px;
@@ -463,6 +463,7 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -497,6 +498,11 @@
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

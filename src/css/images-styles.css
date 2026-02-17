@@ -328,9 +328,17 @@
 
 /* Animations */
 @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .fade-in {
@@ -338,8 +346,15 @@
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .slide-in-left {
@@ -347,8 +362,15 @@
 }
 
 @keyframes slideInLeft {
-    from { opacity: 0; transform: translateX(-30px); }
-    to { opacity: 1; transform: translateX(0); }
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .slide-in-right {
@@ -356,8 +378,15 @@
 }
 
 @keyframes slideInRight {
-    from { opacity: 0; transform: translateX(30px); }
-    to { opacity: 1; transform: translateX(0); }
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /* Responsive Design */
@@ -365,29 +394,29 @@
     .hero-stats .col-4 {
         margin-bottom: 1rem;
     }
-    
+
     .search-container {
         padding: 1.5rem;
     }
-    
-    .filter-controls .row > div {
+
+    .filter-controls .row>div {
         margin-bottom: 1rem;
     }
-    
+
     .images-container.list-view .image-card {
         flex-direction: column;
     }
-    
+
     .images-container.list-view .image-card .image-container {
         width: 100%;
         margin-bottom: 1rem;
     }
-    
+
     .images-container.list-view .image-card .image-content {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .images-container.list-view .image-card .image-description {
         margin-right: 0;
         margin-bottom: 1rem;
@@ -398,15 +427,15 @@
     .images-hero h1 {
         font-size: 2rem;
     }
-    
+
     .search-container {
         padding: 1rem;
     }
-    
+
     .image-card .image-content {
         padding: 1rem;
     }
-    
+
     .modal-xl .modal-body {
         padding: 1rem;
     }
@@ -417,43 +446,43 @@
     .images-hero {
         background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     }
-    
+
     .search-section {
         background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     }
-    
+
     .featured-images {
         background: #2c3e50;
     }
-    
+
     .image-card {
         background: #34495e;
         color: #ecf0f1;
     }
-    
+
     .image-card .image-title {
         color: #ecf0f1;
     }
-    
+
     .image-card .image-description {
         color: #bdc3c7;
     }
-    
+
     .section-title {
         color: #ecf0f1;
     }
-    
+
     .category-nav-item {
         background: #34495e;
         border-color: #2c3e50;
         color: #ecf0f1;
     }
-    
+
     .modal-xl .modal-header {
         background: linear-gradient(135deg, #2c3e50, #34495e);
         color: #ecf0f1;
     }
-    
+
     .image-info h4 {
         color: #ecf0f1;
     }

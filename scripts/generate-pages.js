@@ -707,7 +707,7 @@ const externalReferences = {
 // Template replacement function
 function replaceTemplateVariables(template, document, config) {
     let result = template;
-    
+
     // Basic document information
     result = result.replace(/\{\{DOCUMENT_TITLE\}\}/g, document.title);
     result = result.replace(/\{\{DOCUMENT_DESCRIPTION\}\}/g, document.description);
@@ -720,20 +720,20 @@ function replaceTemplateVariables(template, document, config) {
     result = result.replace(/\{\{PDF_FILE_NAME\}\}/g, document.fileName);
     result = result.replace(/\{\{DOCUMENT_ABSTRACT\}\}/g, document.abstract);
     result = result.replace(/\{\{DOCUMENT_ID\}\}/g, document.id);
-    
+
     // SEO improvements
     const keyTopicsString = document.keyTopics ? document.keyTopics.join(', ') : '';
     result = result.replace(/\{\{KEY_TOPICS_STRING\}\}/g, keyTopicsString);
-    
+
     // AdSense configuration
     result = result.replace(/\{\{ADSENSE_PUBLISHER_ID\}\}/g, config.publisherId);
     result = result.replace(/\{\{ADSENSE_BANNER_SLOT\}\}/g, config.bannerSlot);
     result = result.replace(/\{\{ADSENSE_INLINE_SLOT\}\}/g, config.inlineSlot);
     result = result.replace(/\{\{ADSENSE_SIDEBAR_SLOT\}\}/g, config.sidebarSlot);
-    
+
     // Key topics
     if (document.keyTopics && document.keyTopics.length > 0) {
-        const topicsHtml = document.keyTopics.map(topic => 
+        const topicsHtml = document.keyTopics.map(topic =>
             `<div class="col-md-6 mb-2">
                 <span class="badge bg-light text-dark border">${topic}</span>
             </div>`
@@ -742,7 +742,7 @@ function replaceTemplateVariables(template, document, config) {
     } else {
         result = result.replace(/\{\{KEY_TOPICS\}\}/g, '');
     }
-    
+
     // Researchers
     if (document.researchers && document.researchers.length > 0) {
         const researchersHtml = document.researchers.map(researcher => `
@@ -763,7 +763,7 @@ function replaceTemplateVariables(template, document, config) {
     } else {
         result = result.replace(/\{\{RESEARCHERS\}\}/g, '');
     }
-    
+
     // Related videos
     if (document.relatedVideos && document.relatedVideos.length > 0) {
         const videosHtml = document.relatedVideos.map(video => `
@@ -785,7 +785,7 @@ function replaceTemplateVariables(template, document, config) {
     } else {
         result = result.replace(/\{\{RELATED_VIDEOS\}\}/g, '');
     }
-    
+
     // Related documents
     if (document.relatedDocuments && document.relatedDocuments.length > 0) {
         const documentsHtml = document.relatedDocuments.map(doc => `
@@ -801,48 +801,49 @@ function replaceTemplateVariables(template, document, config) {
     } else {
         result = result.replace(/\{\{RELATED_DOCUMENTS\}\}/g, '');
     }
-    
+
     return result;
 }
 
 // Generate individual document pages
 function generateDocumentPages() {
     console.log('🚀 Generating individual document pages...');
-    
+
     // Create documents directory if it doesn't exist
     const documentsDir = path.join(__dirname, 'documents');
     if (!fs.existsSync(documentsDir)) {
         fs.mkdirSync(documentsDir, { recursive: true });
     }
-    
+
     // Read the document template
     const templatePath = path.join(__dirname, 'document-template.html');
     const template = fs.readFileSync(templatePath, 'utf8');
-    
+
     // Copy CSS and JS files to documents directory
-    const cssPath = path.join(__dirname, 'document-styles.css');
-    const jsPath = path.join(__dirname, 'document-script.js');
-    
-    if (fs.existsSync(cssPath)) {
-        fs.copyFileSync(cssPath, path.join(documentsDir, 'document-styles.css'));
-    }
-    
-    if (fs.existsSync(jsPath)) {
-        fs.copyFileSync(jsPath, path.join(documentsDir, 'document-script.js'));
-    }
-    
+    // Copying of CSS and JS files is no longer needed as we reference src directly
+    // const cssPath = path.join(__dirname, 'document-styles.css');
+    // const jsPath = path.join(__dirname, 'document-script.js');
+
+    // if (fs.existsSync(cssPath)) {
+    //     fs.copyFileSync(cssPath, path.join(documentsDir, 'document-styles.css'));
+    // }
+
+    // if (fs.existsSync(jsPath)) {
+    //     fs.copyFileSync(jsPath, path.join(documentsDir, 'document-script.js'));
+    // }
+
     // Generate pages for each document
     documents.forEach(doc => {
         const pageContent = replaceTemplateVariables(template, doc, adsenseConfig);
         const pagePath = path.join(documentsDir, `${doc.id}.html`);
-        
+
         fs.writeFileSync(pagePath, pageContent);
         console.log(`✅ Generated: ${doc.id}.html`);
     });
-    
+
     // Generate documents index page
     generateDocumentsIndex(documentsDir);
-    
+
     console.log('🎉 Document pages generation completed!');
 }
 
@@ -861,7 +862,7 @@ function generateDocumentsIndex(documentsDir) {
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="../styles.css" rel="stylesheet">
+    <link href="../src/css/styles.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -974,7 +975,7 @@ function generateDocumentsIndex(documentsDir) {
 // Generate category sections for the index
 function generateCategorySections() {
     const categories = {};
-    
+
     // Group documents by category
     documents.forEach(doc => {
         if (!categories[doc.category]) {
@@ -982,7 +983,7 @@ function generateCategorySections() {
         }
         categories[doc.category].push(doc);
     });
-    
+
     // Generate HTML for each category
     return Object.entries(categories).map(([category, docs]) => `
         <div class="category-section mb-5">

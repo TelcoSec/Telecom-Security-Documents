@@ -9,7 +9,7 @@
 .document-header h1 {
     font-weight: 700;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .document-header .lead {
@@ -35,7 +35,7 @@
 }
 
 .breadcrumb-item a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .breadcrumb-item.active {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Document Sections */
@@ -64,7 +64,7 @@
     border: 1px solid #e9ecef;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .pdf-container iframe {
@@ -82,7 +82,7 @@
 
 .video-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .video-thumbnail {
@@ -109,7 +109,7 @@
     transform: translate(-50%, -50%);
     width: 60px;
     height: 60px;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -165,7 +165,9 @@
 }
 
 /* AdSense Styles */
-.ad-banner, .ad-inline, .ad-sidebar {
+.ad-banner,
+.ad-inline,
+.ad-sidebar {
     background: #f8f9fa;
     border: 1px dashed #dee2e6;
     border-radius: 8px;
@@ -191,19 +193,19 @@
     .document-header {
         padding: 100px 0 40px;
     }
-    
+
     .document-header h1 {
         font-size: 2rem;
     }
-    
+
     .pdf-container iframe {
         height: 400px;
     }
-    
+
     .video-card {
         margin-bottom: 20px;
     }
-    
+
     .ad-sidebar {
         min-height: 250px;
     }
@@ -237,16 +239,19 @@
 
 /* Print Styles */
 @media print {
-    .ad-banner, .ad-inline, .ad-sidebar {
+
+    .ad-banner,
+    .ad-inline,
+    .ad-sidebar {
         display: none;
     }
-    
+
     .document-header {
         background: white !important;
         color: black !important;
         padding: 20px 0;
     }
-    
+
     .pdf-container iframe {
         height: 800px;
     }
@@ -269,17 +274,19 @@
         color: #e9ecef;
         border-bottom-color: #495057;
     }
-    
+
     .researcher-item {
         background: #343a40;
         border-color: #495057;
     }
-    
+
     .video-card {
         border-color: #495057;
     }
-    
-    .ad-banner, .ad-inline, .ad-sidebar {
+
+    .ad-banner,
+    .ad-inline,
+    .ad-sidebar {
         background: #343a40;
         border-color: #495057;
     }
