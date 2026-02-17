@@ -16,7 +16,7 @@ class InternalLinkingEnhancer {
     loadDocuments() {
         try {
             console.log('📚 Loading documents from YAML...');
-            const documentsYaml = fs.readFileSync('content/documents.yaml', 'utf8');
+            const documentsYaml = fs.readFileSync(path.join(__dirname, '..', 'content', 'documents.yaml'), 'utf8');
             const data = yaml.load(documentsYaml);
 
             if (data && data.documents) {
@@ -336,7 +336,7 @@ class InternalLinkingEnhancer {
             sitemap += `- [${doc.title}](./${doc.id}.html) - ${doc.category}\n`;
         });
 
-        fs.writeFileSync('INTERNAL-SITEMAP.md', sitemap);
+        fs.writeFileSync(path.join(__dirname, '..', 'INTERNAL-SITEMAP.md'), sitemap);
         console.log('✅ Internal sitemap generated');
     }
 
@@ -344,7 +344,7 @@ class InternalLinkingEnhancer {
     enhanceDocumentTemplate() {
         console.log('🔗 Enhancing document template with internal linking...');
 
-        const templatePath = 'document-template.html';
+        const templatePath = path.join(__dirname, '..', 'document-template.html');
         if (!fs.existsSync(templatePath)) {
             console.error('❌ Document template not found');
             return;
@@ -367,7 +367,7 @@ class InternalLinkingEnhancer {
             '{{ENHANCED_BREADCRUMB}}'
         );
 
-        fs.writeFileSync('document-template-enhanced.html', template);
+        fs.writeFileSync(path.join(__dirname, '..', 'document-template-enhanced.html'), template);
         console.log('✅ Enhanced document template created');
     }
 
@@ -407,7 +407,7 @@ class InternalLinkingEnhancer {
             }
         });
 
-        fs.writeFileSync('INTERNAL-LINKING-REPORT.md', report);
+        fs.writeFileSync(path.join(__dirname, '..', 'INTERNAL-LINKING-REPORT.md'), report);
         console.log('✅ Internal linking report generated');
     }
 

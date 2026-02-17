@@ -62,7 +62,7 @@ class ProductionSEOOptimizer {
         console.log('🤖 Optimizing robots.txt...');
 
         try {
-            const robotsContent = fs.readFileSync('robots.txt', 'utf8');
+            const robotsContent = fs.readFileSync(path.join(__dirname, '..', 'robots.txt'), 'utf8');
 
             // Check if robots.txt is already optimized
             if (robotsContent.includes('Enhanced Robots.txt for Telecom Security Library')) {
@@ -157,7 +157,7 @@ Host: https://telcosec.github.io
 # Crawl delay for all bots (respectful crawling)
 Crawl-delay: 1`;
 
-            fs.writeFileSync('robots.txt', optimizedRobots);
+            fs.writeFileSync(path.join(__dirname, '..', 'robots.txt'), optimizedRobots);
             this.optimizations.push('✅ Robots.txt optimized for production');
             console.log('✅ Robots.txt optimized');
 
@@ -193,15 +193,15 @@ Crawl-delay: 1`;
         try {
             // Generate main SEO report
             const seoReport = this.generateMainSEOReport();
-            fs.writeFileSync('SEO-OPTIMIZATION-REPORT.md', seoReport);
+            fs.writeFileSync(path.join(__dirname, '..', 'SEO-OPTIMIZATION-REPORT.md'), seoReport);
 
             // Generate technical SEO checklist
             const technicalChecklist = this.generateTechnicalChecklist();
-            fs.writeFileSync('TECHNICAL-SEO-CHECKLIST.md', technicalChecklist);
+            fs.writeFileSync(path.join(__dirname, '..', 'TECHNICAL-SEO-CHECKLIST.md'), technicalChecklist);
 
             // Generate performance optimization guide
             const performanceGuide = this.generatePerformanceGuide();
-            fs.writeFileSync('PERFORMANCE-OPTIMIZATION-GUIDE.md', performanceGuide);
+            fs.writeFileSync(path.join(__dirname, '..', 'PERFORMANCE-OPTIMIZATION-GUIDE.md'), performanceGuide);
 
             this.optimizations.push('✅ Comprehensive SEO reports generated');
             console.log('✅ SEO reports generated');

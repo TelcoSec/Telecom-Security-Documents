@@ -15,7 +15,7 @@ class EnhancedSitemapGenerator {
     // Generate main sitemap
     generateMainSitemap() {
         console.log('🚀 Generating enhanced main sitemap...');
-        
+
         // Add core pages with proper priorities and change frequencies
         this.addUrl('/', '1.0', 'weekly', 'Homepage');
         this.addUrl('/about.html', '0.8', 'monthly', 'About Page');
@@ -24,49 +24,48 @@ class EnhancedSitemapGenerator {
         this.addUrl('/images.html', '0.9', 'weekly', 'Images Page');
         this.addUrl('/partners.html', '0.8', 'monthly', 'Partners Page');
         this.addUrl('/documents/index.html', '0.9', 'weekly', 'Documents Index');
-        
+
         // Add category landing pages
         this.addCategoryPages();
-        
+
         // Add individual document pages
         this.addDocumentPages();
-        
+
         // Generate the sitemap XML
         const sitemapXml = this.generateSitemapXml();
-        fs.writeFileSync('sitemap.xml', sitemapXml);
+        fs.writeFileSync(path.join(__dirname, '..', 'sitemap.xml'), sitemapXml);
         console.log(`✅ Main sitemap generated with ${this.sitemapUrls.length} URLs`);
-        
+
         return this.sitemapUrls;
     }
 
     // Generate image sitemap
     generateImageSitemap() {
         console.log('🖼️ Generating image sitemap...');
-        
+
         // Add images from the images directory
         this.addImagesFromDirectory();
-        
+
         // Generate the image sitemap XML
         const imageSitemapXml = this.generateImageSitemapXml();
-        fs.writeFileSync('sitemap-images.xml', imageSitemapXml);
+        fs.writeFileSync(path.join(__dirname, '..', 'sitemap-images.xml'), imageSitemapXml);
         console.log(`✅ Image sitemap generated with ${this.imageSitemapUrls.length} URLs`);
-        
+
         return this.imageSitemapUrls;
     }
 
     // Generate video sitemap
     generateVideoSitemap() {
         console.log('🎥 Generating video sitemap...');
-        
+
         // Add videos from videos.yaml
         this.addVideosFromYaml();
-        
+
         // Generate the video sitemap XML
         const videoSitemapXml = this.generateVideoSitemapXml();
-        fs.writeFileSync('sitemap-videos.xml', videoSitemapXml);
-        fs.writeFileSync('sitemap-videos.xml', videoSitemapXml);
+        fs.writeFileSync(path.join(__dirname, '..', 'sitemap-videos.xml'), videoSitemapXml);
         console.log(`✅ Video sitemap generated with ${this.videoSitemapUrls.length} URLs`);
-        
+
         return this.videoSitemapUrls;
     }
 
@@ -111,14 +110,14 @@ class EnhancedSitemapGenerator {
     // Add document pages from YAML
     addDocumentPages() {
         try {
-            const documentsYaml = fs.readFileSync('content/documents.yaml', 'utf8');
+            const documentsYaml = fs.readFileSync(path.join(__dirname, '..', 'content', 'documents.yaml'), 'utf8');
             const documents = yaml.load(documentsYaml);
-            
+
             if (documents && documents.documents) {
                 documents.documents.forEach(doc => {
                     const docPath = `/documents/${doc.id}.html`;
                     this.addUrl(docPath, '0.8', 'monthly', doc.title);
-                    
+
                     // Add related documents for internal linking
                     if (doc.relatedDocuments) {
                         doc.relatedDocuments.forEach(related => {
@@ -137,7 +136,7 @@ class EnhancedSitemapGenerator {
 
     // Add images from directory
     addImagesFromDirectory() {
-        const imagesDir = 'images';
+        const imagesDir = path.join(__dirname, '..', 'images');
         if (fs.existsSync(imagesDir)) {
             const imageFiles = this.getImageFiles(imagesDir);
             imageFiles.forEach(image => {
@@ -156,12 +155,12 @@ class EnhancedSitemapGenerator {
     getImageFiles(dir, baseDir = '') {
         const files = [];
         const items = fs.readdirSync(dir);
-        
+
         items.forEach(item => {
             const fullPath = path.join(dir, item);
             const relativePath = path.join(baseDir, item);
             const stat = fs.statSync(fullPath);
-            
+
             if (stat.isDirectory()) {
                 files.push(...this.getImageFiles(fullPath, relativePath));
             } else if (this.isImageFile(item)) {
@@ -174,7 +173,7 @@ class EnhancedSitemapGenerator {
                 });
             }
         });
-        
+
         return files;
     }
 
@@ -200,9 +199,9 @@ class EnhancedSitemapGenerator {
     // Add videos from YAML
     addVideosFromYaml() {
         try {
-            const videosYaml = fs.readFileSync('content/videos.yaml', 'utf8');
+            const videosYaml = fs.readFileSync(path.join(__dirname, '..', 'content', 'videos.yaml'), 'utf8');
             const videos = yaml.load(videosYaml);
-            
+
             if (videos && videos.videos) {
                 videos.videos.forEach(video => {
                     this.videoSitemapUrls.push({
@@ -228,7 +227,7 @@ class EnhancedSitemapGenerator {
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">\n\n`;
-        
+
         this.sitemapUrls.forEach(url => {
             xml += `    <url>
         <loc>${url.loc}</loc>
@@ -237,7 +236,7 @@ class EnhancedSitemapGenerator {
         <priority>${url.priority}</priority>
     </url>\n`;
         });
-        
+
         xml += '\n</urlset>';
         return xml;
     }
@@ -247,7 +246,7 @@ class EnhancedSitemapGenerator {
         let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n\n`;
-        
+
         this.imageSitemapUrls.forEach(url => {
             xml += `    <url>
         <loc>${url.loc}</loc>
@@ -259,7 +258,7 @@ class EnhancedSitemapGenerator {
         </image:image>
     </url>\n`;
         });
-        
+
         xml += '\n</urlset>';
         return xml;
     }
@@ -269,7 +268,7 @@ class EnhancedSitemapGenerator {
         let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">\n\n`;
-        
+
         this.videoSitemapUrls.forEach(url => {
             xml += `    <url>
         <loc>${url.loc}</loc>
@@ -283,7 +282,7 @@ class EnhancedSitemapGenerator {
         </video:video>
     </url>\n`;
         });
-        
+
         xml += '\n</urlset>';
         return xml;
     }
@@ -305,20 +304,20 @@ class EnhancedSitemapGenerator {
         <lastmod>${this.currentDate}</lastmod>
     </sitemap>
 </sitemapindex>`;
-        
-        fs.writeFileSync('sitemap-index.xml', sitemapIndex);
+
+        fs.writeFileSync(path.join(__dirname, '..', 'sitemap-index.xml'), sitemapIndex);
         console.log('✅ Sitemap index generated');
     }
 
     // Generate all sitemaps
     generateAll() {
         console.log('🚀 Starting enhanced sitemap generation...\n');
-        
+
         this.generateMainSitemap();
         this.generateImageSitemap();
         this.generateVideoSitemap();
         this.generateSitemapIndex();
-        
+
         console.log('\n🎉 All sitemaps generated successfully!');
         console.log('\n📊 Sitemap Summary:');
         console.log(`   Main Sitemap: ${this.sitemapUrls.length} URLs`);

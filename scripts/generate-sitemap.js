@@ -7,7 +7,7 @@ const yaml = require('js-yaml');
 // Load content from YAML file
 function loadContent() {
     try {
-        const yamlPath = path.join(__dirname, 'content', 'documents.yaml');
+        const yamlPath = path.join(__dirname, '..', 'content', 'documents.yaml');
         const yamlContent = fs.readFileSync(yamlPath, 'utf8');
         const content = yaml.load(yamlContent);
 
@@ -86,7 +86,7 @@ ${content.categories.map(cat => `    <url>
 </urlset>`;
 
     // Write sitemap to file
-    fs.writeFileSync('sitemap.xml', sitemap);
+    fs.writeFileSync(path.join(__dirname, '..', 'sitemap.xml'), sitemap);
     console.log('✅ sitemap.xml generated successfully!');
     console.log(`📊 Total URLs: ${content.documents.length + content.categories.length + 3}`); // documents + categories + static pages
 }
@@ -119,7 +119,7 @@ ${content.documents.map(doc => `        <item>
     </channel>
 </rss>`;
 
-    fs.writeFileSync('rss.xml', rssFeed);
+    fs.writeFileSync(path.join(__dirname, '..', 'rss.xml'), rssFeed);
     console.log('✅ RSS feed generated successfully!');
 }
 

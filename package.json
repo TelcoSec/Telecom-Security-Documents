@@ -5,9 +5,9 @@
   "main": "index.html",
   "scripts": {
     "start": "http-server -p 8080 -o",
-    "generate": "node scripts/generate-pages.js",
+    "generate": "node scripts/generate-from-yaml.js",
     "generate:yaml": "node scripts/generate-from-yaml.js",
-    "generate:watch": "nodemon scripts/generate-pages.js",
+    "generate:watch": "nodemon scripts/generate-from-yaml.js",
     "build": "npm run generate:yaml && npm run seo && npm run optimize:images",
     "validate": "node scripts/check-errors.js",
     "seo": "node scripts/generate-sitemap.js",
